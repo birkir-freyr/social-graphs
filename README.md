@@ -24,13 +24,7 @@ python3 -m venv .venv
 The script reads original TSVs in site/data and regenerates site/data/week1.json and site/assets/week1-degrees.svg. The notebook exposes the calculations using the same functions. The deployed site is static and does not run Python.
 
 ## GitHub Pages
-The workflow targets https://birkir-freyr.github.io/social-graphs/ (intended address; verify after deployment).
-
-1. Open this repository's **Settings → Pages** on GitHub.
-2. Set **Source** to **GitHub Actions**.
-3. Push the site to main or run **Publish Social Graphs** from Actions.
-4. Wait for deployment and use the URL returned by the workflow.
-
+The workflow targets https://birkir-freyr.github.io/social-graphs/ 
 Only site/ is uploaded. All asset paths are relative, supporting project Pages URLs.
 
 ## Add another week
