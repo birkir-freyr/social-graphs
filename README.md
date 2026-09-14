@@ -47,3 +47,6 @@ Source: https://sunelehmann.com/socialgraphs2026-web/data/ · Snapshot: 2026-08-
 Directed A → B means A's Wikipedia article links to B's article within this roster. All roster nodes are added before edges. The original TSV comments and columns are retained. The seeded undirected force layout is not a distance measurement. Components and the removal experiment use undirected connectivity; directed reachability is not implied. Incoming degree measures visibility within this network, not general popularity. No power-law fit is claimed.
 
 Coding-agent assistance produced code and draft prose; numerical claims are checked against the supplied snapshot.
+
+## Public analysis downloads
+The website serves self-contained reproduction packages under `site/downloads/`, so readers do not need access to the GitHub repository. After changing either analysis or its bundled inputs, run `python analysis/package_reproducibility.py` and include the regenerated ZIP files in the website update. Each package contains only an explicit list of course files and instructions.
