@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#122c29">
+  <meta name="description" content="What happens when Marvel's most central characters disappear? An interactive attack on the 277-character giant component.">
+  <title>You can remove Spider-Man. The universe stays. — Social Graphs, Week 3</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../week3.css">
+  <script src="../week3-core.js" defer></script>
+  <script src="../week3.js" defer></script>
+</head>
+<body class="week3">
+<a class="skip" href="#post">Skip to article</a>
+<header class="masthead">
+  <a class="wordmark" href="../" aria-label="Social Graphs home"><span class="brand-icon" aria-hidden="true">⠿</span> SOCIAL<br><span class="wordmark-bottom">GRAPHS</span></a>
+  <div class="masthead-caption">A field journal on networks<br>DTU · 02805 · Fall 2026</div>
+  <nav aria-label="Main navigation"><a href="../#post">Week 01</a><a href="week2.html">Week 02</a><a href="week3.html" aria-current="page">Week 03</a><a href="#methods">Methods & data</a><a href="#about">About</a></nav>
+</header>
+<main id="post">
+  <section class="intro">
+    <div class="eyebrow">FIELD NOTES / 003 <span>20 SEPTEMBER 2026</span></div>
+    <div class="intro-grid">
+      <h1>You can remove<br>Spider-Man.<br><em>The universe stays.</em></h1>
+      <div class="intro-copy"><p class="lede">The biggest hub is also the biggest broker. Taking him out strands five characters—not a universe.</p><p>So we kept going. Remove the current hub, recalculate the network, repeat. The difference between one dramatic knockout and a sustained attack is the story.</p><a class="text-link" href="#experiment">Start removing characters <span aria-hidden="true">↘</span></a></div>
+    </div>
+    <div class="metrics" aria-label="Key findings"><div><strong>277</strong><span>characters in the giant component</span></div><div><strong>271</strong><span>stay together without Spider-Man</span></div><div><strong>5</strong><span>characters he alone attaches</span></div><div><strong>63</strong><span>broker removals before half remain together</span></div></div>
+    <p class="small">A link means that at least one Wikipedia page links to the other within the frozen course roster. We ignore direction for this connectivity experiment.</p>
+  </section>
+
+  <section id="experiment" class="network-section">
+    <div class="section-top"><div><p class="eyebrow">01 / DISASSEMBLE THE UNIVERSE</p><h2>Remove the current hub.<br>Watch the pieces appear.</h2></div><p>Every score is recalculated after every removal.</p></div>
+    <div class="removal-toolbar">
+      <div class="segmented" role="group" aria-label="Removal strategy"><button data-strategy="betweenness" aria-pressed="true" disabled>Adaptive betweenness</button><button data-strategy="degree" aria-pressed="false" disabled>Adaptive degree</button></div>
+      <div class="removal-actions"><button id="play-removals" class="icon-button" aria-label="Play removals" title="Play removals" disabled>▶</button><button id="reset-removals" class="icon-button" aria-label="Reset removals" title="Reset removals" disabled>↺</button></div>
+    </div>
+    <div class="removal-stage">
+      <div class="removal-summary" aria-live="polite"><div><p class="eyebrow">LAST REMOVED</p><strong id="last-removed">Spider-Man</strong></div><div><p class="eyebrow">LARGEST COMPONENT</p><strong id="giant-size">271</strong></div><div><p class="eyebrow">COMPONENTS</p><strong id="fragment-count">6</strong></div><div><p class="eyebrow">OUTSIDE THE GIANT</p><strong id="outside-count">5</strong></div></div>
+      <div class="removal-visual"><canvas id="removal-map" aria-label="Network map showing the remaining giant component, detached fragments, and removed characters"></canvas><div class="removal-legend" aria-hidden="true"><span><i></i> largest component</span><span><i class="fragment"></i> detached</span><span><i class="gone"></i> removed</span></div></div>
+      <div class="removal-timeline"><label for="removal-count"><span>Characters removed</span><output id="removed-output" for="removal-count">1</output></label><input id="removal-count" type="range" min="0" max="100" value="1" step="1" disabled><div class="removal-targets"><div>Last out<strong id="last-removed-detail">Use the timeline</strong></div><div>Next target<strong id="next-target">Hulk</strong></div></div><p id="strategy-note">Recompute betweenness after every removal, then remove the current broker.</p></div>
+    </div>
+    <p id="week3-error" role="alert" hidden></p>
+    <noscript><p>The explorable needs JavaScript. The complete results and reproducibility files remain available below.</p></noscript>
+  </section>
+
+  <section class="attack-panel">
+    <div class="section-top"><div><p class="eyebrow">THE ATTACK CURVE</p><h2>A knockout is not a collapse.</h2></div><p>Lower lines break the network faster.</p></div>
+    <div class="chart-legend" aria-hidden="true"><span><i class="bet"></i> adaptive betweenness</span><span><i></i> adaptive degree</span><span><i class="random"></i> random median</span><span><i class="band"></i> random 5–95%</span></div>
+    <div id="attack-chart"></div>
+    <p id="step-reading">Spider-Man was removed at step 1. 271 of the 276 remaining characters are still in the largest component; 5 sit outside it.</p>
+  </section>
+
+  <article class="story">
+    <section class="story-section"><div class="margin-label">THE FIRST HIT</div><div class="story-body"><h2>Spider-Man wins every importance contest. The network barely notices.</h2><p>Spider-Man has the highest degree, closeness, and betweenness in this snapshot. He is also the single removal that fragments the giant component most. Yet after removing him, <strong>271 of 276 remaining characters—98.2%—still belong to one component</strong>.</p><p>The five pages left alone are Enigma, Ethan Edwards, Helix, Phil Grayfield (NFL SuperPro), and Thunderclap. Each had exactly one route into the giant component: Spider-Man. His enormous betweenness mostly reflects short routes through a hub, not a fragile bridge between two large worlds.</p><div class="table-wrap"><table><caption>Most damaging single removals</caption><thead><tr><th scope="col">Character removed</th><th scope="col">Degree</th><th scope="col">Betweenness</th><th scope="col">Left outside giant</th></tr></thead><tbody><tr><th scope="row">Spider-Man</th><td>106</td><td>0.235</td><td>5</td></tr><tr><th scope="row">Black Widow</th><td>25</td><td>0.035</td><td>3</td></tr><tr><th scope="row">Doctor Strange</th><td>57</td><td>0.083</td><td>2</td></tr><tr><th scope="row">Deadpool</th><td>41</td><td>0.056</td><td>1</td></tr><tr><th scope="row">Moon Knight</th><td>27</td><td>0.023</td><td>1</td></tr></tbody></table></div></div></section>
+
+    <section class="story-section"><div class="margin-label">TRAFFIC ≠ BREAKAGE</div><div class="story-body"><h2>Betweenness counts journeys, not wreckage.</h2><p>A node scores high in betweenness when many shortest paths pass through it. Remove that node and those paths may simply detour. Fragmentation requires something stricter: a node must be an articulation point, the only connection between parts of the graph.</p><p>Only <strong>13 of the 277</strong> characters are articulation points. Hulk and Wolverine rank second and third in betweenness, but removing either one alone leaves every other character connected. Black Widow ranks eighth in betweenness yet causes the second-largest immediate split. Centrality and vulnerability overlap, but they are not interchangeable.</p><blockquote>The busiest transfer station is not necessarily the bridge that collapses.</blockquote></div></section>
+
+    <section class="story-section"><div class="margin-label">THE LONG ATTACK</div><div class="story-body"><h2>Recalculation is where brokers pull ahead.</h2><p>For a sequence of removals, yesterday’s ranking quickly goes stale. We therefore recompute the chosen score after every deletion. Adaptive betweenness pushes the largest component below half its original size after <strong>63 removals</strong>; adaptive degree needs <strong>74</strong>.</p><div class="comparison-callout"><div><strong>42</strong><span>largest component after 80 adaptive betweenness removals</span></div><div><strong>107</strong><span>after 80 adaptive degree removals</span></div><div><strong>191</strong><span>median after 80 random removals</span></div></div><p>At 80 removals, the broker strategy has reduced the surviving giant to 42 characters. Removing current hubs leaves 107 together. A random order usually leaves 191. The network is robust to accidents and isolated shocks, but not to an adversary who keeps finding the new routes between what remains.</p></div></section>
+
+    <section class="story-section"><div class="margin-label">WHAT THIS MEANS</div><div class="story-body"><h2>Robust and vulnerable can both be true.</h2><p>The first removal says the Marvel giant component has redundancy: even its biggest hub is not a single point of catastrophic failure. The full curve says that redundancy is concentrated. Repeated targeted removal eventually exhausts alternate routes far faster than random failure.</p><p>This is a structural experiment, not a claim about who matters in Marvel stories. Wikipedia links are editorial traces, the graph is a frozen roster, and deleting a page does not model a character leaving the fictional universe. The experiment answers a precise question: how connectivity in this particular graph responds to different node-removal rules.</p></div></section>
+
+    <section class="story-section" id="methods"><div class="margin-label">REPRODUCIBILITY</div><div class="story-body"><h2>Same universe. One hundred exits.</h2><p>We start with the 277-node, 1,421-edge undirected giant component from the course’s frozen <strong>26 August 2026</strong> snapshot. Opposite Wikipedia links collapse to one undirected pair. Layout coordinates come from Week 1 and carry no analytical meaning.</p><p>For each adaptive strategy, calculate the score on the entire remaining graph, remove the highest-scoring node, and repeat for 100 steps. Alphabetical name breaks exact score ties. Betweenness is NetworkX’s normalized node betweenness. The random envelope contains <strong>500</strong> seeded, uniformly shuffled removal orders; its band shows the pointwise 5th and 95th percentiles.</p><p>The vertical axis always shows the largest connected component’s absolute size. Removed nodes are not counted as fragments. The “outside giant” number counts surviving nodes in every smaller component.</p><div class="resource-links"><a href="../data/week3.json" download>Results & attack orders ↓</a><a href="../data/week3-random-trials.csv" download>All 500 random trials ↓</a><a href="../downloads/week3-analysis.zip" download>Reproduce the analysis (ZIP) ↓</a><a href="../data/week1_nodes.tsv" download>Node roster ↓</a><a href="../data/week1_edges.tsv" download>Original edges ↓</a></div><p class="small">Sources: <a href="https://sunelehmann.com/socialgraphs2026-web/weeks/week3.html#go-nuts">Week 3, exercise 3.12</a> · <a href="https://sunelehmann.com/socialgraphs2026-web/data/">Shared course dataset</a>. Numerical claims are generated from the snapshot and checked by the browser-independent test suite.</p></div></section>
+  </article>
+  <div class="post-pagination"><a class="text-link" href="week2.html">← Week 02: Even superheroes have more popular friends</a></div>
+</main>
+<footer id="about"><div><a class="footer-brand" href="../">SOCIAL GRAPHS</a><p>Arnar · Birkir · Hanna<br>A student field journal for Social Graphs and Interactions.<br>Eight weeks of questions, experiments, and things we didn’t expect.</p></div><div><p>DTU · 02805 · Fall 2026</p><a href="#methods">Methods & downloads ↑</a><p class="small">Built with coding-agent assistance.<br>Calculations reproduced from the course snapshot.</p></div></footer>
+</body>
+</html>

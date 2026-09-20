@@ -17,6 +17,13 @@ The article uses uniform nonisolated-person → uniform-neighbor sampling. It di
 
 The assignment also asks the group to share the published link in the Week 2 Teams channel by Monday evening and leave constructive feedback on another group's post; those are separate from building the website.
 
+## Week 3
+**You can remove Spider-Man. The universe stays.** Exercise 3.12: an interactive targeted-removal experiment on the 277-character giant component. Compare adaptive degree and adaptive betweenness attacks with 500 random removal orders, scrub through the first 100 deletions, and watch detached components emerge.
+
+Page: `site/weeks/week3.html` · Intended Pages URL: https://birkir-freyr.github.io/social-graphs/weeks/week3.html
+
+Reproduce with `python analysis/build_week3.py`. This writes `site/data/week3.json` and `site/data/week3-random-trials.csv`. Run the graph and saved-claim checks with `node --test analysis/test_week3.cjs`.
+
 ## Preview
 Run from this repository:
 ```sh
@@ -49,4 +56,4 @@ Directed A → B means A's Wikipedia article links to B's article within this ro
 Coding-agent assistance produced code and draft prose; numerical claims are checked against the supplied snapshot.
 
 ## Public analysis downloads
-The website serves self-contained reproduction packages under `site/downloads/`, so readers do not need access to the GitHub repository. After changing either analysis or its bundled inputs, run `python analysis/package_reproducibility.py` and include the regenerated ZIP files in the website update. Each package contains only an explicit list of course files and instructions.
+The website serves self-contained reproduction packages under `site/downloads/`, so readers do not need access to the GitHub repository. After changing an analysis or its bundled inputs, run `python analysis/package_reproducibility.py` and include the regenerated ZIP files in the website update. Each package contains only an explicit list of course files and instructions.

@@ -1,6 +1,6 @@
 """Package the public posts' analyses without requiring GitHub repository access.
 
-Run after changing either analysis: python analysis/package_reproducibility.py
+Run after changing an analysis: python analysis/package_reproducibility.py
 Only the explicitly listed course files are included; no repository metadata.
 """
 from pathlib import Path
@@ -58,6 +58,30 @@ nulls. Every labelled degree is checked after each degree-preserving shuffle.
 The included Week 1 JSON supplies layout coordinates only; measurements come
 from the original node roster and edge list. No network access or GitHub login
 is needed after installing NetworkX. Seeds and source hashes are exported.
+""",
+    },
+    "week3": {
+        "files": COMMON + ["analysis/build_week3.py", "site/data/week1.json"],
+        "readme": """# Week 3 — You can remove Spider-Man. The universe stays.
+
+Reproduce the Social Graphs course post from the frozen 26 August 2026 dataset.
+Source: https://sunelehmann.com/socialgraphs2026-web/data/
+Post: https://birkir-freyr.github.io/social-graphs/weeks/week3.html
+
+Use Python 3.10 or newer. Extract the archive, open a terminal in this folder,
+then run:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install networkx==3.4.2
+    .venv/bin/python analysis/build_week3.py
+
+On Windows, use .venv\\Scripts\\python.exe in place of .venv/bin/python.
+
+This generates site/data/week3.json and site/data/week3-random-trials.csv. It
+recomputes degree and betweenness after each of 100 targeted removals and runs
+500 seeded random removal orders. The included Week 1 JSON supplies layout
+coordinates only; measurements come from the original roster and edge list.
+No network access or GitHub login is needed after installing NetworkX.
 """,
     },
 }
