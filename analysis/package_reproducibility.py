@@ -10,6 +10,45 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site/downloads"
 COMMON = ["site/data/week1_nodes.tsv", "site/data/week1_edges.tsv"]
 PACKAGES = {
+    "week4": {
+        "files": ["site/data/week4_philosophers_nodes.tsv", "site/data/week4_philosophers_edges.tsv",
+                  "analysis/build_week4.py", "analysis/plot_week4.py", "analysis/test_week4.cjs",
+                  "site/week4-core.js", "requirements.txt"],
+        "readme": """# Week 4 — Two links. Three islands.
+
+Exercise 4.13: a disparity-filter experiment on the frozen 15 September 2026
+philosopher Wikipedia dataset. Source: https://sunelehmann.com/socialgraphs2026-web/data/
+Intended post URL: https://birkir-freyr.github.io/social-graphs/weeks/week4.html
+
+Use Python 3.10 or newer. From this extracted folder:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install networkx==3.4.2 numpy==1.26.0 matplotlib==3.8.3
+    .venv/bin/python analysis/build_week4.py
+    .venv/bin/python analysis/plot_week4.py
+
+On Windows use .venv\\Scripts\\python.exe instead of .venv/bin/python.
+The builder writes site/data/week4.json and week4-sweep.csv. The plotter writes
+site/assets/week4-backbones.svg. Input hashes, library version and seeds are saved.
+After generation, optionally run the independent checks using Node.js 18+:
+
+    node --test analysis/test_week4.cjs
+
+Both directions are summed. Analysis keeps all 1,374 nodes of the original giant
+component, including nodes isolated by filtering. Endpoint significance scores
+are calculated once on that original weighted graph. Keep if either score is
+strictly below alpha. Every tied-score batch is processed together. The largest
+single absolute giant-component decrease is 108 to 65 at 0.04712622658232835.
+This is an exhaustive threshold scan, not a statistical change-point estimate.
+
+The overview layout comes from the alpha=0.3 backbone: separate spring layouts
+(seed 413, k=0.15, 200 iterations) for components, with normalized radius raised
+to 0.4 in the largest component for legibility. Smaller components are placed
+around it; reference-layout isolates occupy an artificial outer ring. Colors use unweighted Louvain on the original giant, seed 0.
+The 108-node detail layout uses the graph just before the critical cut; its
+colors show eventual fragments. No network access is needed after installation.
+""",
+    },
     "week1": {
         "files": COMMON + ["analysis/build_week1.py", "analysis/week1.ipynb", "requirements.txt"],
         "readme": """# Week 1 — A universe, unevenly connected

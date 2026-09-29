@@ -24,6 +24,26 @@ Page: `site/weeks/week3.html` · Intended Pages URL: https://birkir-freyr.github
 
 Reproduce with `python analysis/build_week3.py`. This writes `site/data/week3.json` and `site/data/week3-random-trials.csv`. Run the graph and saved-claim checks with `node --test analysis/test_week3.cjs`.
 
+## Week 4
+**Two links. Three islands.** Exercise **4.13**, Go nuts: a disparity-filter story
+on the philosopher network. Find the largest single drop in the giant component,
+cut Augustine's two tied links interactively, and explore the losses across alpha.
+The critical 108-person component splits into 65, 40 and 3; the article makes
+explicit that 1,046 of the original 1,374 philosophers are already isolated.
+
+Page: `site/weeks/week4.html` · Intended Pages URL: https://birkir-freyr.github.io/social-graphs/weeks/week4.html
+
+Reproduce with `python analysis/build_week4.py`, then `python analysis/plot_week4.py`.
+Run `node --test analysis/test_week4.cjs` to verify original weight aggregation,
+filter significance, reference counts, all slider settings, and the critical cut.
+Run `python analysis/package_reproducibility.py` after changing the bundled analysis.
+The public ZIP includes the source TSVs and everything needed to regenerate the
+data and comparison figure. The post is linked from all previous weeks.
+
+The course also asks you to share the published link in the Week 4 Teams channel
+and leave constructive feedback on another group's post. Those remain separate
+from preparing this website entry.
+
 ## Preview
 Run from this repository:
 ```sh
