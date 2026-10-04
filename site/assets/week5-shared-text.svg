@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-labelledby="title desc">
+<title id="title">Marvel pages sharing at least 30 consecutive tokens</title>
+<desc id="desc">36 undirected pairs among 38 active pages. Links mean shared normalized text, not hyperlinks or proven copying.</desc>
+<rect width="1100" height="780" fill="#122c29"/>
+<text x="36" y="45" fill="#edf2e8" font-family="sans-serif" font-size="25">Same universe. Same sentences.</text>
+<text x="36" y="74" fill="#a8c5b9" font-family="sans-serif" font-size="14">30-token minimum · 36 shared-text pairs · 38 of 303 pages</text>
+<line x1="966.51802" y1="181.30096" x2="955.1949999999999" y2="170.91026" stroke="#78968a" stroke-width="3.342857142857143" opacity=".7"/>
+<line x1="991.05106" y1="178.20434" x2="955.1949999999999" y2="170.91026" stroke="#78968a" stroke-width="3.1" opacity=".7"/>
+<line x1="955.1949999999999" y1="170.91026" x2="919.3001800000001" y2="159.93666000000002" stroke="#78968a" stroke-width="2.8285714285714283" opacity=".7"/>
+<line x1="884.1061000000001" y1="149.28032" x2="852.43204" y2="145.22496" stroke="#78968a" stroke-width="2.757142857142857" opacity=".7"/>
+<line x1="440.54686000000004" y1="180.0644" x2="469.88512" y2="191.49446" stroke="#78968a" stroke-width="2.4142857142857146" opacity=".7"/>
+<line x1="852.43204" y1="145.22496" x2="867.09658" y2="138.62514" stroke="#78968a" stroke-width="2.314285714285714" opacity=".7"/>
+<line x1="884.1061000000001" y1="149.28032" x2="867.09658" y2="138.62514" stroke="#78968a" stroke-width="2.057142857142857" opacity=".7"/>
+<line x1="203.72632" y1="516.16686" x2="131.27368" y2="583.83314" stroke="#78968a" stroke-width="1.8857142857142857" opacity=".7"/>
+<line x1="713.72632" y1="419.5" x2="641.27368" y2="487.16686" stroke="#78968a" stroke-width="1.8" opacity=".7"/>
+<line x1="167.58262" y1="260.02958" x2="259.21738" y2="292.91558" stroke="#78968a" stroke-width="1.6857142857142857" opacity=".7"/>
+<line x1="458.72632" y1="419.5" x2="386.27368" y2="487.16686" stroke="#78968a" stroke-width="1.6714285714285713" opacity=".7"/>
+<line x1="966.51802" y1="181.30096" x2="991.05106" y2="178.20434" stroke="#78968a" stroke-width="1.657142857142857" opacity=".7"/>
+<line x1="458.72632" y1="612.83314" x2="386.27368" y2="680.5" stroke="#78968a" stroke-width="1.657142857142857" opacity=".7"/>
+<line x1="968.72632" y1="322.83314" x2="896.27368" y2="390.5" stroke="#78968a" stroke-width="1.6428571428571428" opacity=".7"/>
+<line x1="167.83048" y1="160.52188" x2="158.51175999999998" y2="172.68042" stroke="#78968a" stroke-width="1.5571428571428572" opacity=".7"/>
+<line x1="760.7636200000001" y1="164.08308" x2="735.3778599999999" y2="185.99896" stroke="#78968a" stroke-width="1.5285714285714285" opacity=".7"/>
+<line x1="713.72632" y1="322.83314" x2="641.27368" y2="390.5" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="677.12974" y1="182.85478" x2="713.9741799999999" y2="142.97688" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="677.12974" y1="182.85478" x2="697.27882" y2="161.85994" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="677.12974" y1="182.85478" x2="629.4284200000001" y2="180.97500000000002" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="677.12974" y1="182.85478" x2="635.35768" y2="162.16038" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="677.12974" y1="182.85478" x2="662.4907" y2="142.19562" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="713.9741799999999" y1="142.97688" x2="697.27882" y2="161.85994" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="713.9741799999999" y1="142.97688" x2="629.4284200000001" y2="180.97500000000002" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="713.9741799999999" y1="142.97688" x2="635.35768" y2="162.16038" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="713.9741799999999" y1="142.97688" x2="662.4907" y2="142.19562" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="697.27882" y1="161.85994" x2="629.4284200000001" y2="180.97500000000002" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="697.27882" y1="161.85994" x2="635.35768" y2="162.16038" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="697.27882" y1="161.85994" x2="662.4907" y2="142.19562" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="629.4284200000001" y1="180.97500000000002" x2="635.35768" y2="162.16038" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="629.4284200000001" y1="180.97500000000002" x2="662.4907" y2="142.19562" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="635.35768" y1="162.16038" x2="662.4907" y2="142.19562" stroke="#78968a" stroke-width="1.5142857142857142" opacity=".7"/>
+<line x1="429.29932" y1="141.33374" x2="427.61428" y2="157.86374" stroke="#78968a" stroke-width="1.4857142857142858" opacity=".7"/>
+<line x1="373.27072000000004" y1="155.35002" x2="427.61428" y2="157.86374" stroke="#78968a" stroke-width="1.4857142857142858" opacity=".7"/>
+<line x1="458.72632" y1="322.83314" x2="386.27368" y2="390.5" stroke="#78968a" stroke-width="1.4285714285714286" opacity=".7"/>
+<line x1="440.54686000000004" y1="180.0644" x2="427.61428" y2="157.86374" stroke="#78968a" stroke-width="1.4285714285714286" opacity=".7"/>
+<circle cx="966.51802" cy="181.30096" r="5" fill="#e7cb85"><title>Mayday Parker</title></circle>
+<text x="975.51802" y="185.30096" fill="#edf2e8" font-family="sans-serif" font-size="11">Mayday Parker</text>
+<circle cx="955.1949999999999" cy="170.91026" r="5" fill="#e7cb85"><title>Spider-Woman</title></circle>
+<circle cx="991.05106" cy="178.20434" r="5" fill="#e7cb85"><title>Spider-Girl</title></circle>
+<circle cx="919.3001800000001" cy="159.93666000000002" r="5" fill="#e7cb85"><title>Spider-Woman (Jessica Drew)</title></circle>
+<text x="778.3001800000001" y="163.93666000000002" fill="#edf2e8" font-family="sans-serif" font-size="11">Spider-Woman (Jessica…</text>
+<circle cx="884.1061000000001" cy="149.28032" r="5" fill="#e7cb85"><title>Spitfire (character)</title></circle>
+<circle cx="852.43204" cy="145.22496" r="5" fill="#e7cb85"><title>Union Jack (Joseph Chapman)</title></circle>
+<circle cx="440.54686000000004" cy="180.0644" r="5" fill="#96bbae"><title>Cyclops (Marvel Comics)</title></circle>
+<text x="449.54686000000004" y="184.0644" fill="#edf2e8" font-family="sans-serif" font-size="11">Cyclops (Marvel Comic…</text>
+<circle cx="469.88512" cy="191.49446" r="5" fill="#96bbae"><title>Jean Grey</title></circle>
+<circle cx="867.09658" cy="138.62514" r="5" fill="#e7cb85"><title>Union Jack (Marvel Comics)</title></circle>
+<text x="876.09658" y="142.62514" fill="#edf2e8" font-family="sans-serif" font-size="11">Union Jack (Marvel Co…</text>
+<circle cx="203.72632" cy="516.16686" r="5" fill="#96bbae"><title>Ghost Rider</title></circle>
+<text x="212.72632" y="520.16686" fill="#edf2e8" font-family="sans-serif" font-size="11">Ghost Rider</text>
+<circle cx="131.27368" cy="583.83314" r="5" fill="#96bbae"><title>Ghost Rider (Johnny Blaze)</title></circle>
+<text x="140.27368" y="587.83314" fill="#edf2e8" font-family="sans-serif" font-size="11">Ghost Rider (Johnny B…</text>
+<circle cx="713.72632" cy="419.5" r="5" fill="#83bbd1"><title>Eddie Brock</title></circle>
+<text x="722.72632" y="423.5" fill="#edf2e8" font-family="sans-serif" font-size="11">Eddie Brock</text>
+<circle cx="641.27368" cy="487.16686" r="5" fill="#83bbd1"><title>Venom (character)</title></circle>
+<text x="650.27368" y="491.16686" fill="#edf2e8" font-family="sans-serif" font-size="11">Venom (character)</text>
+<circle cx="167.58262" cy="260.02958" r="5" fill="#83bbd1"><title>Bucky (Marvel Comics)</title></circle>
+<text x="176.58262" y="264.02958" fill="#edf2e8" font-family="sans-serif" font-size="11">Bucky (Marvel Comics)</text>
+<circle cx="259.21738" cy="292.91558" r="5" fill="#83bbd1"><title>Rikki Barnes</title></circle>
+<text x="268.21738" y="296.91558" fill="#edf2e8" font-family="sans-serif" font-size="11">Rikki Barnes</text>
+<circle cx="458.72632" cy="419.5" r="5" fill="#e7cb85"><title>Ch&#x27;od</title></circle>
+<text x="467.72632" y="423.5" fill="#edf2e8" font-family="sans-serif" font-size="11">Ch&#x27;od</text>
+<circle cx="386.27368" cy="487.16686" r="5" fill="#e7cb85"><title>Raza Longknife</title></circle>
+<text x="395.27368" y="491.16686" fill="#edf2e8" font-family="sans-serif" font-size="11">Raza Longknife</text>
+<circle cx="458.72632" cy="612.83314" r="5" fill="#96bbae"><title>Rocket Raccoon</title></circle>
+<text x="467.72632" y="616.83314" fill="#edf2e8" font-family="sans-serif" font-size="11">Rocket Raccoon</text>
+<circle cx="386.27368" cy="680.5" r="5" fill="#96bbae"><title>Star-Lord</title></circle>
+<text x="395.27368" y="684.5" fill="#edf2e8" font-family="sans-serif" font-size="11">Star-Lord</text>
+<circle cx="968.72632" cy="322.83314" r="5" fill="#96bbae"><title>Blue Diamond (character)</title></circle>
+<text x="827.72632" y="326.83314" fill="#edf2e8" font-family="sans-serif" font-size="11">Blue Diamond (charact…</text>
+<circle cx="896.27368" cy="390.5" r="5" fill="#96bbae"><title>Jack Frost (Marvel Comics)</title></circle>
+<text x="905.27368" y="394.5" fill="#edf2e8" font-family="sans-serif" font-size="11">Jack Frost (Marvel Co…</text>
+<circle cx="167.83048" cy="160.52188" r="5" fill="#fa784d"><title>Mockingbird (Marvel Comics)</title></circle>
+<text x="176.83048" y="164.52188" fill="#edf2e8" font-family="sans-serif" font-size="11">Mockingbird (Marvel C…</text>
+<circle cx="158.51175999999998" cy="172.68042" r="5" fill="#fa784d"><title>Quicksilver (Marvel Comics)</title></circle>
+<circle cx="760.7636200000001" cy="164.08308" r="5" fill="#bea7e4"><title>Backhand (character)</title></circle>
+<circle cx="735.3778599999999" cy="185.99896" r="5" fill="#bea7e4"><title>Blackthorn (character)</title></circle>
+<text x="744.3778599999999" y="189.99896" fill="#edf2e8" font-family="sans-serif" font-size="11">Blackthorn (character)</text>
+<circle cx="713.72632" cy="322.83314" r="5" fill="#fa784d"><title>Black Rider (character)</title></circle>
+<circle cx="677.12974" cy="182.85478" r="5" fill="#bea7e4"><title>Radian (Morituri)</title></circle>
+<circle cx="713.9741799999999" cy="142.97688" r="5" fill="#bea7e4"><title>Scaredycat</title></circle>
+<text x="722.9741799999999" y="146.97688" fill="#edf2e8" font-family="sans-serif" font-size="11">Scaredycat</text>
+<circle cx="697.27882" cy="161.85994" r="5" fill="#bea7e4"><title>Scatterbrain (Morituri)</title></circle>
+<circle cx="629.4284200000001" cy="180.97500000000002" r="5" fill="#bea7e4"><title>Snapdragon (Morituri)</title></circle>
+<circle cx="635.35768" cy="162.16038" r="5" fill="#bea7e4"><title>Toxyn</title></circle>
+<text x="644.35768" y="166.16038" fill="#edf2e8" font-family="sans-serif" font-size="11">Toxyn</text>
+<circle cx="641.27368" cy="390.5" r="5" fill="#fa784d"><title>Two-Gun Kid</title></circle>
+<text x="650.27368" y="394.5" fill="#edf2e8" font-family="sans-serif" font-size="11">Two-Gun Kid</text>
+<circle cx="662.4907" cy="142.19562" r="5" fill="#bea7e4"><title>Vyking</title></circle>
+<text x="671.4907" y="146.19562" fill="#edf2e8" font-family="sans-serif" font-size="11">Vyking</text>
+<circle cx="429.29932" cy="141.33374" r="5" fill="#96bbae"><title>Black Panther (character)</title></circle>
+<text x="438.29932" y="145.33374" fill="#edf2e8" font-family="sans-serif" font-size="11">Black Panther (charac…</text>
+<circle cx="373.27072000000004" cy="155.35002" r="5" fill="#96bbae"><title>Rachel Summers</title></circle>
+<circle cx="427.61428" cy="157.86374" r="5" fill="#96bbae"><title>Storm (Marvel Comics)</title></circle>
+<text x="436.61428" y="161.86374" fill="#edf2e8" font-family="sans-serif" font-size="11">Storm (Marvel Comics)</text>
+<circle cx="458.72632" cy="322.83314" r="5" fill="#83bbd1"><title>Battlestar (character)</title></circle>
+<text x="467.72632" y="326.83314" fill="#edf2e8" font-family="sans-serif" font-size="11">Battlestar (character)</text>
+<circle cx="386.27368" cy="390.5" r="5" fill="#83bbd1"><title>U.S. Agent</title></circle>
+<text x="395.27368" y="394.5" fill="#edf2e8" font-family="sans-serif" font-size="11">U.S. Agent</text>
+<text x="36" y="748" fill="#a8c5b9" font-family="sans-serif" font-size="13">Fixed layout from the 20-token graph. Colors identify its connected groups; distance has no meaning.</text></svg>

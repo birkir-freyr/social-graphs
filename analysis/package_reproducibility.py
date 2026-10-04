@@ -10,6 +10,49 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site/downloads"
 COMMON = ["site/data/week1_nodes.tsv", "site/data/week1_edges.tsv"]
 PACKAGES = {
+    "week5": {
+        "files": ["site/data/marvel_pages.zip", "site/data/week1_nodes.tsv",
+                  "analysis/build_week5.py", "analysis/test_week5.py",
+                  "analysis/test_week5.cjs", "site/week5-core.js"],
+        "readme": """# Week 5 — Same universe. Same sentences.
+
+Exercise 5.9: an exact shared-token-run network on the frozen 26 August 2026
+Marvel Wikipedia corpus (303 full pages). All inputs are bundled.
+Source: https://sunelehmann.com/socialgraphs2026-web/data/
+Intended post: https://birkir-freyr.github.io/social-graphs/weeks/week5.html
+
+Use Python 3.10+ with NetworkX 3.4.2 and NumPy 1.26.0:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install networkx==3.4.2 numpy==1.26.0
+    .venv/bin/python analysis/build_week5.py
+    .venv/bin/python -m unittest discover -s analysis -p test_week5.py
+    node --test analysis/test_week5.cjs
+
+On Windows use .venv\\Scripts\\python.exe instead of .venv/bin/python.
+Node.js 18+ is only needed for the optional browser-core checks.
+
+Outputs: site/data/week5.json, week5-pairs.csv, week5-thresholds.csv,
+and site/assets/week5-shared-text.svg. The JSON includes source hashes and
+raw character spans for every pair sharing at least 20 tokens. The full CSV
+contains the longest run for every pair sharing at least 8 tokens.
+
+Normalize by lowercasing tokens matched by \\w+(?:[-'’]\\w+)*. Keep numbers,
+stopwords, internal apostrophes and hyphens. Other punctuation/whitespace
+delimit tokens. No sequence crosses a document boundary. All 45,753 unordered
+pairs are in scope. A missing CSV row means a longest run below 8 tokens.
+Network edges are undirected shared-text pairs, not the Week 1 hyperlinks.
+Fixed layout: >=20-token graph, seed 509, unweighted spring layout within
+each component, with components arranged in a grid. Colors identify those
+components. Distances have no linguistic meaning.
+
+Long shared runs do not establish copying direction, originality, or intent.
+The inspected examples include a plot summary, editorial history, bibliography
+and quotation. Revision histories would be needed to study provenance.
+Wikipedia text is CC BY-SA 4.0; the archive retains page identifiers for
+attribution. https://creativecommons.org/licenses/by-sa/4.0/
+""",
+    },
     "week4": {
         "files": ["site/data/week4_philosophers_nodes.tsv", "site/data/week4_philosophers_edges.tsv",
                   "analysis/build_week4.py", "analysis/plot_week4.py", "analysis/test_week4.cjs",

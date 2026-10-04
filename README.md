@@ -44,6 +44,28 @@ The course also asks you to share the published link in the Week 4 Teams channel
 and leave constructive feedback on another group's post. Those remain separate
 from preparing this website entry.
 
+## Week 5
+**Same universe. Same sentences.** Exercise **5.9**: connect the 303 Marvel
+Wikipedia pages by their longest shared token sequence. Eight tokens produce
+40,550 page pairs; twenty leave 88. Change the threshold and read both raw
+passages behind every surviving link. The inspected matches include a plot
+summary, editorial history, a bibliography, and a quotation—repeated text does
+not establish copying direction.
+
+Page: `site/weeks/week5.html` · Intended Pages URL: https://birkir-freyr.github.io/social-graphs/weeks/week5.html
+
+Reproduce with `python analysis/build_week5.py` (Python 3.10+, NetworkX 3.4.2,
+NumPy 1.26.0). Inputs are bundled in `site/data/marvel_pages.zip` and the Week 1
+node roster. Outputs include source hashes, raw spans, all >=8-token pairs,
+threshold counts, and the standalone SVG. Run
+`python -m unittest discover -s analysis -p test_week5.py` and
+`node --test analysis/test_week5.cjs`, then
+`python analysis/package_reproducibility.py` to refresh the public ZIP.
+
+Exercises 5.1–5.7 are in the separate local course folder; exercise 5.8 was
+skipped. Sharing the published link in Teams and providing another group with
+constructive feedback remain separate course actions.
+
 ## Preview
 Run from this repository:
 ```sh
