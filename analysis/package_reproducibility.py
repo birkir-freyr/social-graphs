@@ -10,6 +10,65 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site/downloads"
 COMMON = ["site/data/week1_nodes.tsv", "site/data/week1_edges.tsv"]
 PACKAGES = {
+    "week6": {
+        "files": COMMON + ["site/data/marvel_pages.zip", "analysis/build_week6.py",
+                  "analysis/requirements-week6.txt", "analysis/test_week6.py",
+                  "analysis/test_week6.cjs", "site/week6-core.js",
+                  "site/week6.js", "site/weeks/week6.html"],
+        "readme": """# Week 6 — Lose the name. Change the neighbor.
+
+Exercise 6.11: a controlled TF-IDF/cosine comparison on all 303 Marvel
+Wikipedia pages from the frozen 26 August 2026 course corpus. All inputs bundled.
+Source: https://sunelehmann.com/socialgraphs2026-web/data/
+Intended post: https://birkir-freyr.github.io/social-graphs/weeks/week6.html
+
+Use Python 3.10+ (tested with 3.10), then from this extracted folder:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install -r analysis/requirements-week6.txt
+    .venv/bin/python analysis/build_week6.py
+    .venv/bin/python -m unittest discover -s analysis -p test_week6.py
+    node --test analysis/test_week6.cjs
+
+On Windows use .venv\\Scripts\\python.exe instead of .venv/bin/python.
+Node.js 18+ is only needed for the optional browser-core checks.
+The included HTML and browser script support UI tests; this is an analysis
+package, not a copy of the entire journal website.
+No network access or NLP model downloads are needed after installation.
+
+Outputs: site/data/week6.json (plus an equivalent gzip copy for the website),
+week6-neighbors.csv, week6-removed-terms.csv, and
+site/assets/week6-lookalikes.svg. Inputs' SHA-256 hashes, versions and the
+complete capitalization audit are saved. The builder creates output folders.
+
+CountVectorizer default lowercase tokens: (?u)\\b\\w\\w+\\b. Keep numbers and
+English stopwords. TF=count/retained document length; IDF=ln(N/DF), with no
+smoothing or +1. L2-normalize before cosine. Ubiquitous terms get zero weight.
+Remove term types capitalized in strictly more than half their [A-Za-z]+
+occurrences across the raw corpus, intersected with the vectorizer vocabulary.
+This heuristic is not entity recognition. Rebuild lengths and norms, keeping
+the same 303 documents and remaining document frequencies. Self is excluded;
+exact score ties break alphabetically by node ID.
+
+Each page exports five nearest neighbors in each view (3,030 rows total).
+The union of these unordered pairs has a cosine and the five largest positive
+coordinate products in BOTH vocabularies. Shares divide the word contribution
+by the full pair cosine, not just by the five largest terms. Each term references
+two entries in the deduplicated raw-excerpt array. Each entry locates its first
+occurrence; offsets are zero-based Python Unicode code points, end exclusive.
+These passages locate usage, not all occurrences behind the weight.
+
+The original hyperlink graph is used only for descriptive agreement counts:
+a direct link in either direction counts once per neighbor. It is not semantic
+ground truth. Cosines from different vocabularies are not directly comparable
+as evidence of improved matching. 223 of 303 first matches change; the Storm
+and Emma Frost surname cases improve, but meaningful names and pronouns explain
+why filtering does not universally improve resemblance.
+
+Wikipedia text is CC BY-SA 4.0; page IDs and roster URLs retain attribution.
+https://creativecommons.org/licenses/by-sa/4.0/
+""",
+    },
     "week5": {
         "files": ["site/data/marvel_pages.zip", "site/data/week1_nodes.tsv",
                   "analysis/build_week5.py", "analysis/test_week5.py",

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+<title id="title">Storm’s closest pages before and after filtering mostly capitalized terms</title>
+<desc id="desc">Two independently ranked cosine similarity lists. The filter changes vocabulary, so scores from the two spaces are not directly comparable.</desc>
+<rect width="1100" height="520" fill="#122c29"/>
+<text x="35" y="47" fill="#edf2e8" font-family="sans-serif" font-size="27">Who is Storm’s closest match?</text>
+<text x="35" y="102" fill="#a8c5b9" font-family="sans-serif" font-size="18">All terms kept</text>
+<text x="35" y="155" fill="#edf2e8" font-family="sans-serif" font-size="18">1. Human Torch</text>
+<rect x="35" y="169" width="147.98" height="9" fill="#fa784d"/>
+<text x="35" y="203" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.329 · storm, relationship, fantastic</text>
+<text x="35" y="248" fill="#edf2e8" font-family="sans-serif" font-size="18">2. Black Panther (character)</text>
+<rect x="35" y="262" width="120.18" height="9" fill="#fa784d"/>
+<text x="35" y="296" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.267 · panther, challa, storm</text>
+<text x="35" y="341" fill="#edf2e8" font-family="sans-serif" font-size="18">3. Cyclops (Marvel Comics)</text>
+<rect x="35" y="355" width="78.83" height="9" fill="#fa784d"/>
+<text x="35" y="389" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.175 · cyclops, men, storm</text>
+<text x="585" y="102" fill="#a8c5b9" font-family="sans-serif" font-size="18">Mostly capitalized terms removed</text>
+<text x="585" y="155" fill="#edf2e8" font-family="sans-serif" font-size="18">1. Jean Grey</text>
+<rect x="585" y="169" width="187.23" height="9" fill="#96bbae"/>
+<text x="585" y="203" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.416 · her, she, mutants</text>
+<text x="585" y="248" fill="#edf2e8" font-family="sans-serif" font-size="18">2. She-Hulk</text>
+<rect x="585" y="262" width="174.64" height="9" fill="#96bbae"/>
+<text x="585" y="296" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.388 · she, her, female</text>
+<text x="585" y="341" fill="#edf2e8" font-family="sans-serif" font-size="18">3. Emma Frost</text>
+<rect x="585" y="355" width="169.08" height="9" fill="#96bbae"/>
+<text x="585" y="389" fill="#a8c5b9" font-family="sans-serif" font-size="13">cosine 0.376 · her, she, mutants</text>
+<text x="35" y="466" fill="#a8c5b9" font-family="sans-serif" font-size="14">Same 303 pages; same TF-IDF formula. One capitalization heuristic changes the vocabulary.</text>
+<text x="35" y="490" fill="#a8c5b9" font-family="sans-serif" font-size="13">Scores are within-view measurements, not a calibrated scale of character meaning.</text></svg>

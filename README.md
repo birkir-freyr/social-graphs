@@ -66,6 +66,32 @@ Exercises 5.1–5.7 are in the separate local course folder; exercise 5.8 was
 skipped. Sharing the published link in Teams and providing another group with
 constructive feedback remain separate course actions.
 
+## Week 6
+**Lose the name. Change the neighbor.** Exercise **6.11**: compare every page's
+five nearest TF-IDF/cosine neighbors before and after the course's capitalization
+heuristic. 223 of 303 first matches change. Inspect the largest word contributions
+and both raw passages: removing misleading surnames can also erase useful identity
+information and expose pronoun-driven matches.
+
+Page: `site/weeks/week6.html` · Intended Pages URL: https://birkir-freyr.github.io/social-graphs/weeks/week6.html
+
+Reproduce with Python 3.10+ and `analysis/requirements-week6.txt`, then run
+`python analysis/build_week6.py`. All inputs are bundled; no NLP model download
+is needed. Run `python -m unittest discover -s analysis -p test_week6.py` and
+`node --test analysis/test_week6.cjs`. Refresh the public reproduction ZIP with
+`python analysis/package_reproducibility.py`.
+
+The JSON includes both rankings, pairwise cosine decomposition, deduplicated raw
+excerpts, the removed-term audit, source hashes and package versions. CSVs contain
+all 3,030 neighbor rows and all 8,972 removed features. The standalone SVG preserves
+the Storm example. Both views use unsmoothed `ln(N/DF)` IDF, retain English
+stopwords and exclude self-matches; ties break alphabetically by node ID.
+Agreement with Wikipedia hyperlinks is descriptive, not semantic ground truth.
+
+Exercises 6.1–6.9 are in the separate local course folder; 6.10 remains skipped.
+Publishing/sharing the link in Teams and commenting on another group's post are
+separate from preparing this website entry.
+
 ## Preview
 Run from this repository:
 ```sh
