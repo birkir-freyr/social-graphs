@@ -15,8 +15,6 @@ Reproduce from the same frozen TSVs with `python analysis/build_week2.py`. This 
 
 The article uses uniform nonisolated-person → uniform-neighbor sampling. It distinguishes this from uniform edge-endpoint sampling and reports the isolate denominator. The 100-shuffle comparison uses a two-sided corrected empirical test of exact expected friend degree, not noisy sample means.
 
-The assignment also asks the group to share the published link in the Week 2 Teams channel by Monday evening and leave constructive feedback on another group's post; those are separate from building the website.
-
 ## Week 3
 **You can remove Spider-Man. The universe stays.** Exercise 3.12: an interactive targeted-removal experiment on the 277-character giant component. Compare adaptive degree and adaptive betweenness attacks with 500 random removal orders, scrub through the first 100 deletions, and watch detached components emerge.
 
@@ -40,10 +38,6 @@ Run `python analysis/package_reproducibility.py` after changing the bundled anal
 The public ZIP includes the source TSVs and everything needed to regenerate the
 data and comparison figure. The post is linked from all previous weeks.
 
-The course also asks you to share the published link in the Week 4 Teams channel
-and leave constructive feedback on another group's post. Those remain separate
-from preparing this website entry.
-
 ## Week 5
 **Same universe. Same sentences.** Exercise **5.9**: connect the 303 Marvel
 Wikipedia pages by their longest shared token sequence. Eight tokens produce
@@ -61,10 +55,6 @@ threshold counts, and the standalone SVG. Run
 `python -m unittest discover -s analysis -p test_week5.py` and
 `node --test analysis/test_week5.cjs`, then
 `python analysis/package_reproducibility.py` to refresh the public ZIP.
-
-Exercises 5.1–5.7 are in the separate local course folder; exercise 5.8 was
-skipped. Sharing the published link in Teams and providing another group with
-constructive feedback remain separate course actions.
 
 ## Week 6
 **Lose the name. Change the neighbor.** Exercise **6.11**: compare every page's
@@ -88,9 +78,32 @@ the Storm example. Both views use unsmoothed `ln(N/DF)` IDF, retain English
 stopwords and exclude self-matches; ties break alphabetically by node ID.
 Agreement with Wikipedia hyperlinks is descriptive, not semantic ground truth.
 
-Exercises 6.1–6.9 are in the separate local course folder; 6.10 remains skipped.
-Publishing/sharing the link in Teams and commenting on another group's post are
-separate from preparing this website entry.
+## Week 7
+**Same query. Different results.** Exercise **7.13** asks whether passage size
+changes which Marvel page search finds. Compare full-page TF-IDF, MiniLM page
+means, and max-passage retrieval with 180- and 60-word windows on eight saved
+queries. The figure reports all intended target ranks; the inspector preserves
+returned passages, scores and surrounding source text.
+
+Page: `site/weeks/week7.html` · Intended Pages URL: https://birkir-freyr.github.io/social-graphs/weeks/week7.html
+
+Reproduce offline with Python3.10+, `analysis/requirements-week7.txt`, then
+`python analysis/build_week7.py`. Raw pages, all original query/document/passage
+vectors and offsets are bundled. Optional `analysis/encode_week7.py` reruns the
+pinned model after installing `analysis/requirements-week7-encoder.txt`; its
+first run downloads model weights.
+
+Run `python -m unittest discover -s analysis -p test_week7.py` and
+`node --test analysis/test_week7.cjs`, then
+`python analysis/package_reproducibility.py`. The self-contained public ZIP
+regenerates all 9,696 ranking rows, target ranks, evidence JSON and the SVG.
+
+Queries and intended pages were recorded before the original local search run;
+the article question and highlighted cases were selected after seeing results.
+Target rank is not exhaustive relevance ground truth: alternative incarnations
+can match an ambiguous query, and Daredevil is absent from this roster.
+The Venom example shows that finding the intended page need not retrieve a
+passage supporting the query's alien constraint.
 
 ## Preview
 Run from this repository:

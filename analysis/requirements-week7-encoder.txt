@@ -1,0 +1,4 @@
+-r requirements-week7.txt
+torch==2.9.0
+transformers==4.51.3
+sentence-transformers==3.4.1

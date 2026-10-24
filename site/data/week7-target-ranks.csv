@@ -1,0 +1,33 @@
+query_id,query,target,present,method,rank
+russian_spy,a Russian spy who became an Avenger,Black_Widow_(Natasha_Romanova),True,tfidf,1
+russian_spy,a Russian spy who became an Avenger,Black_Widow_(Natasha_Romanova),True,dense_page,20
+russian_spy,a Russian spy who became an Avenger,Black_Widow_(Natasha_Romanova),True,dense_180,3
+russian_spy,a Russian spy who became an Avenger,Black_Widow_(Natasha_Romanova),True,dense_60,5
+blind_lawyer,a blind lawyer who fights crime,Daredevil_(Marvel_Comics_character),False,tfidf,
+blind_lawyer,a blind lawyer who fights crime,Daredevil_(Marvel_Comics_character),False,dense_page,
+blind_lawyer,a blind lawyer who fights crime,Daredevil_(Marvel_Comics_character),False,dense_180,
+blind_lawyer,a blind lawyer who fights crime,Daredevil_(Marvel_Comics_character),False,dense_60,
+surgeon,a surgeon who learned sorcery after a car accident,Doctor_Strange,True,tfidf,3
+surgeon,a surgeon who learned sorcery after a car accident,Doctor_Strange,True,dense_page,5
+surgeon,a surgeon who learned sorcery after a car accident,Doctor_Strange,True,dense_180,1
+surgeon,a surgeon who learned sorcery after a car accident,Doctor_Strange,True,dense_60,1
+weather,a woman who controls the weather,Storm_(Marvel_Comics),True,tfidf,1
+weather,a woman who controls the weather,Storm_(Marvel_Comics),True,dense_page,1
+weather,a woman who controls the weather,Storm_(Marvel_Comics),True,dense_180,1
+weather,a woman who controls the weather,Storm_(Marvel_Comics),True,dense_60,1
+alien_suit,a living alien suit that bonds with a host,Venom_(character),True,tfidf,1
+alien_suit,a living alien suit that bonds with a host,Venom_(character),True,dense_page,17
+alien_suit,a living alien suit that bonds with a host,Venom_(character),True,dense_180,1
+alien_suit,a living alien suit that bonds with a host,Venom_(character),True,dense_60,1
+radioactive_spider,a young hero bitten by a radioactive spider,Spider-Man,True,tfidf,3
+radioactive_spider,a young hero bitten by a radioactive spider,Spider-Man,True,dense_page,4
+radioactive_spider,a young hero bitten by a radioactive spider,Spider-Man,True,dense_180,6
+radioactive_spider,a young hero bitten by a radioactive spider,Spider-Man,True,dense_60,1
+iron_fist,Iron Fist martial arts K’un-Lun,Iron_Fist_(character),True,tfidf,1
+iron_fist,Iron Fist martial arts K’un-Lun,Iron_Fist_(character),True,dense_page,2
+iron_fist,Iron Fist martial arts K’un-Lun,Iron_Fist_(character),True,dense_180,2
+iron_fist,Iron Fist martial arts K’un-Lun,Iron_Fist_(character),True,dense_60,1
+ghost_rider,Johnny Blaze Ghost Rider motorcycle,Ghost_Rider_(Johnny_Blaze),True,tfidf,1
+ghost_rider,Johnny Blaze Ghost Rider motorcycle,Ghost_Rider_(Johnny_Blaze),True,dense_page,1
+ghost_rider,Johnny Blaze Ghost Rider motorcycle,Ghost_Rider_(Johnny_Blaze),True,dense_180,2
+ghost_rider,Johnny Blaze Ghost Rider motorcycle,Ghost_Rider_(Johnny_Blaze),True,dense_60,1

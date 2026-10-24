@@ -10,6 +10,71 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "site/downloads"
 COMMON = ["site/data/week1_nodes.tsv", "site/data/week1_edges.tsv"]
 PACKAGES = {
+    "week7": {
+        "files": ["site/data/week1_nodes.tsv", "site/data/marvel_pages.zip",
+                  "analysis/data/week7-search-embeddings.npz", "analysis/data/week7-search-embeddings.json",
+                  "analysis/data/week7-queries.json", "analysis/data/week7-reading-notes.json",
+                  "analysis/build_week7.py", "analysis/encode_week7.py",
+                  "analysis/requirements-week7.txt", "analysis/requirements-week7-encoder.txt",
+                  "analysis/test_week7.py", "analysis/test_week7.cjs",
+                  "site/week7-core.js", "site/week7.js", "site/week7.css",
+                  "site/style.css", "site/assets/favicon.svg", "site/weeks/week7.html"],
+        "readme": """# Week 7 — Same query. Different results.
+
+Exercise 7.13: how do pooling and passage size change Marvel retrieval?
+Compare TF-IDF, a MiniLM page mean, 180-word max passage and 60-word max passage.
+Post: https://birkir-freyr.github.io/social-graphs/weeks/week7.html
+
+All 303 raw pages, eight queries, original query/document/passage vectors and
+source offsets are bundled. Ordinary measurement reproduction is offline.
+Use Python 3.10+ from this extracted folder:
+
+    python3 -m venv .venv
+    .venv/bin/python -m pip install -r analysis/requirements-week7.txt
+    .venv/bin/python analysis/build_week7.py
+    .venv/bin/python -m unittest discover -s analysis -p test_week7.py
+    node --test analysis/test_week7.cjs
+
+Windows: use .venv\\Scripts\\python.exe instead of .venv/bin/python.
+Node 18+ is only needed for browser-core tests. HTML/CSS/JS support those checks;
+this is an analysis package, not a complete copy of all earlier journal pages.
+Outputs: site/data/week7.json and gzip copy, week7-rankings.csv (all 9,696 ranks),
+week7-target-ranks.csv, and site/assets/week7-search-ranks.svg.
+
+Optional fresh model inference (first run downloads public weights):
+
+    .venv/bin/python -m pip install -r analysis/requirements-week7-encoder.txt
+    .venv/bin/python analysis/encode_week7.py
+    .venv/bin/python analysis/build_week7.py
+
+Encoder: sentence-transformers/all-MiniLM-L6-v2, revision
+1110a243fdf4706b3f48f1d95db1a4f5529b4d41. Windows have at most 180 or 60
+whitespace words and 254 wordpieces, leaving two special tokens in the 256-token
+encoder. All non-whitespace text is covered. Unit passage vectors are averaged
+then normalized for the page-mean view. Max views use the greatest query-passage
+cosine per page. Page mean to max changes pooling; 180 to 60 holds max pooling
+fixed. Long pages have more passage candidates. Exact score ties use alphabetical
+page IDs; passage ties choose earliest source offset.
+
+TF-IDF uses default CountVectorizer lowercase tokens of at least two word
+characters, retaining stopwords/numbers. IDF ln(303/DF), no smoothing or +1;
+normalize documents and queries. Query IDF is fitted only on the corpus.
+Full-page methods show an illustrative selected passage; max-passage methods
+show the passage that defines the score. Expanded context does not rerank.
+
+Targets and query texts were recorded before the original local Week7 search;
+the article theme and cases were chosen after viewing results. Targets were
+proposed by the assistant, not independently judged exhaustive relevance labels.
+The spider query fits alternate origins, and the intended Daredevil page is absent.
+No aggregate accuracy, universal best method, significance or generated answer
+is claimed. Reading notes preserve the negation/alternate-incarnation caveats.
+
+Optional inference can differ slightly across environments. Inspect changed
+scores/ranks before updating prose. Model weights are not bundled. Wikipedia
+text is CC BY-SA 4.0; the original roster URLs identify pages and live attribution.
+Snapshot: 26 August 2026. Page claims are analyzed as supplied.
+""",
+    },
     "week6": {
         "files": COMMON + ["site/data/marvel_pages.zip", "analysis/build_week6.py",
                   "analysis/requirements-week6.txt", "analysis/test_week6.py",

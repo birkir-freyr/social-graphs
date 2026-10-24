@@ -1,0 +1,47 @@
+{
+  "declared_before_rankings": true,
+  "annotation_source": "Codex proposed queries and expected targets; relevance still requires source inspection",
+  "items": [
+    {
+      "query": "a Russian spy who became an Avenger",
+      "target": "Black_Widow_(Natasha_Romanova)",
+      "id": "russian_spy"
+    },
+    {
+      "query": "a blind lawyer who fights crime",
+      "target": "Daredevil_(Marvel_Comics_character)",
+      "id": "blind_lawyer"
+    },
+    {
+      "query": "a surgeon who learned sorcery after a car accident",
+      "target": "Doctor_Strange",
+      "id": "surgeon"
+    },
+    {
+      "query": "a woman who controls the weather",
+      "target": "Storm_(Marvel_Comics)",
+      "id": "weather"
+    },
+    {
+      "query": "a living alien suit that bonds with a host",
+      "target": "Venom_(character)",
+      "id": "alien_suit"
+    },
+    {
+      "query": "a young hero bitten by a radioactive spider",
+      "target": "Spider-Man",
+      "id": "radioactive_spider"
+    },
+    {
+      "query": "Iron Fist martial arts K\u2019un-Lun",
+      "target": "Iron_Fist_(character)",
+      "id": "iron_fist"
+    },
+    {
+      "query": "Johnny Blaze Ghost Rider motorcycle",
+      "target": "Ghost_Rider_(Johnny_Blaze)",
+      "id": "ghost_rider"
+    }
+  ],
+  "provenance": "Queries and intended pages recorded before the original local Week7 search run; the article topic and highlighted cases were chosen after seeing those results. Target identity is an assistant-proposed diagnostic, not exhaustive relevance ground truth."
+}

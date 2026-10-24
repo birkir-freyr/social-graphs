@@ -1,0 +1,11 @@
+{
+  "annotation_source": "Codex source readings, not independent human relevance labels. Intended target IDs were recorded before the original search run; the post theme and cases were chosen afterwards.",
+  "russian_spy": "Natasha is the intended target. Her introduction describes Soviet espionage and joining the Avengers. Red Guardian passages also mention Soviet agents, the Avengers and Natasha; they do not establish that he satisfies the full description. TF-IDF ranks Natasha first.",
+  "blind_lawyer": "The intended Daredevil page is absent from the303-page roster. Returned legal/crime narratives are not proof that the intended page is available. Coverage gap discovered during inspection, not a preplanned control.",
+  "surgeon": "Doctor Strange source text connects his surgical career, damaged hands in a crash, the Ancient One and learning magic. The best60-word passage focuses on the crash and omits sorcery; expanded source context is required for the full constraint.",
+  "weather": "Storm is the intended page and ranks first in every view. This stable case remains in the reported query set.",
+  "alien_suit": "The Venom page is relevant, but its top180-word passage explicitly describes an Ultimate variant that is not extraterrestrial. The top60-word passage lies in the same discussion and omits that preceding negation. Expanded context restores it. Page relevance and passage support are different checks.",
+  "radioactive_spider": "Spider-Man is the predeclared intended page. John Jameson has a What If radioactive-spider origin, so his high rank can be a legitimate literal answer to this underspecified query. Spider-Girl also contains alternate origins. Target rank alone cannot classify these as relevance failures.",
+  "iron_fist": "Iron Fist is the intended page, but Lei Kung also directly addresses martial arts and Kun-Lun. An intended-target rank of2 can coexist with a relevant winner.",
+  "ghost_rider": "Johnny Blaze is intended. The Ghost Rider umbrella page also directly describes Johnny and his motorcycle, so either can be useful. Rank changes between those scopes do not by themselves establish better or worse relevance."
+}
