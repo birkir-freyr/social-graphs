@@ -696,15 +696,15 @@ These scripts reproduce the particular website stories. They provide patterns to
 
 | Week | Entry point | Reusable parts |
 |---|---|---|
-| 1 | [build_week1.py](analysis/build_week1.py), [week1.ipynb](analysis/week1.ipynb) | Validated directed loader, components, mixed-bin degree distributions, seeded layout, removal example |
-| 2 | [build_week2.py](analysis/build_week2.py) | Exact person-first/endpoint expectations, degree swaps, $G(n,m)$ ensembles, corrected empirical tests |
-| 3 | [build_week3.py](analysis/build_week3.py) | Adaptive degree/betweenness attacks, single-removal effects, random-order envelopes |
-| 4 | [build_week4.py](analysis/build_week4.py), [plot_week4.py](analysis/plot_week4.py) | Weight aggregation, disparity significance, exact tied-threshold sweep, union-find and backbone figures |
-| 5 | [build_week5.py](analysis/build_week5.py) | Shared-token-run index, exact matching, raw spans and thresholded reuse networks |
-| 6 | [build_week6.py](analysis/build_week6.py) | Unsmoothed TF-IDF, name-filter comparison, nearest neighbors and cosine contributions |
-| 7 | [build_week7.py](analysis/build_week7.py), [encode_week7.py](analysis/encode_week7.py) | Sparse/dense rankings, cached vectors, passage offsets and optional pinned-model inference |
+| 1 | [build_week1.py](../analysis/build_week1.py), [week1.ipynb](../analysis/week1.ipynb) | Validated directed loader, components, mixed-bin degree distributions, seeded layout, removal example |
+| 2 | [build_week2.py](../analysis/build_week2.py) | Exact person-first/endpoint expectations, degree swaps, $G(n,m)$ ensembles, corrected empirical tests |
+| 3 | [build_week3.py](../analysis/build_week3.py) | Adaptive degree/betweenness attacks, single-removal effects, random-order envelopes |
+| 4 | [build_week4.py](../analysis/build_week4.py), [plot_week4.py](../analysis/plot_week4.py) | Weight aggregation, disparity significance, exact tied-threshold sweep, union-find and backbone figures |
+| 5 | [build_week5.py](../analysis/build_week5.py) | Shared-token-run index, exact matching, raw spans and thresholded reuse networks |
+| 6 | [build_week6.py](../analysis/build_week6.py) | Unsmoothed TF-IDF, name-filter comparison, nearest neighbors and cosine contributions |
+| 7 | [build_week7.py](../analysis/build_week7.py), [encode_week7.py](../analysis/encode_week7.py) | Sparse/dense rankings, cached vectors, passage offsets and optional pinned-model inference |
 
-Frozen graph/text inputs live under [site/data](site/data); saved Week 7 query/vector inputs live under [analysis/data](analysis/data). See [README.md](README.md) for setup, commands, validation and the separate Week 6/7 dependency files. [package_reproducibility.py](analysis/package_reproducibility.py) builds the website's downloadable analysis packages.
+Frozen graph/text inputs live under [site/data](../site/data); saved Week 7 query/vector inputs live under [analysis/data](../analysis/data). See [README.md](../README.md) for setup, commands, validation and the separate Week 6/7 dependency files. [package_reproducibility.py](../analysis/package_reproducibility.py) builds the website's downloadable analysis packages.
 
 ### Materials reviewed outside the repository
 

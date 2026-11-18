@@ -1,0 +1,14 @@
+film_id,title,wikipedia_year,year,release_date,release_date_precision,year_conflict,status,included,genres,runtime,cast_count,wikipedia_url,source_url
+11660,Following,1998,1999,1999-04-02,day,True,Released,True,Drama|Thriller,PT1H9M,26,https://en.wikipedia.org/wiki/Following,https://www.themoviedb.org/movie/11660?language=en-US
+77,Memento,2000,2000,2000-10-11,day,False,Released,True,Mystery|Thriller,PT1H53M,13,https://en.wikipedia.org/wiki/Memento_(film),https://www.themoviedb.org/movie/77?language=en-US
+320,Insomnia,2002,2002,2002-05-24,day,False,Released,True,Thriller|Crime|Drama,PT1H58M,25,https://en.wikipedia.org/wiki/Insomnia_(2002_film),https://www.themoviedb.org/movie/320?language=en-US
+272,Batman Begins,2005,2005,2005-06-10,day,False,Released,True,Drama|Crime|Action,PT2H20M,110,https://en.wikipedia.org/wiki/Batman_Begins,https://www.themoviedb.org/movie/272?language=en-US
+1124,The Prestige,2006,2006,2006-10-19,day,False,Released,True,Drama|Mystery|Science Fiction,PT2H11M,50,https://en.wikipedia.org/wiki/The_Prestige,https://www.themoviedb.org/movie/1124?language=en-US
+155,The Dark Knight,2008,2008,2008-07-16,day,False,Released,True,Action|Thriller|Crime,PT2H32M,139,https://en.wikipedia.org/wiki/The_Dark_Knight,https://www.themoviedb.org/movie/155?language=en-US
+27205,Inception,2010,2010,2010-07-15,day,False,Released,True,Action|Science Fiction|Crime,PT2H28M,52,https://en.wikipedia.org/wiki/Inception,https://www.themoviedb.org/movie/27205?language=en-US
+49026,The Dark Knight Rises,2012,2012,2012-07-17,day,False,Released,True,Action|Crime|Thriller,PT2H45M,166,https://en.wikipedia.org/wiki/The_Dark_Knight_Rises,https://www.themoviedb.org/movie/49026?language=en-US
+157336,Interstellar,2014,2014,2014-11-04,day,False,Released,True,Adventure|Drama|Science Fiction,PT2H49M,37,https://en.wikipedia.org/wiki/Interstellar_(film),https://www.themoviedb.org/movie/157336?language=en-US
+374720,Dunkirk,2017,2017,2017-07-19,day,False,Released,True,War|Action|History,PT1H47M,50,https://en.wikipedia.org/wiki/Dunkirk_(2017_film),https://www.themoviedb.org/movie/374720?language=en-US
+577922,Tenet,2020,2020,2020-08-22,day,False,Released,True,Action|Thriller|Science Fiction,PT2H30M,61,https://en.wikipedia.org/wiki/Tenet,https://www.themoviedb.org/movie/577922?language=en-US
+872585,Oppenheimer,2023,2023,2023-07-19,day,False,Released,True,Drama|History|War,PT3H1M,80,https://en.wikipedia.org/wiki/Oppenheimer_(film),https://www.themoviedb.org/movie/872585?language=en-US
+1368337,The Odyssey,2026,2026,2026-07-15,day,False,Released,True,Adventure|Action|Fantasy,PT2H53M,69,https://en.wikipedia.org/wiki/The_Odyssey_(2026_film),https://www.themoviedb.org/movie/1368337?language=en-US
