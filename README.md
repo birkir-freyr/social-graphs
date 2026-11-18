@@ -3,6 +3,8 @@ A weekly network-science journal for DTU 02805, Fall 2026.
 
 **Members:** Arnar, Birkir, Hanna.
 
+**Final-project reference:** [Semester methods guide](METHODS.md) — Weeks 1–7, with method selection, formulas, validation checks, pitfalls and reusable analysis code.
+
 ## Week 1
 **A universe, unevenly connected.** Does the most visible Marvel Wikipedia character keep the network connected? Interactive map, degree distributions with mixed binning, leaderboards, a removal experiment, and disconnected components.
 
