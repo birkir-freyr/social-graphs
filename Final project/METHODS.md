@@ -719,6 +719,5 @@ The local course folder was `Documents/Master DTU/Haustönn 2026/socialgraphs`.
 | 5 | `Week5/exercise_5_answers.md`, companion notebook sections |
 | 6 | `Week6/exercise_6_answers.md`, companion notebook sections |
 | 7 | `Week7/exercise_7_answers.md`, companion notebook sections |
-| Cross-check | `Exam1/study-plan.md` and `Exam2/study-plan.md` methods checklists |
 
 The week-by-week exercise answers provide the source for methods not implemented in this repo, such as LDA, Word2Vec, the corpus atlas, BERTopic, sentiment and NER. The original assignment pages are [Week 1](https://sunelehmann.com/socialgraphs2026-web/weeks/week1.html), [Week 2](https://sunelehmann.com/socialgraphs2026-web/weeks/week2.html), [Week 3](https://sunelehmann.com/socialgraphs2026-web/weeks/week3.html), [Week 4](https://sunelehmann.com/socialgraphs2026-web/weeks/week4.html), [Week 5](https://sunelehmann.com/socialgraphs2026-web/weeks/week5.html), [Week 6](https://sunelehmann.com/socialgraphs2026-web/weeks/week6.html) and [Week 7](https://sunelehmann.com/socialgraphs2026-web/weeks/week7.html). This guide summarizes the saved work; those links identify the course sources and were not re-fetched for this review.
