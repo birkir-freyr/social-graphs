@@ -1,0 +1,31 @@
+{
+ "fig1": {
+  "median_words_nolan": 131.5,
+  "median_words_other": 169,
+  "n_nolan_roles": 96,
+  "n_other_roles": 1153,
+  "r_length_vs_departure": -0.6023669737084285
+ },
+ "fig2": {
+  "n_roles": 82,
+  "n_actors": 55,
+  "obs": 0.023433080934669028,
+  "z": 4.226738825700045,
+  "p": 9.999000099990002e-05,
+  "p_floor": 2.7755575615628914e-17,
+  "above": 66,
+  "null_sd": 0.005551029082410941
+ },
+ "fig3": {
+  "role_text_masked@0": 0.022019740787345875,
+  "role_text_masked@40": 0.01092171273885977,
+  "role_text_masked@60": 0.012568928324435302,
+  "role_text_masked@80": 0.01562176461232522,
+  "role_text_masked@120": 0.017632279493776354,
+  "role_text_blind@0": 0.023433080934669028,
+  "role_text_blind@40": 0.006125051714015612,
+  "role_text_blind@60": 0.008047718972963695,
+  "role_text_blind@80": 0.012422774137680222,
+  "role_text_blind@120": 0.01395246597743707
+ }
+}

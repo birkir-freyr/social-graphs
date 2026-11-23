@@ -1,0 +1,90 @@
+{
+ "n_scored": 873,
+ "n_directors": 46,
+ "k_nolan": 82,
+ "nolan_mean": 0.023433080934669028,
+ "rank": 7,
+ "n_ranked": 47,
+ "p_perm": 9.999000099990002e-05,
+ "nolan_z": 5.162872187059173,
+ "directors_reaching_z": 0,
+ "n_z": 46,
+ "other_mean": 0.0007742044085570065,
+ "top": [
+  {
+   "director": "Terry Gilliam",
+   "mean": 0.03638454478317693,
+   "n": 4
+  },
+  {
+   "director": "Kevin Smith",
+   "mean": 0.03540190899157355,
+   "n": 3
+  },
+  {
+   "director": "Ang Lee",
+   "mean": 0.034602299492640896,
+   "n": 3
+  },
+  {
+   "director": "Stephen Gaghan",
+   "mean": 0.03355549016434339,
+   "n": 4
+  },
+  {
+   "director": "Jay Roach",
+   "mean": 0.031187698222280735,
+   "n": 3
+  },
+  {
+   "director": "Peter Webber",
+   "mean": 0.02441313938508131,
+   "n": 3
+  },
+  {
+   "director": "Brad Anderson",
+   "mean": 0.020508677723657092,
+   "n": 3
+  },
+  {
+   "director": "William Friedkin",
+   "mean": 0.018545046355559647,
+   "n": 3
+  },
+  {
+   "director": "Michael Mann",
+   "mean": 0.018418766616597804,
+   "n": 3
+  },
+  {
+   "director": "John Irvin",
+   "mean": 0.017000137949887934,
+   "n": 3
+  },
+  {
+   "director": "Louis Leterrier",
+   "mean": 0.01405266088369669,
+   "n": 7
+  },
+  {
+   "director": "Steven Soderbergh",
+   "mean": 0.01403895046098722,
+   "n": 10
+  },
+  {
+   "director": "Mike Newell",
+   "mean": 0.012779369438153757,
+   "n": 3
+  },
+  {
+   "director": "Kelly Asbury",
+   "mean": 0.012334760971048167,
+   "n": 3
+  },
+  {
+   "director": "Brian Helgeland",
+   "mean": 0.011527010600252777,
+   "n": 3
+  }
+ ]
+}
