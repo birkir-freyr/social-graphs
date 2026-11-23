@@ -51,6 +51,29 @@ def cached_extract(page):
     return next(iter(pages.values()), {}).get("extract", "") or ""
 
 
+DIRECTORS_CSV = "film_directors.csv"
+
+
+def have_cache():
+    return os.path.isdir(CACHE) and any(
+        n.endswith(".json") for n in os.listdir(CACHE))
+
+
+def load_director_table(path=DIRECTORS_CSV):
+    """wiki_page -> director, from the CSV checked into the repo.
+
+    cache_wiki/ is 39 MB of downloaded articles and is not in the repo,
+    so without this the director test could only be rerun by someone who
+    had refetched the whole cache. The CSV is the parse's output, which
+    is all this analysis needs.
+    """
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return {r["wiki_page"]: r.get("director", "")
+                for r in csv.DictReader(f) if r.get("wiki_page")}
+
+
 def director_of(page):
     """Parse the director from the article's lead. Returns '' if unsure."""
     t = cached_extract(page)
@@ -100,6 +123,10 @@ def main():
     ap.add_argument("--min-roles", type=int, default=5,
                     help="a director needs this many scored roles to enter "
                          "the comparison distribution")
+    ap.add_argument("--export-directors", default="",
+                    help="parse directors from cache_wiki/ and write them to "
+                         "this CSV, then exit. Run once, commit the CSV, and "
+                         "the test is reproducible without the cache.")
     args = ap.parse_args()
 
     rows = T.load(args.roles, args.text)
@@ -107,7 +134,42 @@ def main():
            csv.DictReader(open(args.roles, encoding="utf-8"))}
     print(f"{len(rows)} roles with text")
 
+    if args.export_directors:
+        if not have_cache():
+            sys.exit(f"no {CACHE}/ to parse from — this needs the article "
+                     f"cache, which is not in the repo")
+        seen = {}
+        for r in csv.DictReader(open(args.roles, encoding="utf-8")):
+            pg = r.get("wiki_page", "")
+            if pg and pg not in seen:
+                seen[pg] = (r.get("film", ""), r.get("year", ""))
+        with open(args.export_directors, "w", newline="",
+                  encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["film", "year", "wiki_page", "director"])
+            got = 0
+            for pg, (film, year) in sorted(seen.items(),
+                                           key=lambda kv: kv[1][0].lower()):
+                d = director_of(pg)
+                got += bool(d)
+                w.writerow([film, year, pg, d])
+        print(f"wrote {args.export_directors}: {len(seen)} pages, "
+              f"{got} with a director ({got/max(len(seen),1):.0%})")
+        return
+
     # --- attach directors -------------------------------------------------
+    # Prefer the cache when it is there, since it is the source the parse
+    # was validated against; fall back to the committed CSV so the test
+    # runs from a fresh clone.
+    table, from_cache = {}, have_cache()
+    if not from_cache:
+        table = load_director_table()
+        if not table:
+            sys.exit(f"neither {CACHE}/ nor {DIRECTORS_CSV} is present — "
+                     f"cannot attach directors")
+        print(f"  cache_wiki/ absent; using {DIRECTORS_CSV} "
+              f"({len(table)} pages)")
+
     pages, miss = {}, 0
     for r in rows:
         src = raw.get((r["actor"], r["film"]), {})
@@ -116,7 +178,8 @@ def main():
             r["director"] = "Christopher Nolan"
             continue
         if pg not in pages:
-            pages[pg] = director_of(pg) if pg else ""
+            pages[pg] = (director_of(pg) if from_cache
+                         else table.get(pg, "")) if pg else ""
         r["director"] = normalise(pages[pg])
         if not r["director"]:
             miss += 1
