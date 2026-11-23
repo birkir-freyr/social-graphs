@@ -50,22 +50,34 @@ def is_descriptor(character):
                    for t in toks)
 
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
 def run_typecast(roles_path, text, min_results):
-    """Call the real analysis and read its JSON back."""
-    fd, out = tempfile.mkstemp(suffix=".json")
-    os.close(fd)
+    """Call the real analysis and read its JSON back.
+
+    Run from a scratch directory with absolute paths. typecast.py writes
+    typecast_results.csv beside wherever it is run, and running it from
+    the repo would overwrite the committed results with this check's
+    filtered version -- which it silently did the first time.
+    """
+    work = tempfile.mkdtemp()
+    out = os.path.join(work, "result.json")
     try:
         r = subprocess.run(
-            [sys.executable, "typecast.py", "--roles", roles_path,
+            [sys.executable, os.path.join(HERE, "typecast.py"),
+             "--roles", os.path.abspath(roles_path),
              "--text", text, "--json", out,
              "--min-results", str(min_results)],
-            capture_output=True, text=True)
-        if not os.path.getsize(out):
+            capture_output=True, text=True, cwd=work)
+        if not os.path.exists(out) or not os.path.getsize(out):
             sys.exit("typecast.py produced no JSON:\n" + r.stdout + r.stderr)
         with open(out, encoding="utf-8") as f:
             return json.load(f)
     finally:
-        os.unlink(out)
+        for n in os.listdir(work):
+            os.unlink(os.path.join(work, n))
+        os.rmdir(work)
 
 
 def main():
