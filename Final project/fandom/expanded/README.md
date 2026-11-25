@@ -28,9 +28,15 @@ Cornell’s Movie-Dialogs Corpus identifies speakers by film and character. We m
 
 The 109 credits include seven roles in *Memento* and ten in *Insomnia*. Only Al Pacino and Robin Williams also have three earlier dialogue roles and an eligible co-star in the same Nolan film. The dialogue is therefore most useful for reading examples and comparing how a character speaks with how fans describe them. It has limited coverage for estimating Nolan-wide casting patterns. [Cornell dataset documentation](https://convokit.cornell.edu/documentation/movie.html)
 
+## Other passages found in the project archive
+
+The older Fandom archive links 61 distinct credits on this study’s roster to character pages. All 61 already have usable Fandom descriptions. The separate role archive yielded **157 candidate passages** for credits where both the expanded Fandom collection and the paper’s original Wikipedia dataset had fewer than 25 masked words. Of these, 154 come from the CMU Movie Summary Corpus and three use Wikipedia’s cast and plot sections. Examples include Morgan Freeman as Hoke Colburn in *Driving Miss Daisy* and Josh Hartnett as Ernest Lawrence in *Oppenheimer*. Eleven of the 157 also have at least 25 words of Cornell dialogue. The other 146 fill a gap across all three existing datasets. [Supplemental passages and source locations](archived_passages.csv)
+
+The table requires a matching actor, film title and release year, a character name that matches the source label, and at least 25 words after the paper’s name masking. For plot sentences the extraction also checks that a credited name appears in the sentence. Each row gives the source version, the location of each excerpt, the original text and the masked text. These are candidates for human review because a sentence mentioning a character can describe someone else’s actions. The reported Fandom comparison uses the 367 Fandom descriptions. The CMU passages are extracts from Wikipedia’s November 2012 snapshot, compiled by David Bamman, Brendan O’Connor and Noah A. Smith. Text is credited to the source article contributors under the applicable Attribution-ShareAlike license. [CMU Movie Summary Corpus and attribution](https://www.cs.cmu.edu/~ark/personas/)
+
 ## Reproduction
 
-From the `Final project` directory, the first command verifies the selected Fandom revisions. Add `--offline` to use cached responses. The comparison uses the paper’s existing scoring code and the pinned Week 7 encoder. Supply `--model-dir /path/to/model` for offline inference.
+From the `Final project` directory, install the tested dependencies with `python3 -m pip install -r requirements-project.txt`. The build command verifies the selected Fandom revisions. Add `--offline` to use cached responses. The comparison uses the paper’s existing scoring code and the pinned Week 7 encoder. Supply `--model-dir /path/to/model` for offline inference.
 
 ```sh
 python3 fandom/expanded/build.py
@@ -38,4 +44,6 @@ python3 fandom/expanded/compare.py
 python3 fandom/expanded/cornell.py data/nolan/raw/cornell-dialogs --output-text data/nolan/raw/cornell-dialogs/matched_dialogue.csv
 ```
 
-The local Cornell data directory holds the three original tables and the joined dialogue. The script checks the hashes of all three inputs. To reproduce the index elsewhere, place `movie_titles_metadata.txt`, `movie_characters_metadata.txt` and `movie_lines.txt` from the pinned mirror in that directory. The CSV index can also be used independently of the local cache. [Local joined dialogue](../../data/nolan/raw/cornell-dialogs/matched_dialogue.csv) · [Pinned Cornell data mirror](https://huggingface.co/datasets/spawn99/CornellMovieDialogCorpus/tree/2bba5d7a7c57f8fdf2c65bd6c068d68e71a10af6)
+The local Cornell data directory holds the three original tables and the joined dialogue. The script checks the hashes of all three inputs. To reproduce the index elsewhere, place `movie_titles_metadata.txt`, `movie_characters_metadata.txt` and `movie_lines.txt` from the pinned mirror in that directory. The CSV index can also be used independently of the local cache. [Pinned Cornell data mirror](https://huggingface.co/datasets/spawn99/CornellMovieDialogCorpus/tree/2bba5d7a7c57f8fdf2c65bd6c068d68e71a10af6)
+
+The supplemental passages are included as a standalone CSV. To rebuild that table from the local role archive, run `python3 fandom/expanded/archived_passages.py data/nolan/character_descriptions.jsonl`. [Export script](archived_passages.py)
