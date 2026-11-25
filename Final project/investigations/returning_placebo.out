@@ -1,0 +1,3 @@
+actor pairs of distinct Nolan characters with placebo: 28 from 15 actors
+mean cosine: actor's own pair 0.0123  |  co-star pairs from the same two films 0.0118
+own pair minus co-star pairs (same films)                  mean +0.0005  z +0.17  p 0.8802  (n=28, actors=15)

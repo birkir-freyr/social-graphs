@@ -1,0 +1,27 @@
+
+[original: all earlier roles (sizes differ)] 822 roles (82 Nolan)
+   mean percentile: Nolan 0.589   other 0.616
+   Spearman(n earlier roles, percentile) rho +0.655 p 6.5e-102
+   Nolan actors vs random actor (pct - 0.5)                   mean +0.0886  z +1.76  p 0.0790  (n=82, actors=55)
+   Other directors' actors vs random actor                    mean +0.1156  z +2.87  p 0.0015  (n=740, actors=63)
+   Nolan minus same actor's other roles (pct)                 mean +0.0367  z +1.18  p 0.2426  (n=52, actors=52)
+   regulars 2+ films 0.598 (n=17) vs one-timers 0.488 (n=38): diff +0.110 p 0.199
+   regulars 3+ films 0.720 (n=9) vs one-timers 0.484 (n=46): diff +0.236 p 0.024
+
+[fixed size: the 3 most recent earlier roles] 822 roles (82 Nolan)
+   mean percentile: Nolan 0.520   other 0.558
+   Spearman(n earlier roles, percentile) rho +0.020 p 0.57
+   Nolan actors vs random actor (pct - 0.5)                   mean +0.0204  z +0.63  p 0.5320  (n=82, actors=55)
+   Other directors' actors vs random actor                    mean +0.0581  z +2.71  p 0.0035  (n=740, actors=63)
+   Nolan minus same actor's other roles (pct)                 mean -0.0684  z -1.70  p 0.0872  (n=52, actors=52)
+   regulars 2+ films 0.550 (n=17) vs one-timers 0.446 (n=38): diff +0.104 p 0.186
+   regulars 3+ films 0.650 (n=9) vs one-timers 0.444 (n=46): diff +0.205 p 0.036
+
+[fixed size: the 5 most recent earlier roles] 707 roles (75 Nolan)
+   mean percentile: Nolan 0.539   other 0.574
+   Spearman(n earlier roles, percentile) rho +0.045 p 0.23
+   Nolan actors vs random actor (pct - 0.5)                   mean +0.0390  z +1.04  p 0.3039  (n=75, actors=48)
+   Other directors' actors vs random actor                    mean +0.0743  z +3.01  p 0.0015  (n=632, actors=57)
+   Nolan minus same actor's other roles (pct)                 mean -0.0832  z -2.00  p 0.0437  (n=47, actors=47)
+   regulars 2+ films 0.566 (n=16) vs one-timers 0.455 (n=32): diff +0.112 p 0.216
+   regulars 3+ films 0.654 (n=9) vs one-timers 0.454 (n=39): diff +0.199 p 0.063

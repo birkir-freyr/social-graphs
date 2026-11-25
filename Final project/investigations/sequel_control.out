@@ -1,0 +1,54 @@
+later roles with a same-film co-star: 198; reprises 16 (10 actors; Nolan 9)
+
+reprises found (check by eye):
+  Charlize Theron        The Huntsman: Winter's War         Queen Ravenna                <- Snow White and the Huntsman (Queen Ravenna)
+  Christian Bale         The Dark Knight                    Bruce Wayne                  <- Batman Begins (Bruce Wayne / Batman)
+  Christian Bale         The Dark Knight Rises              Bruce Wayne                  <- Batman Begins (Bruce Wayne / Batman); The Dark Knight (Bruce Wayne)
+  Cillian Murphy         The Dark Knight Rises              Dr. Jonathan Crane / Scarecr <- Batman Begins (Dr. Jonathan Crane)
+  Emily Blunt            Sherlock Gnomes                    Juliet                       <- Gnomeo & Juliet (Juliet)
+  Gary Oldman            Harry Potter and the Goblet of Fire Sirius Black                 <- Harry Potter and the Prisoner of Azkaban (Sirius Black)
+  Gary Oldman            The Dark Knight                    Gordon                       <- Batman Begins (Jim Gordon)
+  Gary Oldman            The Dark Knight Rises              Commissioner Gordon          <- Batman Begins (Jim Gordon); The Dark Knight (Gordon)
+  Hugh Jackman           X-Men: The Last Stand              Logan / Wolverine            <- X-Men (Logan / Wolverine)
+  Liam Neeson            The Dark Knight Rises              Ra's Al Ghul                 <- Batman Begins (Ducard)
+  Michael Caine          Sherlock Gnomes                    Lord Redbrick                <- Gnomeo & Juliet (Lord Redbrick)
+  Michael Caine          The Dark Knight                    Alfred                       <- Batman Begins (Alfred)
+  Michael Caine          The Dark Knight Rises              Alfred                       <- Batman Begins (Alfred); The Dark Knight (Alfred)
+  Morgan Freeman         The Dark Knight                    Lucius Fox                   <- Batman Begins (Lucius Fox)
+  Robert Pattinson       The Twilight Saga: Breaking Dawn - Part 1 Edward Cullen                <- Twilight (Edward Cullen); The Twilight Saga: New Moon (Edward Cullen);
+  Robert Pattinson       The Twilight Saga: Breaking Dawn - Part 2 Edward Cullen                <- Twilight (Edward Cullen); The Twilight Saga: New Moon (Edward Cullen);
+
+=== REPRISES (n=16) ===
+  departure: own 0.9061   co-star 0.9132
+   departure own - co-star (negative = closer to type)        mean -0.0071  z -0.53  p 0.6719  (n=16, actors=10)
+  rank (k=3): own 0.931   co-star 0.847
+   rank own - co-star (positive = fits own part better)       mean +0.0841  z +1.67  p 0.0624  (n=16, actors=10)
+  share of parts where own is closer than co-star: 0.50
+
+=== other later roles (n=182) ===
+  departure: own 0.9511   co-star 0.9528
+   departure own - co-star (negative = closer to type)        mean -0.0017  z -0.66  p 0.5082  (n=182, actors=63)
+  rank (k=3): own 0.541   co-star 0.540
+   rank own - co-star (positive = fits own part better)       mean +0.0010  z +0.05  p 0.9593  (n=182, actors=63)
+  share of parts where own is closer than co-star: 0.49
+
+=== REPRISES, direct: cosine to the earlier version of the same character ===
+  own part 0.0868   co-star's part 0.0611
+   own - co-star (positive = recognises the character)        mean +0.0257  z +1.82  p 0.0722  (n=16, actors=10)
+  share where own is closer: 0.69
+    Robert Pattinson     The Twilight Saga: Breaking Da own 0.152  co-star 0.210
+    Hugh Jackman         X-Men: The Last Stand          own 0.133  co-star 0.174
+    Gary Oldman          Harry Potter and the Goblet of own 0.000  co-star 0.019
+    Cillian Murphy       The Dark Knight Rises          own 0.004  co-star 0.015
+    Morgan Freeman       The Dark Knight                own 0.009  co-star 0.016
+    Christian Bale       The Dark Knight                own 0.088  co-star 0.084
+    Liam Neeson          The Dark Knight Rises          own 0.022  co-star 0.013
+    Emily Blunt          Sherlock Gnomes                own 0.095  co-star 0.073
+    Charlize Theron      The Huntsman: Winter's War     own 0.071  co-star 0.044
+    Michael Caine        The Dark Knight Rises          own 0.060  co-star 0.024
+    Michael Caine        The Dark Knight                own 0.094  co-star 0.053
+    Michael Caine        Sherlock Gnomes                own 0.117  co-star 0.074
+    Christian Bale       The Dark Knight Rises          own 0.095  co-star 0.048
+    Gary Oldman          The Dark Knight                own 0.100  co-star 0.050
+    Gary Oldman          The Dark Knight Rises          own 0.079  co-star 0.021
+    Robert Pattinson     The Twilight Saga: Breaking Da own 0.267  co-star 0.059

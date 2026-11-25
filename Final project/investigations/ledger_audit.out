@@ -1,0 +1,46 @@
+Heath Ledger as Joker in The Dark Knight: 14 earlier roles
+   1997 Blackrock                      Toby Ackland               cos to type 0.321
+   1999 10 Things I Hate About You     Patrick Verona             cos to type 0.308
+   1999 Two Hands                      Jimmy                      cos to type 0.344
+   2000 The Patriot                    Gabriel Martin             cos to type 0.323
+   2001 A Knight's Tale                William Thatcher           cos to type 0.317
+   2001 Monster's Ball                 Sonny Grotowski            cos to type 0.325
+   2002 The Four Feathers              Harry Faversham            cos to type 0.333
+   2003 Ned Kelly                      Ned Kelly                  cos to type 0.349
+   2003 The Order                      Alex Bernier               cos to type 0.296
+   2005 Brokeback Mountain             Ennis Del Mar              cos to type 0.322
+   2005 Casanova                       Casanova                   cos to type 0.311
+   2005 Lords of Dogtown               Skip                       cos to type 0.313
+   2005 The Brothers Grimm             Jacob Grimm                cos to type 0.248
+   2006 Candy                          Dan                        cos to type 0.312
+cos(role, type) = 0.1001   (departure 0.8999)
+top shared terms (contribution, term, weight in role, weight in type):
+   0.0098  police           0.195  0.050
+   0.0094  says             0.153  0.061
+   0.0046  officers         0.057  0.081
+   0.0033  one              0.065  0.051
+   0.0032  kill             0.093  0.034
+   0.0027  gang             0.057  0.047
+   0.0027  identity         0.094  0.028
+   0.0023  burns            0.120  0.019
+   0.0023  blow             0.084  0.027
+   0.0023  killing          0.114  0.020
+   0.0020  city             0.049  0.041
+   0.0019  offers           0.040  0.048
+   0.0019  transporting     0.084  0.023
+   0.0019  avoid            0.060  0.032
+   0.0018  convoy           0.082  0.023
+heaviest terms in the role passage that the type lacks:
+   0.213  bosses
+   0.177  commissioner
+   0.168  rigged
+   0.164  explode
+   0.157  mafia
+   0.149  unless
+   0.141  fortune
+   0.126  struggles
+   0.107  organizations
+   0.107  extradition
+
+Role passage (all names masked):
+ A gang of masked criminals rob a mafia-owned bank in NAME NAME, betraying and killing each other until the sole survivor, the CHARACTER, reveals himself as the mastermind and escapes with the money. NAME's mafia bosses gather to discuss protecting their organizations from the CHARACTER, the police, and NAME. The CHARACTER interrupts the meeting and offers to kill NAME for half of the fortune their accountant, NAME, concealed before fleeing to NAME NAME to avoid extradition. The bosses accept the CHARACTER's offer, and he kills high-profile targets involved in the trial, including the judge and police commissioner NAME NAME. Although NAME saves the mayor, the CHARACTER threatens that his attacks will continue until NAME reveals his identity. NAME struggles to understand the CHARACTER's motives, to which his butler NAME NAME says that "some men just want to watch the world burn." NAME claims he is NAME to lure the CHARACTER out, who attacks the police convoy transporting NAME. NAME and NAME apprehend the CHARACTER, and NAME is promoted to commissioner. At the police station, NAME interrogates the CHARACTER, who says he finds NAME entertaining and has no intention of killing him. Having deduced NAME's feelings for NAME, the CHARACTER reveals she and NAME are being held separately in buildings rigged to explode. NAME races to rescue NAME while NAME and the other officers go after NAME, but they discover the CHARACTER has given their positions in reverse. The CHARACTER escapes cus

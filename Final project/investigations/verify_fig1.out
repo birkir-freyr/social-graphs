@@ -1,0 +1,40 @@
+TRUTH: 100 main-cast actors, 17 returning, 83 one-film, 130 links
+DRAWN: 130 line segments, 13 squares, 17 black dots, 83 grey dots
+Films on ring: ['Batman Begins', 'Dunkirk', 'Following', 'Inception', 'Insomnia', 'Interstellar', 'Memento', 'Oppenheimer', 'Tenet', 'The Dark Knight', 'The Dark Knight Rises', 'The Odyssey', 'The Prestige']
+Links whose colour matches their film square: 130/130
+  OK  Michael Caine          drawn films=['Batman Begins', 'Interstellar', 'Tenet', 'The Dark Knight', 'The Dark Knight Rises', 'The Prestige']  label-to-own-dot gap=  2.5pt  next dot= 28.8pt
+  OK  Cillian Murphy         drawn films=['Batman Begins', 'Dunkirk', 'Inception', 'Oppenheimer', 'The Dark Knight']  label-to-own-dot gap=  5.5pt  next dot= 14.2pt
+  OK  Christian Bale         drawn films=['Batman Begins', 'The Dark Knight', 'The Dark Knight Rises', 'The Prestige']  label-to-own-dot gap=  2.5pt  next dot=  5.2pt
+  OK  Anne Hathaway          drawn films=['Interstellar', 'The Dark Knight Rises', 'The Odyssey']  label-to-own-dot gap=  2.5pt  next dot=  5.3pt
+  OK  Gary Oldman            drawn films=['Batman Begins', 'The Dark Knight', 'The Dark Knight Rises']  label-to-own-dot gap=  2.5pt  next dot= 30.7pt
+  OK  Kenneth Branagh        drawn films=['Dunkirk', 'Oppenheimer', 'Tenet']  label-to-own-dot gap=  4.5pt  next dot= 13.9pt
+  OK  Tom Hardy              drawn films=['Dunkirk', 'Inception', 'The Dark Knight Rises']  label-to-own-dot gap=  0.7pt  next dot= 19.8pt
+  OK  Casey Affleck          drawn films=['Interstellar', 'Oppenheimer']  label-to-own-dot gap=  3.1pt  next dot= 34.6pt
+  OK  Himesh Patel           drawn films=['Tenet', 'The Odyssey']  label-to-own-dot gap=  2.5pt  next dot= 48.7pt
+  OK  Joseph Gordon-Levitt   drawn films=['Inception', 'The Dark Knight Rises']  label-to-own-dot gap=  3.1pt  next dot= 36.2pt
+  OK  Ken Watanabe           drawn films=['Batman Begins', 'Inception']  label-to-own-dot gap=  2.4pt  next dot= 23.6pt
+  OK  Marion Cotillard       drawn films=['Inception', 'The Dark Knight Rises']  label-to-own-dot gap=  0.7pt  next dot=  5.2pt
+  OK  Mark Boone Junior      drawn films=['Batman Begins', 'Memento']  label-to-own-dot gap=  2.5pt  next dot= 46.5pt
+  OK  Martin Donovan         drawn films=['Insomnia', 'Tenet']  label-to-own-dot gap=  2.5pt  next dot= 53.0pt
+  OK  Matt Damon             drawn films=['Oppenheimer', 'The Odyssey']  label-to-own-dot gap=  3.1pt  next dot= 21.1pt
+  OK  Morgan Freeman         drawn films=['The Dark Knight', 'The Dark Knight Rises']  label-to-own-dot gap=  2.5pt  next dot=  5.6pt
+  OK  Robert Pattinson       drawn films=['Tenet', 'The Odyssey']  label-to-own-dot gap=  2.4pt  next dot= 34.1pt
+Dots claimed by two labels: none
+Returning actors with no label: none
+Black dots: 17 vs returning actors: 17
+One-film actors per film (drawn vs truth):
+  OK  Batman Begins            drawn  4  truth  4
+  OK  Dunkirk                  drawn  7  truth  7
+  OK  Following                drawn 10  truth 10
+  OK  Inception                drawn  5  truth  5
+  OK  Insomnia                 drawn  9  truth  9
+  OK  Interstellar             drawn  7  truth  7
+  OK  Memento                  drawn  9  truth  9
+  OK  Oppenheimer              drawn  6  truth  6
+  OK  Tenet                    drawn  5  truth  5
+  OK  The Dark Knight          drawn  5  truth  5
+  OK  The Dark Knight Rises    drawn  2  truth  2
+  OK  The Odyssey              drawn  6  truth  6
+  OK  The Prestige             drawn  8  truth  8
+Film years on the figure: ['(1998)', '(2000)', '(2002)', '(2005)', '(2006)', '(2008)', '(2010)', '(2012)', '(2014)', '(2017)', '(2020)', '(2023)', '(2026)']
+PROBLEMS: 0

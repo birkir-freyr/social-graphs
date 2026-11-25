@@ -1,0 +1,4 @@
+own minus co-star (full passages)                          mean +0.0008  z +0.26  p 0.8008  (n=82, actors=55)   95% CI [-0.0051, +0.0065]
+passage length: own median 134 words, co-stars' mean-per-part median 172 words
+own minus co-star, all passages cut to 60 words            mean -0.0010  z -0.53  p 0.6066  (n=63, actors=43)   95% CI [-0.0045, +0.0025]
+own minus co-star, all passages cut to 100 words           mean -0.0005  z -0.27  p 0.7994  (n=48, actors=34)   95% CI [-0.0045, +0.0033]

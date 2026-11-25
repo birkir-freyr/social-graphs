@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d18" for="edge" attr.name="shared_actor_names" attr.type="string" />
+  <key id="d17" for="edge" attr.name="shared_actor_ids" attr.type="string" />
+  <key id="d16" for="edge" attr.name="jaccard" attr.type="double" />
+  <key id="d15" for="edge" attr.name="shared_actor_count" attr.type="long" />
+  <key id="d14" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d13" for="node" attr.name="cast_size" attr.type="long" />
+  <key id="d12" for="node" attr.name="source_url" attr.type="string" />
+  <key id="d11" for="node" attr.name="genres" attr.type="string" />
+  <key id="d10" for="node" attr.name="year_conflict" attr.type="boolean" />
+  <key id="d9" for="node" attr.name="release_date" attr.type="string" />
+  <key id="d8" for="node" attr.name="year" attr.type="long" />
+  <key id="d7" for="node" attr.name="label" attr.type="string" />
+  <key id="d6" for="node" attr.name="tmdb_id" attr.type="long" />
+  <key id="d5" for="node" attr.name="bipartite" attr.type="long" />
+  <key id="d4" for="node" attr.name="node_type" attr.type="string" />
+  <key id="d3" for="graph" attr.name="jaccard_definition" attr.type="string" />
+  <key id="d2" for="graph" attr.name="weight_definition" attr.type="string" />
+  <key id="d1" for="graph" attr.name="source_graph" attr.type="string" />
+  <key id="d0" for="graph" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="film:11660">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">11660</data>
+      <data key="d7">Following</data>
+      <data key="d8">1998</data>
+      <data key="d9">1999-04-02</data>
+      <data key="d10">True</data>
+      <data key="d11">Drama|Thriller</data>
+      <data key="d12">https://www.themoviedb.org/movie/11660?language=en-US</data>
+      <data key="d13">26</data>
+    </node>
+    <node id="film:77">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">77</data>
+      <data key="d7">Memento</data>
+      <data key="d8">2000</data>
+      <data key="d9">2000-10-11</data>
+      <data key="d10">False</data>
+      <data key="d11">Mystery|Thriller</data>
+      <data key="d12">https://www.themoviedb.org/movie/77?language=en-US</data>
+      <data key="d13">13</data>
+    </node>
+    <node id="film:320">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">320</data>
+      <data key="d7">Insomnia</data>
+      <data key="d8">2002</data>
+      <data key="d9">2002-05-24</data>
+      <data key="d10">False</data>
+      <data key="d11">Thriller|Crime|Drama</data>
+      <data key="d12">https://www.themoviedb.org/movie/320?language=en-US</data>
+      <data key="d13">24</data>
+    </node>
+    <node id="film:272">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">272</data>
+      <data key="d7">Batman Begins</data>
+      <data key="d8">2005</data>
+      <data key="d9">2005-06-10</data>
+      <data key="d10">False</data>
+      <data key="d11">Drama|Crime|Action</data>
+      <data key="d12">https://www.themoviedb.org/movie/272?language=en-US</data>
+      <data key="d13">103</data>
+    </node>
+    <node id="film:1124">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">1124</data>
+      <data key="d7">The Prestige</data>
+      <data key="d8">2006</data>
+      <data key="d9">2006-10-19</data>
+      <data key="d10">False</data>
+      <data key="d11">Drama|Mystery|Science Fiction</data>
+      <data key="d12">https://www.themoviedb.org/movie/1124?language=en-US</data>
+      <data key="d13">46</data>
+    </node>
+    <node id="film:155">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">155</data>
+      <data key="d7">The Dark Knight</data>
+      <data key="d8">2008</data>
+      <data key="d9">2008-07-16</data>
+      <data key="d10">False</data>
+      <data key="d11">Action|Thriller|Crime</data>
+      <data key="d12">https://www.themoviedb.org/movie/155?language=en-US</data>
+      <data key="d13">98</data>
+    </node>
+    <node id="film:27205">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">27205</data>
+      <data key="d7">Inception</data>
+      <data key="d8">2010</data>
+      <data key="d9">2010-07-15</data>
+      <data key="d10">False</data>
+      <data key="d11">Action|Science Fiction|Crime</data>
+      <data key="d12">https://www.themoviedb.org/movie/27205?language=en-US</data>
+      <data key="d13">52</data>
+    </node>
+    <node id="film:49026">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">49026</data>
+      <data key="d7">The Dark Knight Rises</data>
+      <data key="d8">2012</data>
+      <data key="d9">2012-07-17</data>
+      <data key="d10">False</data>
+      <data key="d11">Action|Crime|Thriller</data>
+      <data key="d12">https://www.themoviedb.org/movie/49026?language=en-US</data>
+      <data key="d13">100</data>
+    </node>
+    <node id="film:157336">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">157336</data>
+      <data key="d7">Interstellar</data>
+      <data key="d8">2014</data>
+      <data key="d9">2014-11-04</data>
+      <data key="d10">False</data>
+      <data key="d11">Adventure|Drama|Science Fiction</data>
+      <data key="d12">https://www.themoviedb.org/movie/157336?language=en-US</data>
+      <data key="d13">29</data>
+    </node>
+    <node id="film:374720">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">374720</data>
+      <data key="d7">Dunkirk</data>
+      <data key="d8">2017</data>
+      <data key="d9">2017-07-19</data>
+      <data key="d10">False</data>
+      <data key="d11">War|Action|History</data>
+      <data key="d12">https://www.themoviedb.org/movie/374720?language=en-US</data>
+      <data key="d13">47</data>
+    </node>
+    <node id="film:577922">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">577922</data>
+      <data key="d7">Tenet</data>
+      <data key="d8">2020</data>
+      <data key="d9">2020-08-22</data>
+      <data key="d10">False</data>
+      <data key="d11">Action|Thriller|Science Fiction</data>
+      <data key="d12">https://www.themoviedb.org/movie/577922?language=en-US</data>
+      <data key="d13">39</data>
+    </node>
+    <node id="film:872585">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">872585</data>
+      <data key="d7">Oppenheimer</data>
+      <data key="d8">2023</data>
+      <data key="d9">2023-07-19</data>
+      <data key="d10">False</data>
+      <data key="d11">Drama|History|War</data>
+      <data key="d12">https://www.themoviedb.org/movie/872585?language=en-US</data>
+      <data key="d13">79</data>
+    </node>
+    <node id="film:1368337">
+      <data key="d4">film</data>
+      <data key="d5">1</data>
+      <data key="d6">1368337</data>
+      <data key="d7">The Odyssey</data>
+      <data key="d8">2026</data>
+      <data key="d9">2026-07-15</data>
+      <data key="d10">False</data>
+      <data key="d11">Adventure|Action|Fantasy</data>
+      <data key="d12">https://www.themoviedb.org/movie/1368337?language=en-US</data>
+      <data key="d13">62</data>
+    </node>
+    <edge source="film:11660" target="film:272">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.023809523809523808</data>
+      <data key="d17">["actor:70230", "actor:70225", "actor:28749"]</data>
+      <data key="d18">["Jeremy Theobald", "John Nolan", "Lucy Russell"]</data>
+    </edge>
+    <edge source="film:11660" target="film:49026">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.008</data>
+      <data key="d17">["actor:70225"]</data>
+      <data key="d18">["John Nolan"]</data>
+    </edge>
+    <edge source="film:11660" target="film:374720">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.013888888888888888</data>
+      <data key="d17">["actor:70225"]</data>
+      <data key="d18">["John Nolan"]</data>
+    </edge>
+    <edge source="film:11660" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.015625</data>
+      <data key="d17">["actor:70230"]</data>
+      <data key="d18">["Jeremy Theobald"]</data>
+    </edge>
+    <edge source="film:77" target="film:320">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.027777777777777776</data>
+      <data key="d17">["actor:544"]</data>
+      <data key="d18">["Larry Holden"]</data>
+    </edge>
+    <edge source="film:77" target="film:272">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.017543859649122806</data>
+      <data key="d17">["actor:544", "actor:534"]</data>
+      <data key="d18">["Larry Holden", "Mark Boone Junior"]</data>
+    </edge>
+    <edge source="film:77" target="film:1124">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.017241379310344827</data>
+      <data key="d17">["actor:535"]</data>
+      <data key="d18">["Russ Fega"]</data>
+    </edge>
+    <edge source="film:77" target="film:27205">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.015625</data>
+      <data key="d17">["actor:535"]</data>
+      <data key="d18">["Russ Fega"]</data>
+    </edge>
+    <edge source="film:77" target="film:49026">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.018018018018018018</data>
+      <data key="d17">["actor:535", "actor:539"]</data>
+      <data key="d18">["Russ Fega", "Thomas Lennon"]</data>
+    </edge>
+    <edge source="film:77" target="film:157336">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.024390243902439025</data>
+      <data key="d17">["actor:535"]</data>
+      <data key="d18">["Russ Fega"]</data>
+    </edge>
+    <edge source="film:320" target="film:272">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007936507936507936</data>
+      <data key="d17">["actor:544"]</data>
+      <data key="d18">["Larry Holden"]</data>
+    </edge>
+    <edge source="film:320" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.016129032258064516</data>
+      <data key="d17">["actor:42993"]</data>
+      <data key="d18">["Martin Donovan"]</data>
+    </edge>
+    <edge source="film:272" target="film:1124">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.013605442176870748</data>
+      <data key="d17">["actor:3894", "actor:3895"]</data>
+      <data key="d18">["Christian Bale", "Michael Caine"]</data>
+    </edge>
+    <edge source="film:272" target="film:155">
+      <data key="d14">6</data>
+      <data key="d15">6</data>
+      <data key="d16">0.03076923076923077</data>
+      <data key="d17">["actor:3894", "actor:2037", "actor:128386", "actor:64", "actor:3895", "actor:192"]</data>
+      <data key="d18">["Christian Bale", "Cillian Murphy", "Colin McFarlane", "Gary Oldman", "Michael Caine", "Morgan Freeman"]</data>
+    </edge>
+    <edge source="film:272" target="film:27205">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.026490066225165563</data>
+      <data key="d17">["actor:17291", "actor:2037", "actor:3899", "actor:3895"]</data>
+      <data key="d18">["Andrew Pleavin", "Cillian Murphy", "Ken Watanabe", "Michael Caine"]</data>
+    </edge>
+    <edge source="film:272" target="film:49026">
+      <data key="d14">7</data>
+      <data key="d15">7</data>
+      <data key="d16">0.03571428571428571</data>
+      <data key="d17">["actor:3894", "actor:2037", "actor:64", "actor:70225", "actor:3896", "actor:3895", "actor:192"]</data>
+      <data key="d18">["Christian Bale", "Cillian Murphy", "Gary Oldman", "John Nolan", "Liam Neeson", "Michael Caine", "Morgan Freeman"]</data>
+    </edge>
+    <edge source="film:272" target="film:157336">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007633587786259542</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:272" target="film:374720">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.02040816326530612</data>
+      <data key="d17">["actor:2037", "actor:70225", "actor:3750710"]</data>
+      <data key="d18">["Cillian Murphy", "John Nolan", "Tom Nolan"]</data>
+    </edge>
+    <edge source="film:272" target="film:577922">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.02158273381294964</data>
+      <data key="d17">["actor:70230", "actor:3895", "actor:3750710"]</data>
+      <data key="d18">["Jeremy Theobald", "Michael Caine", "Tom Nolan"]</data>
+    </edge>
+    <edge source="film:272" target="film:872585">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.011111111111111112</data>
+      <data key="d17">["actor:2037", "actor:64"]</data>
+      <data key="d18">["Cillian Murphy", "Gary Oldman"]</data>
+    </edge>
+    <edge source="film:1124" target="film:155">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.014084507042253521</data>
+      <data key="d17">["actor:3894", "actor:3895"]</data>
+      <data key="d18">["Christian Bale", "Michael Caine"]</data>
+    </edge>
+    <edge source="film:1124" target="film:27205">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.020833333333333332</data>
+      <data key="d17">["actor:3895", "actor:535"]</data>
+      <data key="d18">["Michael Caine", "Russ Fega"]</data>
+    </edge>
+    <edge source="film:1124" target="film:49026">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.02097902097902098</data>
+      <data key="d17">["actor:3894", "actor:3895", "actor:535"]</data>
+      <data key="d18">["Christian Bale", "Michael Caine", "Russ Fega"]</data>
+    </edge>
+    <edge source="film:1124" target="film:157336">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.0273972602739726</data>
+      <data key="d17">["actor:3895", "actor:535"]</data>
+      <data key="d18">["Michael Caine", "Russ Fega"]</data>
+    </edge>
+    <edge source="film:1124" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.011904761904761904</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:1124" target="film:1368337">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.009345794392523364</data>
+      <data key="d17">["actor:111195"]</data>
+      <data key="d18">["Jamie Harris"]</data>
+    </edge>
+    <edge source="film:155" target="film:27205">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.013513513513513514</data>
+      <data key="d17">["actor:2037", "actor:3895"]</data>
+      <data key="d18">["Cillian Murphy", "Michael Caine"]</data>
+    </edge>
+    <edge source="film:155" target="film:49026">
+      <data key="d14">7</data>
+      <data key="d15">7</data>
+      <data key="d16">0.03664921465968586</data>
+      <data key="d17">["actor:3894", "actor:2037", "actor:64", "actor:3895", "actor:192", "actor:21316", "actor:853194"]</data>
+      <data key="d18">["Christian Bale", "Cillian Murphy", "Gary Oldman", "Michael Caine", "Morgan Freeman", "Nestor Carbonell", "Patrick Leahy"]</data>
+    </edge>
+    <edge source="film:155" target="film:157336">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007936507936507936</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:155" target="film:374720">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.006944444444444444</data>
+      <data key="d17">["actor:2037"]</data>
+      <data key="d18">["Cillian Murphy"]</data>
+    </edge>
+    <edge source="film:155" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007352941176470588</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:155" target="film:872585">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.017241379310344827</data>
+      <data key="d17">["actor:2037", "actor:83854", "actor:64"]</data>
+      <data key="d18">["Cillian Murphy", "David Dastmalchian", "Gary Oldman"]</data>
+    </edge>
+    <edge source="film:27205" target="film:49026">
+      <data key="d14">7</data>
+      <data key="d15">7</data>
+      <data key="d16">0.04827586206896552</data>
+      <data key="d17">["actor:2037", "actor:24045", "actor:8293", "actor:3895", "actor:1334309", "actor:535", "actor:2524"]</data>
+      <data key="d18">["Cillian Murphy", "Joseph Gordon-Levitt", "Marion Cotillard", "Michael Caine", "Miranda Nolan", "Russ Fega", "Tom Hardy"]</data>
+    </edge>
+    <edge source="film:27205" target="film:157336">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.02531645569620253</data>
+      <data key="d17">["actor:3895", "actor:535"]</data>
+      <data key="d18">["Michael Caine", "Russ Fega"]</data>
+    </edge>
+    <edge source="film:27205" target="film:374720">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.03125</data>
+      <data key="d17">["actor:2037", "actor:1334309", "actor:2524"]</data>
+      <data key="d18">["Cillian Murphy", "Miranda Nolan", "Tom Hardy"]</data>
+    </edge>
+    <edge source="film:27205" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.011111111111111112</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:27205" target="film:872585">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007692307692307693</data>
+      <data key="d17">["actor:2037"]</data>
+      <data key="d18">["Cillian Murphy"]</data>
+    </edge>
+    <edge source="film:27205" target="film:1368337">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.008849557522123894</data>
+      <data key="d17">["actor:27578"]</data>
+      <data key="d18">["Elliot Page"]</data>
+    </edge>
+    <edge source="film:49026" target="film:157336">
+      <data key="d14">5</data>
+      <data key="d15">5</data>
+      <data key="d16">0.04032258064516129</data>
+      <data key="d17">["actor:1813", "actor:55411", "actor:3895", "actor:535", "actor:21416"]</data>
+      <data key="d18">["Anne Hathaway", "David Gyasi", "Michael Caine", "Russ Fega", "William Devane"]</data>
+    </edge>
+    <edge source="film:49026" target="film:374720">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.027972027972027972</data>
+      <data key="d17">["actor:2037", "actor:70225", "actor:1334309", "actor:2524"]</data>
+      <data key="d18">["Cillian Murphy", "John Nolan", "Miranda Nolan", "Tom Hardy"]</data>
+    </edge>
+    <edge source="film:49026" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.007246376811594203</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:49026" target="film:872585">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.022857142857142857</data>
+      <data key="d17">["actor:2037", "actor:64", "actor:8654", "actor:71010"]</data>
+      <data key="d18">["Cillian Murphy", "Gary Oldman", "Matthew Modine", "Tom Conti"]</data>
+    </edge>
+    <edge source="film:49026" target="film:1368337">
+      <data key="d14">2</data>
+      <data key="d15">2</data>
+      <data key="d16">0.0125</data>
+      <data key="d17">["actor:1813", "actor:40039"]</data>
+      <data key="d18">["Anne Hathaway", "Josh Stewart"]</data>
+    </edge>
+    <edge source="film:157336" target="film:577922">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.014925373134328358</data>
+      <data key="d17">["actor:3895"]</data>
+      <data key="d18">["Michael Caine"]</data>
+    </edge>
+    <edge source="film:157336" target="film:872585">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.038461538461538464</data>
+      <data key="d17">["actor:1893", "actor:1505363", "actor:212689", "actor:1892"]</data>
+      <data key="d18">["Casey Affleck", "Flora Nolan", "Jeff Hephner", "Matt Damon"]</data>
+    </edge>
+    <edge source="film:157336" target="film:1368337">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.03409090909090909</data>
+      <data key="d17">["actor:1813", "actor:78050", "actor:1892"]</data>
+      <data key="d18">["Anne Hathaway", "Elyes Gabel", "Matt Damon"]</data>
+    </edge>
+    <edge source="film:374720" target="film:577922">
+      <data key="d14">3</data>
+      <data key="d15">3</data>
+      <data key="d16">0.03614457831325301</data>
+      <data key="d17">["actor:1499831", "actor:11181", "actor:3750710"]</data>
+      <data key="d18">["Jack Cutmore-Scott", "Kenneth Branagh", "Tom Nolan"]</data>
+    </edge>
+    <edge source="film:374720" target="film:872585">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.03278688524590164</data>
+      <data key="d17">["actor:2037", "actor:1499831", "actor:19655", "actor:11181"]</data>
+      <data key="d18">["Cillian Murphy", "Jack Cutmore-Scott", "James D'Arcy", "Kenneth Branagh"]</data>
+    </edge>
+    <edge source="film:374720" target="film:1368337">
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">0.009259259259259259</data>
+      <data key="d17">["actor:1446565"]</data>
+      <data key="d18">["Brian Vernel"]</data>
+    </edge>
+    <edge source="film:577922" target="film:872585">
+      <data key="d14">4</data>
+      <data key="d15">4</data>
+      <data key="d16">0.03508771929824561</data>
+      <data key="d17">["actor:1499831", "actor:109322", "actor:11181", "actor:543819"]</data>
+      <data key="d18">["Jack Cutmore-Scott", "Jefferson Hall", "Kenneth Branagh", "Sean Avery"]</data>
+    </edge>
+    <edge source="film:577922" target="film:1368337">
+      <data key="d14">5</data>
+      <data key="d15">5</data>
+      <data key="d16">0.052083333333333336</data>
+      <data key="d17">["actor:67206", "actor:202930", "actor:1227717", "actor:11288", "actor:543819"]</data>
+      <data key="d18">["Andrew Howard", "Anthony Molinari", "Himesh Patel", "Robert Pattinson", "Sean Avery"]</data>
+    </edge>
+    <edge source="film:872585" target="film:1368337">
+      <data key="d14">5</data>
+      <data key="d15">5</data>
+      <data key="d16">0.03676470588235294</data>
+      <data key="d17">["actor:227564", "actor:1736", "actor:1892", "actor:543819", "actor:3853422"]</data>
+      <data key="d18">["Benny Safdie", "James Remar", "Matt Damon", "Sean Avery", "Tyler Beardsley"]</data>
+    </edge>
+    <data key="d0">Nolan film network: shared actors</data>
+    <data key="d1">nolan_bipartite.graphml</data>
+    <data key="d2">Number of distinct actors credited in both films</data>
+    <data key="d3">Shared actors divided by distinct actors in either cast</data>
+  </graph>
+</graphml>

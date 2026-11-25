@@ -1,0 +1,22 @@
+{
+ "all credited": {
+  "spearman": -0.465,
+  "p_one_sided": 0.0001,
+  "pairs": 78
+ },
+ "all credited, no Batman films": {
+  "spearman": -0.432,
+  "p_one_sided": 0.0018,
+  "pairs": 45
+ },
+ "main cast": {
+  "spearman": -0.431,
+  "p_one_sided": 0.0005,
+  "pairs": 78
+ },
+ "main cast, no Batman films": {
+  "spearman": -0.314,
+  "p_one_sided": 0.0154,
+  "pairs": 45
+ }
+}

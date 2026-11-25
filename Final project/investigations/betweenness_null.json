@@ -1,0 +1,61 @@
+{
+ "B": 200,
+ "swaps_per_realisation": 7180,
+ "rows": [
+  {
+   "actor": "Michael Caine",
+   "films": 7,
+   "observed": 0.1847,
+   "null_mean": 0.1508,
+   "null_sd": 0.0241,
+   "z": 1.41,
+   "p_two_sided": 0.1692
+  },
+  {
+   "actor": "Cillian Murphy",
+   "films": 6,
+   "observed": 0.1464,
+   "null_mean": 0.1057,
+   "null_sd": 0.0213,
+   "z": 1.9,
+   "p_two_sided": 0.0697
+  },
+  {
+   "actor": "Gary Oldman",
+   "films": 4,
+   "observed": 0.069,
+   "null_mean": 0.0439,
+   "null_sd": 0.0131,
+   "z": 1.91,
+   "p_two_sided": 0.1095
+  },
+  {
+   "actor": "John Nolan",
+   "films": 4,
+   "observed": 0.0614,
+   "null_mean": 0.0439,
+   "null_sd": 0.0142,
+   "z": 1.23,
+   "p_two_sided": 0.2488
+  },
+  {
+   "actor": "Christian Bale",
+   "films": 4,
+   "observed": 0.0598,
+   "null_mean": 0.0444,
+   "null_sd": 0.0133,
+   "z": 1.16,
+   "p_two_sided": 0.2488
+  },
+  {
+   "actor": "Russ Fega",
+   "films": 5,
+   "observed": 0.046,
+   "null_mean": 0.0738,
+   "null_sd": 0.0198,
+   "z": -1.41,
+   "p_two_sided": 0.1294
+  }
+ ],
+ "null_connected": 190
+}

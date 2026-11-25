@@ -1,0 +1,70 @@
+{
+ "a": [
+  {
+   "label": "Nolan role",
+   "mean": 0.0234,
+   "lo": 0.0163,
+   "hi": 0.0302,
+   "n": 82,
+   "actors": 55
+  },
+  {
+   "label": "Co-star in the same Nolan film",
+   "mean": 0.0227,
+   "lo": 0.0166,
+   "hi": 0.0288,
+   "n": 82,
+   "actors": 55
+  },
+  {
+   "label": "Same actor, other director",
+   "mean": 0.0099,
+   "lo": 0.0012,
+   "hi": 0.019,
+   "n": 103,
+   "actors": 42
+  },
+  {
+   "label": "Co-star in the same other film",
+   "mean": 0.0129,
+   "lo": 0.0056,
+   "hi": 0.0206,
+   "n": 103,
+   "actors": 42
+  }
+ ],
+ "b": [
+  {
+   "label": "Nolan role",
+   "mean": 0.52,
+   "lo": 0.457,
+   "hi": 0.58,
+   "n": 82,
+   "actors": 55
+  },
+  {
+   "label": "Co-star, Nolan film",
+   "mean": 0.548,
+   "lo": 0.502,
+   "hi": 0.594,
+   "n": 82,
+   "actors": 55
+  },
+  {
+   "label": "Other director",
+   "mean": 0.585,
+   "lo": 0.537,
+   "hi": 0.632,
+   "n": 101,
+   "actors": 42
+  },
+  {
+   "label": "Co-star, other film",
+   "mean": 0.565,
+   "lo": 0.509,
+   "hi": 0.623,
+   "n": 101,
+   "actors": 42
+  }
+ ]
+}

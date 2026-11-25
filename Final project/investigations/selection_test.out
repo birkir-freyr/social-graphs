@@ -1,0 +1,12 @@
+
+[role_text_blind] scored 822 roles (82 Nolan); median comparison pool 54 actors
+   mean percentile: Nolan 0.589   other directors 0.616   (0.5 = random actor)
+   Nolan actors vs random actor (pct - 0.5)                   mean +0.0886  z +1.76  p 0.0790  (n=82, actors=55)
+   Other directors' actors vs random actor                    mean +0.1156  z +2.87  p 0.0015  (n=740, actors=63)
+   Nolan minus same actor's other roles (pct)                 mean +0.0367  z +1.18  p 0.2426  (n=52, actors=52)
+
+[role_text_masked] scored 822 roles (82 Nolan); median comparison pool 54 actors
+   mean percentile: Nolan 0.627   other directors 0.624   (0.5 = random actor)
+   Nolan actors vs random actor (pct - 0.5)                   mean +0.1270  z +2.30  p 0.0152  (n=82, actors=55)
+   Other directors' actors vs random actor                    mean +0.1239  z +3.19  p 0.0002  (n=740, actors=63)
+   Nolan minus same actor's other roles (pct)                 mean +0.0557  z +1.64  p 0.1067  (n=52, actors=52)

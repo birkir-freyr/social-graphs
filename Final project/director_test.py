@@ -282,8 +282,31 @@ def main():
     beat = [d for d, x in zs.items()
             if nolan_z is not None and x >= nolan_z and d != "Christopher Nolan"]
 
+    # Actor-clustered comparison. The z above treats Nolan's 82 roles as
+    # independent, but they come from 55 actors who share filmographies --
+    # the same objection that made typecast.py flip signs by actor. Here each
+    # actor with both kinds of role contributes ONE number: the mean diff of
+    # their Nolan roles minus the mean diff of their roles for other
+    # directors, and the sign-flip null flips whole actors.
+    per_actor = defaultdict(lambda: {"n": [], "o": []})
+    for s in scored:
+        per_actor[s["actor"]]["n" if s["is_nolan"] else "o"].append(s["diff"])
+    paired = [statistics.mean(v["n"]) - statistics.mean(v["o"])
+              for v in per_actor.values() if v["n"] and v["o"]]
+    paired_mean = statistics.mean(paired) if paired else None
+    flip_null = [statistics.mean([x if random.random() < .5 else -x for x in paired])
+                 for _ in range(N_PERM)] if paired else []
+    paired_sd = statistics.pstdev(flip_null) if flip_null else 0.0
+    paired_z = paired_mean / paired_sd if paired_sd else None
+    paired_p = ((sum(1 for x in flip_null if abs(x) >= abs(paired_mean)) + 1)
+                / (N_PERM + 1)) if paired else None
+
     print("\n" + "=" * 66)
     print(f"roles scored                  {len(scored)}")
+    if paired:
+        print(f"Nolan minus same actor's other roles (actor-clustered): "
+              f"{paired_mean:+.4f} over {len(paired)} actors, z {paired_z:+.2f}, "
+              f"p {paired_p:.4f}, {sum(x > 0 for x in paired)} of {len(paired)} positive")
     print(f"directors with >= {args.min_roles} roles       {len(pool)}")
     print(f"Nolan roles scored            {k}")
     print(f"Nolan mean departure          {nolan_mean:+.4f}")
@@ -345,9 +368,9 @@ def main():
         ax.scatter([k], [nolan_mean], s=46, color=S.NOLAN, lw=0.8,
                    edgecolor=S.SURFACE, zorder=5, marker="s", label="Nolan")
         ax.set_xscale("log")
-        S.frame(ax, "Nolan among directors",
+        S.frame(ax, "",
                 xlabel="Roles scored for that director",
-                ylabel="Mean departure from type",
+                ylabel="Mean excess departure",
                 grid="y", legend_cols=2)
         os.makedirs("figures", exist_ok=True)
         fig.savefig("figures/fig4_directors.png")
@@ -368,6 +391,12 @@ def main():
                    "p_perm": p_perm, "nolan_z": nolan_z,
                    "directors_reaching_z": len(beat),
                    "n_z": len(zs) - 1,
+                   "pooled_other_mean": pooled_mu_all,
+                   "next_highest_z": max((x for d, x in zs.items()
+                                          if d != "Christopher Nolan"), default=None),
+                   "paired_actors": len(paired), "paired_mean": paired_mean,
+                   "paired_z": paired_z, "paired_p": paired_p,
+                   "paired_positive": sum(x > 0 for x in paired),
                    "other_mean": statistics.mean([m for m, _, _ in means])
                    if means else None,
                    "top": [{"director": d, "mean": m, "n": n}

@@ -99,9 +99,9 @@ def fig2(d, out):
     ax.set_xlim(lo, hi)
     ax.set_ylim(lo, hi)
     ax.set_aspect("equal")
-    S.frame(ax, "Distance from the actor's prior type",
-            xlabel="The actor's own other roles",
-            ylabel="The Nolan role", legend_cols=2)
+    S.frame(ax, "",
+            xlabel="Departure of the actor's own earlier roles",
+            ylabel="Departure of the Nolan role", legend_cols=2)
 
     fig.savefig(out)
     plt.close(fig)
@@ -141,9 +141,9 @@ def fig3(sweep, out):
     ax.set_xticks(list(xpos.values()))
     ax.set_xticklabels([str(t) if t else "all" for t in levels])
     ax.set_xlim(-0.3, len(levels) - 0.7)
-    S.frame(ax, "The effect against the length control",
+    S.frame(ax, "",
             xlabel="Words kept per passage",
-            ylabel="Mean departure from type",
+            ylabel="Mean excess departure",
             grid="y", legend_cols=2)
 
     fig.savefig(out)
@@ -168,9 +168,9 @@ def fig1(rows, full, out):
     ax.axhline(0, color=S.LINE, lw=0.8, zorder=2)
     ax.scatter(xs, ys, s=22, color=S.NOLAN, lw=0.7, edgecolor=S.SURFACE,
                zorder=3)
-    S.frame(ax, "Short passages look atypical",
+    S.frame(ax, "",
             xlabel="Words in the Nolan role's passage",
-            ylabel="Departure from type", grid="y")
+            ylabel="Excess departure of the Nolan role", grid="y")
 
     fig.savefig(out)
     plt.close(fig)

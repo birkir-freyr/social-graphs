@@ -1,0 +1,174 @@
+\documentclass[9pt,twocolumn,twoside]{pnas-new}
+% Use the lineno option to display guide line numbers if required.
+
+\articletype{Social Sciences}
+
+\templatetype{pnasresearcharticle}
+
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\title{The part or the film? Typecasting and Christopher Nolan's recurring actors}
+
+\author[a,1,2]{Hanna Margr\'et P\'etursd\'ottir}
+\author[a,1]{Birkir Freyr Konr\'a\dh sson}
+\author[a,1]{Arnar Thor Bjornsson}
+
+\affil[a]{Technical University of Denmark, Kongens Lyngby, Denmark}
+
+\leadauthor{P\'etursd\'ottir}
+
+\significancestatement{Actors who become known for one kind of role are said to be typecast. Christopher Nolan works with the same actors again and again, so we asked whether he also casts them against their type. Linking his casting network to descriptions of every role, we find that his films pull actors further from their earlier work than other directors' films do. But a co-star's role in the same film is just as far from an actor's earlier roles as the actor's own role, under Nolan and other directors alike. The departure comes from Nolan's films themselves, and plot text alone cannot say whether he also casts against type.}
+
+\authorcontributions{B.F.K. collected the casting data and built and analysed the actor--film network. H.M.P. designed and implemented the extraction of character text and the role-similarity analysis, including the director and returning-actor comparisons and the data-integrity checks. A.T.B. checked the analyses against the code and data, designed and ran the placebo, selection, network-null and era tests, built the validation sample, and wrote the abstract, introduction and discussion. All authors revised the manuscript.}
+\authordeclaration{The authors declare no competing interests.}
+\equalauthors{\textsuperscript{1}H.M.P., B.F.K. and A.T.B. contributed equally to this work.}
+\correspondingauthor{\textsuperscript{2}To whom correspondence should be addressed. E-mail: s253092@student.dtu.dk}
+
+\keywords{Two-mode networks $|$ Typecasting $|$ Text similarity $|$ Null models $|$ Christopher Nolan}
+
+\begin{abstract}
+Christopher Nolan casts the same actors in film after film. Does he also cast them against type? We built the bipartite network of his 13 films and 638 credited actors and linked every role to the sentences that describe it in the film's plot summary. Nolan roles sit further from an actor's earlier roles than the same actor's roles for other directors do ($p = 0.0002$). A placebo changes what this means. A co-star's role from the same Nolan film is just as far from the actor's earlier roles as the actor's own role ($p = 0.80$), and the same holds for other directors. The departure comes from Nolan's films, whose plots use vocabulary rarely found elsewhere in his actors' careers, and plot text cannot tell an actor's own role from a co-star's. In the network, films made close together share casts, while films with similar stories do not.
+\end{abstract}
+
+\dates{This manuscript was compiled on \today}
+\doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+
+\maketitle
+\thispagestyle{firststyle}
+\ifthenelse{\boolean{shortarticle}}{\ifthenelse{\boolean{singlecolumn}}{\abscontentformatted}{\abscontent}}{}
+
+\Firstpage
+
+\dropcap{A}n actor who becomes known for one kind of role can find that this identity both helps and limits a career. It makes the actor easy to cast, and it makes other roles harder to get \cite{article_typecast}. Film work is organised as a sequence of short projects, so careers are built through repeated collaborations \cite{faulkner1987}, and the resulting actor--film network was one of the first in which small-world structure and heavy-tailed degree distributions were measured \cite{watts1998,barabasi1999}. Casting is therefore both a labour market and a two-mode social network \cite{borgatti1997}.
+
+Christopher Nolan is known for bringing actors back. Michael Caine, Cillian Murphy and Christian Bale each appear in four or more of his films, and an actor who returns may play the same character in a sequel or someone entirely new. This raises a question the network alone cannot answer. When Nolan casts an actor, does he cast them as the kind of character they are known for, or against it?
+
+We answer in two steps. The casting network shows who Nolan brings back and when. The plot text then shows what kind of role each actor is given. We call the sentences describing a role its \emph{passage}, and an actor's \emph{type} the average of the passages of their earlier roles. Together the two steps let us ask whether Nolan casts against type, and whether the actors he keeps returning to are treated differently from those he uses once. A text measure cannot by itself tell a role apart from the film it sits in, so we test that directly by comparing each actor's role with a co-star's role from the same film.
+
+\section*{Results}
+
+\subsection*{Nolan reuses actors in eras}
+Nolan's 13 feature films list 788 actors and 878 casting links on TMDB. We drop the 160 credits marked as uncredited, voice or archive footage, which are mostly extras and off-screen roles, leaving a connected bipartite network of 638 actors and 718 links. Of these actors, 51 (8.0\%) appear in two or more films.
+
+Nolan does not reuse actors evenly over his career. The closer two films are in time, the more actors they share (Fig.~\ref{fig:casting-network}; Spearman $\rho = -0.47$ over 78 film pairs, $p = 10^{-4}$, permutation test). The Batman sequels share casts by design, but leaving them out changes little ($\rho = -0.43$, $p = 0.002$). \Parasplit
+The ring in Fig.~\ref{fig:casting-network} therefore splits into a Batman-era side and a side of recent ensemble films, joined by a few actors who span both.
+
+\begin{figure*}[t!]
+\centering
+\includegraphics[width=\linewidth]{figures/nolan_main_cast_network.png}
+\caption{\textbf{Nolan's main casts are joined by a few returning actors, and reuse comes in eras.} The main cast (top ten billing) of Nolan's 13 films as a bipartite network. Films are coloured squares on the ring, placed next to the films they share actors with; the 83 actors in only one film fan out in grey, and the 17 who return (black, area growing with their number of films) sit between the films they link, joined by links in each film's colour. Michael Caine and Cillian Murphy link the Batman films (left) to the recent ensembles (right); the three earliest films share almost no main cast with the rest. Uncredited, voice and archive-footage credits are excluded.}
+\label{fig:casting-network}
+\end{figure*}
+
+Betweenness centrality \cite{freeman1977,brandes2001} measures how often an actor lies on the shortest paths between other nodes. Michael Caine, in seven films, has the highest betweenness, followed by Cillian Murphy and Gary Oldman (Table~\ref{tab:casting-betweenness}). Betweenness grows with the number of films an actor appears in, so we compare each score with 200 random networks in which every actor keeps their number of films and every film its cast size \cite{maslov2002}. No actor bridges the network more than their number of films predicts (Caine $z = 1.4$, $p = 0.17$; Murphy $z = 1.9$, $p = 0.07$). The actors who return are the regulars whose roles we compare with everyone else's below.
+
+\begin{table}[h!]
+\centering
+\caption{Actors in four or more Nolan films, ranked by betweenness. Null $z$: distance from the mean of 200 degree-preserving random networks, in standard deviations.}
+\begin{tabular}{@{}lrrr@{}}
+\hline
+Actor & Films & Betweenness & Null $z$ \\
+\hline
+Michael Caine & 7 & 0.185 & $+1.4$ \\
+Cillian Murphy & 6 & 0.146 & $+1.9$ \\
+Gary Oldman & 4 & 0.069 & $+1.9$ \\
+John Nolan & 4 & 0.061 & $+1.2$ \\
+Christian Bale & 4 & 0.060 & $+1.2$ \\
+Russ Fega & 5 & 0.046 & $-1.4$ \\
+\hline
+\end{tabular}
+\label{tab:casting-betweenness}
+\end{table}
+
+\subsection*{Nolan roles depart from the actor's earlier work}
+To compare roles rather than credits, we extended the network to every earlier film of Nolan's actors (6{,}890 further casting links across 5{,}735 films). For 618 of the 878 Nolan appearances (70\%), the actor has at least one earlier credit in another director's film. We kept the 88 actors billed in the top ten of a Nolan film with at least three earlier credits, collected their 2{,}639 roles, and extracted for each role the sentences of the film's Wikipedia plot that name the character (Methods). We found a plot section for 2{,}087 of the 2{,}310 films, and 1{,}249 roles (47\%) yielded a passage of at least 25 words.
+
+We represent each passage as a TF--IDF vector \cite{salton1988} with every name masked. An actor's type, at the time of a given film, is the centroid of the passages of their roles in earlier films. A role's \emph{departure} is one minus its cosine similarity to that type. Some actors simply play varied roles, so we subtract the departure of the actor's own earlier roles, each scored against the rest. What remains is the \emph{excess departure}.
+
+Nolan roles depart further than the actor's own earlier roles do. Over 82 Nolan roles played by 55 actors, the mean excess departure is $+0.023$, and 66 of the 82 roles lie further from type than their control ($z = 4.2$; $p \approx 10^{-4}$, the smallest value our 10{,}000-draw actor-clustered sign-flip test can return). One alternative explanation needs checking. Short passages look further from type ($r = -0.60$), and Nolan's passages are shorter (median 132 against 169 words). With every passage cut to the same length, from 40 to 120 words, the effect remains. Five other checks move the estimate only between $+0.022$ and $+0.027$ (Methods).
+
+Other directors' films also move actors away from their past, but only by $+0.004$ on average. Fig.~\ref{fig:directors} places Nolan among the 47 directors with at least three scored roles. His mean lies far above the spread expected at his sample size ($z = 5.2$). No other director lies above it (highest $z = 1.9$), and four with three or four roles lie below it, against 2.3 expected by chance among 46 directors. Because his 82 roles come from 55 actors, the cleaner comparison holds the actor fixed. For 40 of the 52 actors who also have scored roles with other directors, their Nolan roles depart more than their other later roles (mean difference $+0.017$; actor-clustered sign-flip $z = 3.7$, $p = 0.0002$).
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=\linewidth]{figures/fig4_directors.png}
+\caption{\textbf{Among the directors in our data, only Nolan's roles depart from type more than chance allows.} Mean excess departure for each director with at least three scored roles, against that director's number of roles (log scale). The grey band is $\pm 1.96$ standard errors around the pooled mean of all non-Nolan roles (dashed line) at each sample size. Small directors scatter widely, so six have a higher raw mean than Nolan, but Nolan ($n = 82$, $z = 5.2$) is the only director above the band; four small directors lie just below it.}
+\label{fig:directors}
+\end{figure}
+
+\subsection*{A co-star's role departs just as far}
+A Nolan role could be far from an actor's past for two reasons. Nolan may give the actor an unusual role, or Nolan's films may simply be unusual. The second is plausible here. The words that most distinguish Nolan passages from all others (\emph{subconscious}, \emph{inverted}, \emph{dilation}, \emph{tesseract}, \emph{thermonuclear}) never occur in a passage from any other director's film. Nolan passages are also less similar to the rest of the corpus than other passages are (median cosine to the corpus centroid 0.096 against 0.124).
+
+We separate the two explanations with a placebo. For each Nolan role, we score a co-star's passage from the same film against the actor's type, exactly as we score the actor's own passage. If Nolan cast against type, the actor's own role should depart more than the co-star's. It does not. The actor's own role departs by $+0.023$ and the co-star's by $+0.023$ (Fig.~\ref{fig:role-or-film}a; difference $+0.001$, 95\% interval $-0.005$ to $+0.007$, $p = 0.80$). Co-stars' passages are longer (median 172 against 134 words), which if anything lowers their departure, and with every passage cut to 60 words the difference is $-0.001$. The same holds in other directors' films ($-0.003$, $p = 0.41$). It also holds after we remove the 2{,}645 terms concentrated in a single film, which weakens the Nolan effect ($+0.011$ relative to the same actors' roles for other directors, $p = 0.012$) but leaves the placebo difference at $+0.001$. What differs is the film. For the 36 actors with placebo scores in both kinds of film, a co-star's role in a Nolan film lies further from the actor's type than a co-star's role in the actor's other films ($+0.015$, $p = 0.002$).
+
+\begin{figure*}[t!]
+\centering
+\includegraphics[width=\linewidth]{figures/fig3_role_or_film.png}
+\caption{\textbf{An actor's own role is no further from their type than a co-star's role in the same film, by either measure.} (\emph{a}) Mean excess departure from the actor's type, with actor-clustered bootstrap 95\% intervals, for the actor's own role and for a co-star's role from the same film scored against the same actor's type, for 82 Nolan roles (left pair) and the 103 roles with other directors that have a co-star in our data (right pair). The bars within each pair do not differ; the Nolan pair is higher. (\emph{b}) Share of all other actors whose type is further from a passage than the cast actor's type (0.5 = an actor drawn at random), for the actor's own role and for a co-star's role in the same film; types are built from three earlier roles each.}
+\label{fig:role-or-film}
+\end{figure*}
+
+A ranking asks the same question a second way. For each role, we rank the cast actor's type among the types of every other actor with at least three earlier roles by then (median 54 actors). We do the same for a co-star's passage from the same film. Every type is built from the actor's three most recent earlier roles, because a type built from more roles lies closer to the average passage (Methods). The actor's type fits their own role no better than a co-star's, for Nolan (0.52 against 0.55; difference $-0.03$, $p = 0.21$) or for other directors (0.58 against 0.56; $+0.02$, $p = 0.48$; Fig.~\ref{fig:role-or-film}b). Plot text therefore cannot detect casting at the level of the role, for Nolan or anyone else.
+
+Heath Ledger's Joker shows what the measure sees. It scores as close to his type ($-0.003$) because it shares \emph{police}, \emph{kill} and \emph{gang} with his outlaw roles in \emph{Ned Kelly} and \emph{Two Hands}. A plot summary records what a character does, not how the role is played. The measure therefore captures the kind of story an actor is in, which is how the typecasting literature defines an actor's identity \cite{article_typecast}.
+
+\subsection*{Returning actors get different roles, and so do co-stars}
+Counting a reprised character once, 14 actors played two or more distinct Nolan characters. These characters resemble each other less than size-matched sets of the same actors' other roles do (mean pairwise cosine 0.012 against 0.022; 13 of 14 actors; $z = -2.4$, $p = 0.010$). The film effect explains this too. Two characters played by co-stars in the same two Nolan films are just as dissimilar (mean cosine 0.0118 against 0.0123, $p = 0.88$), because Nolan's films are lexically unlike each other.
+
+\subsection*{Network position does not predict the kind of role}
+Films that share more actors are not described more alike. Leaving out the shared actors' passages, the number of shared actors and the cosine between two films' passages correlate at $\rho = 0.05$ over 77 film pairs ($p = 0.72$, Mantel test; $-0.11$ without the Batman films). The 17 actors in two or more Nolan films depart from type no more than the 38 who appear once, with or without subtracting a co-star's departure (all $p > 0.2$), and departure does not correlate with betweenness ($|\rho| < 0.2$). Outside Nolan's films, co-stars have more similar types than other pairs of actors (cosine 0.23 against 0.16). This is because prolific actors co-star more often and have types closer to the corpus mean (Methods). One lead remains. The types of the nine actors in three or more Nolan films fit a co-star's passage in his films better than one-timers' types do (rank 0.63 against 0.51; $p = 0.06$, or $0.04$ with five-role types). With nine actors and several comparisons, we treat this as a lead for future work.
+
+\subsection*{Human ratings do not follow the measure}
+To check what cosine similarity tracks, we rated 24 pairs of passages on a five-point scale without seeing their scores (Methods). Within an actor's roles, the cosine similarity of a pair did not predict how similar we rated the two characters (Spearman $\rho = 0.00$, $n = 18$). The pairs the measure scores as most alike are two different characters from the same Nolan film (mean cosine 0.43). We rated them 3.0 on average, against 2.0 for the within-actor pairs the measure ranks highest. The measure therefore does not track what kind of character a role is. It tracks the vocabulary of the story the role sits in, which is why the same-film comparison above is needed. Reading the 48 passages also exposed three extraction errors: a passage taken from the wrong film's article, one about the character's brother, and one that merges two characters who share a name.
+
+\section*{Discussion}
+Nolan reuses his actors and places them in films unlike those they had made before. His roles depart further from an actor's earlier work than the same actor's roles for other directors do, and among the 47 directors in our data only his depart more than chance allows. But a co-star's role from the same film is just as far from the actor's type, and the actor's type fits their own role no better than a co-star's, under Nolan or any other director. The tempting conclusion, that Nolan casts against type, therefore does not survive the placebo. Neither does the idea that he gives returning actors deliberately different roles. Both effects reflect what makes Nolan's films recognisable, plots built around dreams, inverted time, black holes and the bomb, told in vocabulary that rarely appears elsewhere in his actors' careers. The typecasting literature defines type by the kind of film an actor works in \cite{article_typecast}, and in that sense Nolan does move actors away from their type. He does it through the films he makes. Whether he also does it through the roles he assigns, plot text cannot say.
+
+The network fits this picture. Reuse is concentrated in time, so Nolan's regulars come in eras, the Batman years and the recent ensembles. The actors who join the eras are those who made the most films, and their number of films explains their high betweenness. Shared casts do not follow shared stories, and an actor's place in the network does not predict the kind of role they get.
+
+The measure has clear limits. Passages share most of their vocabulary with the film, and an actor's roles overlap little (median cosine 0.009 between a Nolan role and an earlier role). The measure follows the story a character is in and says little about personality. It barely recognises even a character played again. For 16 roles that reprise an earlier character, the actor's own role is no closer to their type than a co-star's ($-0.007$, $p = 0.67$), and only slightly closer to the earlier version of the character ($p = 0.07$). Human ratings did not follow it either. Passages cover 47\% of roles and favour larger ones, the extraction makes errors we found by reading, and the actor pool is Nolan-centric by construction, so the director comparison describes only the directors these actors work with. Testing casting at the level of the role needs a representation of the character itself, such as the latent personas of Bamman et al.\ \cite{bamman2013}.
+
+The lesson reaches beyond Nolan. Any study that measures typecasting from text compares a role with an actor's past, and every role comes with its film. Without a comparison that holds the film fixed, such as a co-star's role from the same film, the film is mistaken for the casting.
+
+\matmethods{
+\subsection*{Casting network}
+We matched the feature films Christopher Nolan directed, from his Wikipedia filmography, to The Movie Database (TMDB) \cite{tmdb} and kept every film released by 18 November 2026. From the TMDB cast lists we built an undirected, unweighted bipartite network with one link per actor--film pair, identified by TMDB IDs \cite{latapy2008}. We removed credits marked as uncredited, voice or archive footage; all network results use the remaining 638 actors and 718 links.
+
+We computed exact betweenness centrality in NetworkX \cite{networkx}, excluding endpoints and normalised over all 651 nodes. For the null model we rewired the bipartite network by degree-preserving swaps \cite{maslov2002}: two links $(a_1, f_1)$ and $(a_2, f_2)$ become $(a_1, f_2)$ and $(a_2, f_1)$ when neither new link exists. Each of 200 realisations starts from the observed network and makes $10m$ successful swaps ($m = 718$), keeping every actor's number of films and every film's cast size; we report $z$-scores and two-sided empirical $p$-values. Ten null networks were disconnected; we kept them.
+
+For the era test we computed the Spearman correlation between the number of actors two films share and the gap between their release years over all 78 film pairs, and compared it with 10{,}000 permutations of the release years across films (a Mantel-type test \cite{mantel1967}). Fig.~\ref{fig:casting-network} uses the main cast (top-ten billing). A 2-opt search orders the films around the ring to minimise the arc length between films that share actors, and a spring layout with the films held fixed places the returning actors.
+
+\subsection*{Earlier film credits}
+For each actor in a Nolan film we collected their TMDB filmography, linked each film to IMDb by title ID \cite{imdb} and kept titles of IMDb type \emph{movie} running longer than 40 minutes. An earlier credit counts for a Nolan appearance if its release year precedes the Nolan film's.
+
+\subsection*{Role text and similarity}
+\paragraph*{Roles} We kept actors billed in the top ten of a credited Nolan role with at least three earlier credits, and all their earlier roles. Plot summaries rarely describe smaller roles, and three earlier roles is the fewest from which a leave-one-out type can be built. For each film we took the plot section (\emph{Plot}, \emph{Synopsis}, \emph{Premise}, \emph{Story} or \emph{Storyline}, with subsections) of its English Wikipedia article \cite{wikipedia}, chosen among the search results by whether the title or snippet named a film of the stated year. We kept the sentences naming the character, by full credited name or any capitalised component of it after removing honorifics. A role entered the analysis with at least 25 words; shorter passages contain too few weighted terms to compare.
+
+\paragraph*{Masking} Names identify a role without describing it. We masked the character's own name and the film title, and, in our primary specification, every other capitalised word that occurs somewhere other than at the start of a sentence. Without the second step, two roles in one film share the names of everyone in it, and an actor returning in a franchise gains similarity to their own earlier work.
+
+\paragraph*{Departure} We use TF--IDF rather than sentence embeddings because every similarity can then be traced to the words that produce it, which is how we diagnosed the film effect (the Ledger example). We represent passages as L2-normalised TF--IDF vectors over lowercase alphabetic tokens longer than two characters, with function words and film-description words (\emph{film}, \emph{scene}, \emph{plot}, \emph{later}) removed and $\mathrm{IDF}_t = \ln(N/\mathrm{DF}_t)$, keeping terms that occur in at least two passages. For a role in a film released in year $y$, the actor's earlier roles $P$ are those in films released before $y$ by a different director. Departure is $1 - \cos$ between a vector and the normalised centroid of $P$. A centroid of $n$ roles is denser than one of $n - 1$, so we score both sides leave-one-out: for each $i$, we compare the role and the held-out role $P_i$ with the centroid of $P \setminus \{P_i\}$ and average the results. On synthetic data with no effect and three earlier roles per actor, scoring only the controls leave-one-out produced false positives in 56\% of runs; the symmetric scoring still did so in 12\%, which is why we also report results for actors with eight or more earlier roles. Excess departure is the role's departure minus the mean departure of the held-out roles. Five robustness checks change the mean Nolan excess departure little: masking only the character's own name ($+0.022$), dropping descriptively credited roles such as \emph{Guard} ($+0.024$), dropping 14 roles whose passages mostly describe a co-star with the same surname ($+0.024$), counting a reprised character once ($+0.024$), and requiring eight or more earlier roles per actor ($+0.027$).
+
+\paragraph*{Inference} An actor can contribute several Nolan roles that share a centroid, so we randomise by actor. Under the null, the sign of each actor's summed contribution is arbitrary; we flip signs in 10{,}000 draws and report two-sided $p = (1 + \#\{|T_b| \geq |T_{\mathrm{obs}}|\})/(B + 1)$. We use the same test for the comparison with other directors, where each actor contributes one number: the mean excess departure of their Nolan roles minus that of their roles with other directors. Fig.~\ref{fig:directors} expresses each director's mean as a $z$-score against the pooled non-Nolan roles, using the standard error at that director's number of roles. Directors come from the opening sentences of each film's Wikipedia article (89\% of films with a usable passage); a hand check of 44 parses found one error, which we fixed.
+
+\paragraph*{Placebo and selection test} For the placebo, each role's co-stars are the other characters in our data from the same film, played by other actors and not sharing the character's surname. We score each co-star passage against the actor's type with the same leave-one-out procedure and average over co-stars. For the selection test, we compute the cosine between a passage and the type of every other actor with at least three earlier roles, built by the same rule as the cast actor's type (films released before the role's film and not by its director), and report the share of those actors whose type is further from the passage than the cast actor's, for the actor's own passage and averaged over co-stars' passages. A centroid of more roles lies closer to the corpus mean (Spearman $\rho = 0.93$ between an actor's number of passages and their type's cosine to the corpus centroid), so with all earlier roles the rank grew with their number ($\rho = 0.66$); we build every type in this test from the three most recent eligible roles ($\rho = 0.02$; five give the same result). Confidence intervals in Fig.~\ref{fig:role-or-film} come from 5{,}000 bootstrap resamples of actors. For the vocabulary check we removed every term of which at least half of the passages containing it come from a single film.
+
+\paragraph*{Network and text} A film is the centroid of its role passages, without those of actors in both films of a pair; we permute film labels 10{,}000 times. Regulars and one-timers are compared on actor means by label permutation. Co-stars share a non-Nolan TMDB film; each pair's types exclude their shared films, and we permute actor labels (QAP). With $t$ a type's cosine to the corpus centroid, $\cos(a, b) = t_a t_b + \sqrt{1 - t_a^2}\sqrt{1 - t_b^2}\,\cos(a_\perp, b_\perp)$; the co-star gap lies in the first term, and the distinctive component $\cos(a_\perp, b_\perp)$ does not differ ($p = 0.25$ after removing each actor's mean).
+
+\paragraph*{Returning actors} We merge an actor's Nolan characters when their credited names share a surname, so a character reprised in a sequel counts once; Ducard and Ra's al Ghul we merge by hand, since the film reveals them to be one character. We compare their mean pairwise cosine with that of 200 random same-sized subsets of the actor's other roles, and with all pairs of co-stars' characters from the same two Nolan films. As a positive control, a reprise is a role whose credited name shares a surname with the actor's earlier role in another film (two false matches removed by hand), scored against all earlier roles.
+
+\paragraph*{Validation} We drew 24 pairs: 18 pairs of an actor's Nolan role and an earlier role, six from each tercile of cosine; five pairs of different characters from the same Nolan film with high cosine; and Ledger's Joker with his Ned Kelly. Passages had 30--250 words (Ledger excepted) and no descriptive credits. We read the passages in random order, without scores or pair types, and rated how similar the two characters are as kinds of character from 1 (completely different) to 5 (essentially the same), ignoring the films. We report the Spearman correlation between rating and cosine similarity with a permutation $p$-value ($p = 1.0$ within actors; $\rho = 0.23$, $p = 0.29$ over all 23 non-case pairs). Each pair was rated once, so we report no inter-rater agreement.\par
+}
+\showmatmethods{}
+
+\newpage
+\acknow{We thank the teaching staff of the DTU course Social Graphs and Interactions for feedback on the project.}
+\showacknow{}
+
+\dataavail{All code, data and character passages are available at \url{https://github.com/birkir-freyr/social-graphs} (folder \texttt{Final project}). Cast lists are from TMDB and plot summaries from English Wikipedia (CC BY-SA 4.0). This product uses the TMDB API but is not endorsed or certified by TMDB.}
+
+\bibsplit[9]
+
+\bibliography{references}
+
+\end{document}

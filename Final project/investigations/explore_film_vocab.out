@@ -1,0 +1,35 @@
+1248 usable passages: 96 Nolan, 1152 other
+typicality (cos to corpus centroid, own film excluded): Nolan median 0.0957  other median 0.1236
+within-film cosine between different characters: Nolan mean 0.2495 (n pairs 341), other mean 0.3867 (n pairs 90)
+non-Nolan films with 2+ characters in our data: 78
+terms most over-represented in Nolan passages (ratio, term, #nolan, #other):
+    84.0  tars               7    0
+    84.0  subconscious       7    0
+    84.0  equation           7    0
+    72.0  undelivered        6    0
+    72.0  specifying         6    0
+    72.0  projection         6    0
+    72.0  inverted           6    0
+    72.0  invasive           6    0
+    72.0  espionage          6    0
+    72.0  dilation           6    0
+    72.0  binary             6    0
+    60.0  turnstile          5    0
+    60.0  suitors            5    0
+    60.0  measurements       5    0
+    60.0  lander             5    0
+    60.0  joseph             5    0
+    60.0  invert             5    0
+    60.0  intercepting       5    0
+    60.0  implanting         5    0
+    60.0  hypocenter         5    0
+    60.0  forger             5    0
+    60.0  competitor         5    0
+    60.0  artifact           5    0
+    60.0  architecture       5    0
+    48.0  weaponize          4    0
+    48.0  vaporize           4    0
+    48.0  thermonuclear      4    0
+    48.0  tesseract          4    0
+    48.0  teleportation      4    0
+    48.0  shade              4    0

@@ -1,0 +1,39 @@
+films with passages: 13 | passages per film: {'Following': 2, 'Memento': 7, 'Insomnia': 5, 'Batman Begins': 11, 'The Prestige': 6, 'The Dark Knight': 7, 'Inception': 10, 'The Dark Knight Rises': 10, 'Interstellar': 9, 'Dunkirk': 6, 'Tenet': 7, 'Oppenheimer': 8, 'The Odyssey': 8}
+
+=== all films (13 films, 78 pairs) ===
+  shared actors ~ text (shared actors' passages removed)   rho +0.053  p 0.7202  (pairs 77)
+  Jaccard ~ text (shared removed)                          rho +0.022  p 0.8681  (pairs 77)
+  shared actors ~ text (all passages)                      rho +0.143  p 0.3304  (pairs 78)
+  years apart ~ text (shared removed)                      rho -0.238  p 0.0520  (pairs 77)
+  years apart ~ shared actors                              rho -0.449  p 0.0003  (pairs 78)
+  shared actors ~ text | years (partial)                   rho -0.061  p 0.6771  (pairs 77)
+  top text-similar pairs (cos, shared actors):
+    0.126   6  Batman Begins / The Dark Knight
+    0.112   7  The Dark Knight / The Dark Knight Rises
+    0.063   0  Memento / Oppenheimer
+    0.059   0  Insomnia / Dunkirk
+    0.058   0  Interstellar / Dunkirk
+    0.057   3  The Prestige / The Dark Knight Rises
+  least similar:
+    0.013   4  Dunkirk / Oppenheimer
+    0.013   0  The Prestige / Oppenheimer
+    0.003   0  Following / Oppenheimer
+
+=== without Batman (10 films, 45 pairs) ===
+  shared actors ~ text (shared actors' passages removed)   rho -0.112  p 0.4963  (pairs 45)
+  Jaccard ~ text (shared removed)                          rho -0.093  p 0.5583  (pairs 45)
+  shared actors ~ text (all passages)                      rho -0.080  p 0.6345  (pairs 45)
+  years apart ~ text (shared removed)                      rho -0.113  p 0.4424  (pairs 45)
+  years apart ~ shared actors                              rho -0.415  p 0.0038  (pairs 45)
+  shared actors ~ text | years (partial)                   rho -0.175  p 0.3094  (pairs 45)
+  top text-similar pairs (cos, shared actors):
+    0.063   0  Memento / Oppenheimer
+    0.059   0  Insomnia / Dunkirk
+    0.058   0  Interstellar / Dunkirk
+    0.053   0  Memento / The Odyssey
+    0.051   2  Inception / Interstellar
+    0.051   1  Dunkirk / The Odyssey
+  least similar:
+    0.013   4  Dunkirk / Oppenheimer
+    0.013   0  The Prestige / Oppenheimer
+    0.003   0  Following / Oppenheimer

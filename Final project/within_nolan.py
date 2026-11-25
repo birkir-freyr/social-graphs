@@ -30,21 +30,29 @@ N_PERM = 10000
 TITLES = {"commissioner", "detective", "professor", "doctor", "captain",
           "commander", "officer", "sergeant", "lieutenant", "colonel",
           "general", "major", "agent", "inspector", "sir", "lord", "lady",
-          "mister", "miss", "mrs", "young", "old", "the"}
+          "mister", "miss", "mrs", "young", "old", "the", "jr"}
+
+# Same character under names that share no surname.
+ALIASES = {"ducard": "ghul"}      # Ducard is revealed to be Ra's al Ghul
 
 
 def char_tokens(c):
-    """Name tokens of a credited character, titles removed.
+    """Surname of each alias of a credited character, titles removed.
 
-    'Commissioner Gordon', 'Gordon' and 'Jim Gordon' are one part. Taking
-    the first token would make them three, which would count a reprised
-    character once per sequel — the opposite of what the paper states.
+    'Commissioner Gordon', 'Gordon' and 'Jim Gordon' are one part, and
+    'Dr. Jonathan Crane / Scarecrow' gives {crane, scarecrow}. Only the
+    LAST name token of each alias is used: matching on any token merged
+    characters that merely share a first name ('Robert Fischer, Jr.' and
+    'J. Robert Oppenheimer'), undercounting distinct characters.
     """
     c = re.sub(r"\(.*?\)", " ", c or "")
-    c = re.sub(r"[^A-Za-z\s/]", " ", c)
-    c = c.replace("/", " ")
-    return {t.lower() for t in c.split()
-            if len(t) > 2 and t.lower() not in TITLES}
+    out = set()
+    for alias in c.split("/"):
+        words = [w.lower() for w in re.sub(r"[^A-Za-z\s]", " ", alias).split()
+                 if len(w) > 2 and w.lower() not in TITLES]
+        if words:
+            out.add(words[-1])
+    return out | {ALIASES[t] for t in out if t in ALIASES}
 
 
 def group_characters(roles):

@@ -1,0 +1,4 @@
+all credited                         pairs 78  Spearman(shared, year gap) -0.465  p 0.0001
+all credited, no Batman films        pairs 45  Spearman(shared, year gap) -0.432  p 0.0018
+main cast                            pairs 78  Spearman(shared, year gap) -0.431  p 0.0005
+main cast, no Batman films           pairs 45  Spearman(shared, year gap) -0.314  p 0.0154

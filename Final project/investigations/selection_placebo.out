@@ -1,0 +1,29 @@
+
+[k = 3] roles with a same-film co-star: Nolan 82, other 101
+   Nolan  own 0.520  co-star passage 0.548
+   other  own 0.585  co-star passage 0.565
+   Nolan: own minus co-star passage                           mean -0.0272  z -1.27  p 0.2107  (n=82, actors=55)
+   Other films: own minus co-star passage                     mean +0.0203  z +0.70  p 0.4830  (n=101, actors=42)
+   Nolan minus same actor's other films                       mean -0.0569  z -1.15  p 0.2576  (n=36, actors=36)
+
+[k = 5] roles with a same-film co-star: Nolan 75, other 87
+   Nolan  own 0.539  co-star passage 0.560
+   other  own 0.592  co-star passage 0.578
+   Nolan: own minus co-star passage                           mean -0.0212  z -0.80  p 0.4302  (n=75, actors=48)
+   Other films: own minus co-star passage                     mean +0.0139  z +0.57  p 0.5858  (n=87, actors=37)
+   Nolan minus same actor's other films                       mean -0.0558  z -1.11  p 0.2749  (n=32, actors=32)
+
+--- regulars vs one-timers (Nolan roles; actor means; label permutation 10k) ---
+    own = fit to own part; placebo = fit to a co-star's part (film fit); diff = own - placebo
+k=3 own     2+ films: regulars +0.550 (n=17)  one-timers +0.446  diff +0.104  p 0.186
+k=3 own     3+ films: regulars +0.650 (n=9)  one-timers +0.444  diff +0.205  p 0.036
+k=3 placebo 2+ films: regulars +0.550 (n=17)  one-timers +0.520  diff +0.030  p 0.554
+k=3 placebo 3+ films: regulars +0.630 (n=9)  one-timers +0.510  diff +0.120  p 0.061
+k=3 diff    2+ films: regulars -0.000 (n=17)  one-timers -0.074  diff +0.074  p 0.253
+k=3 diff    3+ films: regulars +0.020 (n=9)  one-timers -0.066  diff +0.086  p 0.288
+k=5 own     2+ films: regulars +0.566 (n=16)  one-timers +0.455  diff +0.112  p 0.216
+k=5 own     3+ films: regulars +0.654 (n=9)  one-timers +0.454  diff +0.199  p 0.063
+k=5 placebo 2+ films: regulars +0.572 (n=16)  one-timers +0.516  diff +0.056  p 0.264
+k=5 placebo 3+ films: regulars +0.636 (n=9)  one-timers +0.511  diff +0.125  p 0.038
+k=5 diff    2+ films: regulars -0.006 (n=16)  one-timers -0.061  diff +0.056  p 0.456
+k=5 diff    3+ films: regulars +0.018 (n=9)  one-timers -0.057  diff +0.074  p 0.400

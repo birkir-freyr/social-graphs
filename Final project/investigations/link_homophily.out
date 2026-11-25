@@ -1,0 +1,63 @@
+typed actors: 70; without TMDB filmography: []
+pairs 2415 (dropped 0 with < 2 passages left); co-star pairs 517; Nolan co-cast pairs 411
+
+mean type similarity: co-stars 0.2287  others 0.1596
+1 co-star minus other pairs                                      obs +0.0691  null mean -0.0000  p 0.0001
+2 Spearman(shared films, similarity)                             obs +0.2918  null mean -0.0002  p 0.0001
+3 Nolan co-cast minus other pairs                                obs +0.0571  null mean +0.0001  p 0.0001
+3b Nolan co-cast minus other, pairs never co-starred elsewhere   obs +0.0340  null mean +0.0002  p 0.0010
+Nolan co-cast pairs: mean similarity 0.2217  (n=411)
+  shared non-Nolan films 0-0: pairs  1898  mean sim 0.1596
+  shared non-Nolan films 1-1: pairs   375  mean sim 0.2134
+  shared non-Nolan films 2-3: pairs   121  mean sim 0.2664
+  shared non-Nolan films 4-99: pairs    21  mean sim 0.2854
+
+actors coded female by pronouns: 14 of 70: ['Anne Hathaway', 'Charlize Theron', 'Ellen Burstyn', 'Elliot Page', 'Emily Blunt', 'Fiona Dourif', 'Florence Pugh', 'Jessica Chastain', 'Jorja Fox', 'Katharine Isabelle', 'Katie Holmes', 'Mackenzie Foy', 'Piper Perabo', 'Scarlett Johansson']
+
+[all terms] residual similarity after gender, era, passages, genericness
+  co-star minus other                                      -0.0017  p 0.0157
+  Nolan co-cast minus other                                -0.0003  p 0.7118
+  Nolan co-cast minus other, never co-starred elsewhere    +0.0005  p 0.5423
+  OLS coefficients: same gender +0.0023, era gap per year -0.00005, co-star -0.0019  (R2 of controls shown by the drop below)
+  raw co-star gap +0.0691
+
+generic vocabulary: kept 966 of 13772 terms
+generic terms: co-stars 0.4052  others 0.3052
+
+[generic terms only] residual similarity after gender, era, passages, genericness
+  co-star minus other                                      -0.0020  p 0.4333
+  Nolan co-cast minus other                                -0.0036  p 0.1721
+  Nolan co-cast minus other, never co-starred elsewhere    -0.0019  p 0.5053
+  OLS coefficients: same gender +0.0056, era gap per year -0.00014, co-star -0.0023  (R2 of controls shown by the drop below)
+  raw co-star gap +0.1000
+
+=== actor fixed effects (double-centred similarity), QAP 10,000 ===
+  [all terms] co-star minus other                                    +0.0066  null -0.0000  p 0.0001
+  [all terms] Spearman(shared films, sim)                            +0.0940  null -0.0004  p 0.0001
+  [all terms] Nolan co-cast minus other                              +0.0055  null +0.0000  p 0.0008
+  [all terms] Nolan co-cast minus other, never co-starred elsewhere  +0.0014  null -0.0000  p 0.3675
+     shared films 0-0: pairs  1898  mean centred sim -0.0014
+     shared films 1-1: pairs   375  mean centred sim +0.0024
+     shared films 2-3: pairs   121  mean centred sim +0.0113
+     shared films 4-99: pairs    21  mean centred sim +0.0184
+  [generic terms only] co-star minus other                                    +0.0073  null -0.0000  p 0.0001
+  [generic terms only] Spearman(shared films, sim)                            +0.0903  null -0.0003  p 0.0001
+  [generic terms only] Nolan co-cast minus other                              +0.0074  null +0.0000  p 0.0005
+  [generic terms only] Nolan co-cast minus other, never co-starred elsewhere  +0.0027  null +0.0000  p 0.2245
+     shared films 0-0: pairs  1898  mean centred sim -0.0016
+     shared films 1-1: pairs   375  mean centred sim +0.0029
+     shared films 2-3: pairs   121  mean centred sim +0.0127
+     shared films 4-99: pairs    21  mean centred sim +0.0161
+
+=== distinctive part of each type (mainstream direction removed) ===
+mean: co-stars -0.0169  others -0.0123
+  [raw] co-star minus other                                    -0.0046  null -0.0000  p 0.0004
+  [raw] Nolan co-cast minus other                              -0.0050  null +0.0000  p 0.0003
+  [raw] Nolan co-cast minus other, never co-starred elsewhere  -0.0027  null +0.0000  p 0.0537
+  [double-centred] co-star minus other                                    +0.0009  null -0.0000  p 0.2475
+  [double-centred] Nolan co-cast minus other                              -0.0000  null +0.0000  p 0.9656
+  [double-centred] Nolan co-cast minus other, never co-starred elsewhere  +0.0006  null +0.0000  p 0.5364
+     shared films 0-0: pairs  1898  mean distinctive sim -0.0123
+     shared films 1-1: pairs   375  mean distinctive sim -0.0158
+     shared films 2-3: pairs   121  mean distinctive sim -0.0193
+     shared films 4-99: pairs    21  mean distinctive sim -0.0228

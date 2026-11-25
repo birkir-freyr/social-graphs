@@ -1,0 +1,22 @@
+
+min earlier roles = 3
+   Nolan role vs own earlier roles                            mean +0.0234  z +4.22  p 0.0001  (n=82, actors=55)
+   Nolan minus same actor's other later roles                 mean +0.0165  z +3.75  p 0.0003  (n=52, actors=52)
+   Nolan real role minus same-film placebo                    mean +0.0008  z +0.26  p 0.8008  (n=82, actors=55)
+
+min earlier roles = 5
+   Nolan role vs own earlier roles                            mean +0.0252  z +4.19  p 0.0001  (n=75, actors=48)
+   Nolan minus same actor's other later roles                 mean +0.0192  z +4.06  p 0.0002  (n=47, actors=47)
+   Nolan real role minus same-film placebo                    mean +0.0004  z +0.13  p 0.9008  (n=75, actors=48)
+
+min earlier roles = 8
+   Nolan role vs own earlier roles                            mean +0.0269  z +4.06  p 0.0001  (n=62, actors=40)
+   Nolan minus same actor's other later roles                 mean +0.0224  z +4.17  p 0.0002  (n=39, actors=39)
+   Nolan real role minus same-film placebo                    mean +0.0006  z +0.18  p 0.8704  (n=62, actors=40)
+
+min earlier roles = 12
+   Nolan role vs own earlier roles                            mean +0.0285  z +3.76  p 0.0001  (n=49, actors=29)
+   Nolan minus same actor's other later roles                 mean +0.0306  z +4.23  p 0.0001  (n=28, actors=28)
+   Nolan real role minus same-film placebo                    mean -0.0014  z -0.29  p 0.7885  (n=49, actors=29)
+
+ Nolan role vs own earlier roles, reprised characters once  mean +0.0239  z +4.53  p 0.0001  (n=73, actors=55)

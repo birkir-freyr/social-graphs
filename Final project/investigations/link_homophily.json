@@ -1,0 +1,116 @@
+{
+ "1 co-star minus other pairs": {
+  "obs": 0.06914135840753133,
+  "null_mean": -4.679968568834597e-05,
+  "p": 9.999000099990002e-05
+ },
+ "2 Spearman(shared films, similarity)": {
+  "obs": 0.29180041985742766,
+  "null_mean": -0.0001523745924157679,
+  "p": 9.999000099990002e-05
+ },
+ "3 Nolan co-cast minus other pairs": {
+  "obs": 0.057057749974028515,
+  "null_mean": 0.0001084829897190994,
+  "p": 9.999000099990002e-05
+ },
+ "3b Nolan co-cast minus other, pairs never co-starred elsewhere": {
+  "obs": 0.033985677885543686,
+  "null_mean": 0.00017014680533487033,
+  "p": 0.000999900009999
+ },
+ "all terms: co-star minus other": {
+  "obs": -0.0016563114175138114,
+  "p": 0.0156984301569843
+ },
+ "all terms: Nolan co-cast minus other": {
+  "obs": -0.00027273505052987084,
+  "p": 0.7118288171182882
+ },
+ "all terms: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": 0.0005069441958057295,
+  "p": 0.5423457654234577
+ },
+ "generic terms only: co-star minus other": {
+  "obs": -0.002000631945573399,
+  "p": 0.43325667433256676
+ },
+ "generic terms only: Nolan co-cast minus other": {
+  "obs": -0.003648102837061414,
+  "p": 0.1720827917208279
+ },
+ "generic terms only: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": -0.0018805553344180019,
+  "p": 0.5053494650534947
+ },
+ "fixed effects, all terms: co-star minus other": {
+  "obs": 0.0065518849326846595,
+  "null": -2.1036452302010674e-05,
+  "p": 9.999000099990002e-05
+ },
+ "fixed effects, all terms: Spearman(shared films, sim)": {
+  "obs": 0.09399174454112869,
+  "null": -0.00035585820712993806,
+  "p": 9.999000099990002e-05
+ },
+ "fixed effects, all terms: Nolan co-cast minus other": {
+  "obs": 0.005481196852242435,
+  "null": 7.740643436267285e-06,
+  "p": 0.0007999200079992001
+ },
+ "fixed effects, all terms: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": 0.0014229291096514312,
+  "null": -3.3094417573962198e-06,
+  "p": 0.36746325367463256
+ },
+ "fixed effects, generic terms only: co-star minus other": {
+  "obs": 0.0072665981260014,
+  "null": -2.2504491950906346e-05,
+  "p": 9.999000099990002e-05
+ },
+ "fixed effects, generic terms only: Spearman(shared films, sim)": {
+  "obs": 0.09032281348173392,
+  "null": -0.0003200538836319363,
+  "p": 9.999000099990002e-05
+ },
+ "fixed effects, generic terms only: Nolan co-cast minus other": {
+  "obs": 0.007449412247921851,
+  "null": 6.5594442424887e-06,
+  "p": 0.0004999500049995
+ },
+ "fixed effects, generic terms only: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": 0.0026555724775291015,
+  "null": 2.9037179129530468e-06,
+  "p": 0.22447755224477553
+ },
+ "distinctive, raw: co-star minus other": {
+  "obs": -0.004634830406672624,
+  "null": -1.1833626431696819e-05,
+  "p": 0.00039996000399960006
+ },
+ "distinctive, raw: Nolan co-cast minus other": {
+  "obs": -0.004984210138484995,
+  "null": 3.080611642224294e-05,
+  "p": 0.00029997000299970003
+ },
+ "distinctive, raw: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": -0.0026900963274831234,
+  "null": 1.830085352059528e-05,
+  "p": 0.05369463053694631
+ },
+ "distinctive, double-centred: co-star minus other": {
+  "obs": 0.0009312097657179684,
+  "null": -1.6198590641888768e-05,
+  "p": 0.24747525247475252
+ },
+ "distinctive, double-centred: Nolan co-cast minus other": {
+  "obs": -2.462463472020283e-05,
+  "null": 1.5207586844557263e-05,
+  "p": 0.9656034396560343
+ },
+ "distinctive, double-centred: Nolan co-cast minus other, never co-starred elsewhere": {
+  "obs": 0.0006368726155672178,
+  "null": 1.1051528249011753e-05,
+  "p": 0.5364463553644635
+ }
+}

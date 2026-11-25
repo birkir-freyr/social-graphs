@@ -1,0 +1,15 @@
+roles with sentences matched only through a shared name: 17 (Nolan 11); dropped (>= 25% of passage): 14
+   100%  N  Gary Oldman        Commissioner Gordon      The Dark Knight Rises   via ['Gordon']
+   100%  N  Cillian Murphy     J. Robert Oppenheimer    Oppenheimer             via ['Oppenheimer', 'Robert']
+   100%     Heath Ledger       Jacob Grimm              The Brothers Grimm      via ['Grimm']
+   100%  N  Jeremy Theobald    Younger Gotham Water Boa Batman Begins           via ['Gotham', 'Technician']
+   100%     John Lithgow       Alfred Seguine Kinsey    Kinsey                  via ['Alfred', 'Kinsey']
+   100%     Matt Damon         Wilhelm Grimm            The Brothers Grimm      via ['Grimm']
+    98%     Liam Neeson        Alfred Kinsey            Kinsey                  via ['Alfred', 'Kinsey']
+    95%  N  Emily Blunt        Kitty Oppenheimer        Oppenheimer             via ['Oppenheimer']
+    94%  N  Leonardo DiCaprio  Dom Cobb                 Inception               via ['Cobb']
+    93%  N  Gary Oldman        Jim Gordon               Batman Begins           via ['Gordon']
+    92%  N  Cillian Murphy     Dr. Jonathan Crane       Batman Begins           via ['Crane']
+    90%  N  Martin Donovan     Hap Eckhart              Insomnia                via ['Eckhart']
+Nolan role vs own earlier roles, contaminated roles dropped mean +0.0243  z +4.30  p 0.0001  (n=74, actors=52)
+Nolan minus same actor's other roles, contaminated dropped mean +0.0176  z +3.70  p 0.0003  (n=49, actors=49)

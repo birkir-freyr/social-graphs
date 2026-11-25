@@ -1,0 +1,84 @@
+scored Nolan roles 82; actors not matched to network: []
+
+--- regulars = 2+ Nolan films ---
+all Nolan roles   diff  regulars +0.0271 (n=17)  one-timers +0.0188 (n=38)  diff +0.0083  p 0.269
+all Nolan roles   role  regulars +0.0028 (n=17)  one-timers +0.0005 (n=38)  diff +0.0023  p 0.705
+all Nolan roles   pct   regulars +0.5982 (n=17)  one-timers +0.4885 (n=38)  diff +0.1098  p 0.199
+first Nolan role  diff  regulars +0.0285 (n=17)  one-timers +0.0188 (n=38)  diff +0.0097  p 0.222
+first Nolan role  role  regulars +0.0046 (n=17)  one-timers +0.0005 (n=38)  diff +0.0041  p 0.535
+first Nolan role  pct   regulars +0.5299 (n=17)  one-timers +0.4885 (n=38)  diff +0.0414  p 0.636
+
+--- regulars = 3+ Nolan films ---
+all Nolan roles   diff  regulars +0.0255 (n=9)  one-timers +0.0206 (n=46)  diff +0.0049  p 0.601
+all Nolan roles   role  regulars +0.0013 (n=9)  one-timers +0.0012 (n=46)  diff +0.0001  p 0.991
+all Nolan roles   pct   regulars +0.7197 (n=9)  one-timers +0.4838 (n=46)  diff +0.2360  p 0.024
+first Nolan role  diff  regulars +0.0288 (n=9)  one-timers +0.0205 (n=46)  diff +0.0083  p 0.404
+first Nolan role  role  regulars +0.0060 (n=9)  one-timers +0.0009 (n=46)  diff +0.0051  p 0.531
+first Nolan role  pct   regulars +0.5932 (n=9)  one-timers +0.4833 (n=46)  diff +0.1099  p 0.310
+
+--- Spearman over actors (all Nolan roles, actor means) ---
+diff  vs betweenness    rho +0.168  p 0.220  (n=55)
+diff  vs n Nolan films  rho +0.172  p 0.210  (n=55)
+role  vs betweenness    rho +0.017  p 0.901  (n=55)
+role  vs n Nolan films  rho -0.011  p 0.939  (n=55)
+pct   vs betweenness    rho +0.191  p 0.163  (n=55)
+pct   vs n Nolan films  rho +0.209  p 0.126  (n=55)
+
+--- regulars, role by role (k>=2) ---
+  Michael Caine          k=7  Batman Begins                diff +0.055  role +0.031  pct +0.843
+  Michael Caine          k=7  The Prestige                 diff +0.023  role +0.008  pct +0.963
+  Michael Caine          k=7  The Dark Knight              diff +0.048  role +0.040  pct +0.946
+  Michael Caine          k=7  The Dark Knight Rises        diff +0.019  role -0.012  pct +1.000
+  Michael Caine          k=7  Interstellar                 diff -0.002  role -0.022  pct +0.984
+  Michael Caine          k=7  Tenet                        diff +0.078  role +0.053  pct +0.765
+  Cillian Murphy         k=6  Batman Begins                diff +0.046  role +0.009  pct +0.255
+  Cillian Murphy         k=6  Inception                    diff +0.044  role +0.001  pct +0.569
+  Cillian Murphy         k=6  The Dark Knight Rises        diff +0.081  role +0.035  pct +0.667
+  Cillian Murphy         k=6  Oppenheimer                  diff +0.036  role -0.045  pct +0.812
+  Christian Bale         k=4  Batman Begins                diff -0.025  role -0.052  pct +0.549
+  Christian Bale         k=4  The Prestige                 diff -0.003  role -0.023  pct +0.685
+  Christian Bale         k=4  The Dark Knight              diff +0.018  role +0.002  pct +0.679
+  Christian Bale         k=4  The Dark Knight Rises        diff -0.025  role -0.053  pct +0.933
+  Gary Oldman            k=4  Batman Begins                diff +0.008  role -0.017  pct +0.824
+  Gary Oldman            k=4  The Dark Knight              diff -0.028  role -0.013  pct +1.000
+  Gary Oldman            k=4  The Dark Knight Rises        diff -0.005  role -0.005  pct +0.967
+  Gary Oldman            k=4  Oppenheimer                  diff +0.062  role +0.052  pct +0.739
+  Anne Hathaway          k=3  The Dark Knight Rises        diff +0.056  role +0.006  pct +0.667
+  Anne Hathaway          k=3  Interstellar                 diff +0.017  role -0.021  pct +0.873
+  Anne Hathaway          k=3  The Odyssey                  diff +0.041  role -0.013  pct +0.884
+  Kenneth Branagh        k=3  Dunkirk                      diff +0.044  role +0.021  pct +0.585
+  Kenneth Branagh        k=3  Tenet                        diff +0.017  role -0.021  pct +0.750
+  Matt Damon             k=3  Interstellar                 diff +0.030  role +0.007  pct +0.968
+  Matt Damon             k=3  Oppenheimer                  diff +0.081  role +0.037  pct +0.681
+  Matt Damon             k=3  The Odyssey                  diff -0.028  role -0.076  pct +0.986
+  Morgan Freeman         k=3  Batman Begins                diff +0.047  role +0.044  pct +0.373
+  Morgan Freeman         k=3  The Dark Knight              diff +0.043  role +0.057  pct +0.768
+  Tom Hardy              k=3  Inception                    diff -0.003  role +0.003  pct +0.276
+  Tom Hardy              k=3  The Dark Knight Rises        diff -0.008  role -0.012  pct +0.250
+  Tom Hardy              k=3  Dunkirk                      diff +0.007  role -0.018  pct +0.877
+  Casey Affleck          k=2  Interstellar                 diff +0.043  role +0.012  pct +0.413
+  Elliot Page            k=2  Inception                    diff +0.051  role +0.015  pct +0.121
+  Elliot Page            k=2  The Odyssey                  diff +0.059  role +0.012  pct +0.319
+  Joseph Gordon-Levitt   k=2  Inception                    diff +0.042  role +0.002  pct +0.931
+  Joseph Gordon-Levitt   k=2  The Dark Knight Rises        diff +0.052  role -0.004  pct +0.700
+  Ken Watanabe           k=2  Inception                    diff -0.011  role -0.005  pct +0.138
+  Liam Neeson            k=2  Batman Begins                diff +0.026  role +0.004  pct +0.980
+  Liam Neeson            k=2  The Dark Knight Rises        diff +0.027  role -0.004  pct +0.867
+  Marion Cotillard       k=2  Inception                    diff +0.001  role -0.029  pct +0.328
+  Marion Cotillard       k=2  The Dark Knight Rises        diff +0.027  role +0.010  pct +0.150
+  Martin Donovan         k=2  Insomnia                     diff +0.002  role +0.026  pct +0.244
+  Robert Pattinson       k=2  Tenet                        diff +0.071  role -0.002  pct +0.515
+  Robert Pattinson       k=2  The Odyssey                  diff +0.039  role +0.001  pct +0.884
+
+--- robustness: regulars (3+) vs one-timers, selection percentile ---
+  without Christian Bale       diff +0.237  p 0.032
+  without Michael Caine        diff +0.211  p 0.054
+  without Gary Oldman          diff +0.216  p 0.052
+  without Cillian Murphy       diff +0.254  p 0.021
+  without Morgan Freeman       diff +0.255  p 0.021
+  without Tom Hardy            diff +0.267  p 0.015
+  without Anne Hathaway        diff +0.225  p 0.040
+  without Kenneth Branagh      diff +0.243  p 0.027
+  without Matt Damon           diff +0.216  p 0.046
+  reprised characters counted once (76 roles): diff +0.191  p 0.068
+  note: 18 regulars-vs-one-timers comparisons above; one p < 0.05 is what chance gives.

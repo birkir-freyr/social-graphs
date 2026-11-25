@@ -1,0 +1,3 @@
+[role_text_blind] roles tested 822: mean percentile of OWN actor 0.611 (chance 0.5); ranked first 51/822; Nolan roles 0.576 (n=82), others 0.615
+[role_text_masked] roles tested 822: mean percentile of OWN actor 0.621 (chance 0.5); ranked first 59/822; Nolan roles 0.602 (n=82), others 0.624
+[role_text] roles tested 822: mean percentile of OWN actor 0.615 (chance 0.5); ranked first 80/822; Nolan roles 0.611 (n=82), others 0.615

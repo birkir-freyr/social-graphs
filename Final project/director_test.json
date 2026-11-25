@@ -9,6 +9,13 @@
  "nolan_z": 5.162872187059173,
  "directors_reaching_z": 0,
  "n_z": 46,
+ "pooled_other_mean": 0.004074579052752911,
+ "next_highest_z": 1.9031770654744762,
+ "paired_actors": 52,
+ "paired_mean": 0.01654319999705339,
+ "paired_z": 3.6804700669753214,
+ "paired_p": 0.00019998000199980003,
+ "paired_positive": 40,
  "other_mean": 0.0007742044085570065,
  "top": [
   {
