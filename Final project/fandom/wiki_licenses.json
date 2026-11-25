@@ -1,0 +1,58 @@
+{
+  "batman": {
+    "community": "Batman Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://batman.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "chrisnolan": {
+    "community": "Christopher Nolan Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://chrisnolan.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "hero": {
+    "community": "Heroes Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://hero.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "inception": {
+    "community": "Inception Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://inception.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "interstellarfilm": {
+    "community": "Interstellar Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://interstellarfilm.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "villains": {
+    "community": "Villains Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://villains.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  },
+  "ww2-movie-characters": {
+    "community": "WW2 Movie Characters Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://ww2-movie-characters.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral"
+  }
+}

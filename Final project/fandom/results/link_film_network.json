@@ -1,0 +1,62 @@
+{
+ "all films: shared actors ~ text (shared actors' passages removed)": {
+  "rho": 0.14037599262234643,
+  "p": 0.46895310468953105,
+  "pairs": 77
+ },
+ "all films: Jaccard ~ text (shared removed)": {
+  "rho": 0.0496265769246263,
+  "p": 0.76992300769923,
+  "pairs": 77
+ },
+ "all films: shared actors ~ text (all passages)": {
+  "rho": 0.25815376327751927,
+  "p": 0.17198280171982802,
+  "pairs": 78
+ },
+ "all films: years apart ~ text (shared removed)": {
+  "rho": -0.3720867556073731,
+  "p": 0.003999600039996,
+  "pairs": 77
+ },
+ "all films: years apart ~ shared actors": {
+  "rho": -0.44935453834270733,
+  "p": 0.00029997000299970003,
+  "pairs": 78
+ },
+ "all films: shared actors ~ text | years (partial)": {
+  "rho": -0.030172792016519363,
+  "p": 0.8883111688831117,
+  "pairs": 77
+ },
+ "without Batman: shared actors ~ text (shared actors' passages removed)": {
+  "rho": -0.057392732880361265,
+  "p": 0.7558244175582441,
+  "pairs": 45
+ },
+ "without Batman: Jaccard ~ text (shared removed)": {
+  "rho": -0.04593345738633898,
+  "p": 0.7862213778622138,
+  "pairs": 45
+ },
+ "without Batman: shared actors ~ text (all passages)": {
+  "rho": 0.06784691038546375,
+  "p": 0.7077292270772922,
+  "pairs": 45
+ },
+ "without Batman: years apart ~ text (shared removed)": {
+  "rho": -0.2947253897262484,
+  "p": 0.031096890310968902,
+  "pairs": 45
+ },
+ "without Batman: years apart ~ shared actors": {
+  "rho": -0.4147753771955162,
+  "p": 0.0037996200379962005,
+  "pairs": 45
+ },
+ "without Batman: shared actors ~ text | years (partial)": {
+  "rho": -0.20659707432002775,
+  "p": 0.2880711928807119,
+  "pairs": 45
+ }
+}

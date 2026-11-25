@@ -41,8 +41,6 @@ CACHE = "cache_wiki"
 DATA = "."                      # overridden by --data
 PAUSE = 0.15                    # between live requests; Wikipedia asks for politeness
 
-os.makedirs(CACHE, exist_ok=True)
-
 _stats = Counter()
 
 
@@ -55,6 +53,7 @@ def cached(url, tries=4):
     finding. Failures are not written to the cache, so a later run
     retries exactly those.
     """
+    os.makedirs(CACHE, exist_ok=True)
     k = hashlib.sha1(url.encode()).hexdigest()[:20]
     p = os.path.join(CACHE, k + ".json")
     if os.path.exists(p):

@@ -1,0 +1,111 @@
+actor,film,year,character,is_nolan,movie_id,speaker_ids,speaker_labels,lines,words,has_fandom_description
+Guy Pearce,Memento,2000,Leonard,1,m436,u6563|u6564,LEONARD|LEONARD *,228,1776,1
+Carrie-Anne Moss,Memento,2000,Natalie,1,m436,u6567,NATALIE,83,799,1
+Joe Pantoliano,Memento,2000,Teddy,1,m436,u6568,TEDDY,96,1464,1
+Mark Boone Junior,Memento,2000,Burt,1,m436,u6560,BURT,28,177,0
+Jorja Fox,Memento,2000,Leonard's Wife,1,m436,u6565,LEONARD'S WIFE,3,24,1
+Harriet Sansom Harris,Memento,2000,Mrs. Jankis,1,m436,u6566,MRS. JANKIS,5,66,0
+Callum Keith Rennie,Memento,2000,Dodd,1,m436,u6561,DODD,6,31,1
+Al Pacino,Insomnia,2002,Will Dormer,1,m398,u6009,WILL,131,961,1
+Robin Williams,Insomnia,2002,Walter Finch,1,m398,u6008,WALTER,32,230,1
+Hilary Swank,Insomnia,2002,Ellie Burr,1,m398,u6001,ELLIE,28,210,1
+Maura Tierney,Insomnia,2002,Rachel Clement,1,m398,u6005,RACHEL,9,62,1
+Martin Donovan,Insomnia,2002,Hap Eckhart,1,m398,u6004,HAP,17,196,1
+Nicky Katt,Insomnia,2002,Fred Duggar,1,m398,u6003,FRED,22,153,1
+Paul Dooley,Insomnia,2002,Chief Nyback,1,m398,u6000,CHIEF NYBACK,11,75,1
+Jonathan Jackson,Insomnia,2002,Randy Stetz,1,m398,u6006,RANDY,12,60,1
+Larry Holden,Insomnia,2002,Farrell,1,m398,u6002,FARRELL,6,46,1
+Katharine Isabelle,Insomnia,2002,Tanya Francke,1,m398,u6007,TANYA,16,90,1
+Aaron Eckhart,Erin Brockovich,2000,George,0,m336,u5078,GEORGE,73,818,0
+Aaron Eckhart,Nurse Betty,2000,Del,0,m152,u2374,DEL,44,483,0
+Aaron Eckhart,Suspect Zero,2004,Thomas Mackelway,0,m201,u3075,MACKELWAY,226,2765,0
+Aaron Eckhart,The Black Dahlia,2006,Lee Blanchard,0,m270,u4070,LEE,6,113,0
+Al Pacino,The Godfather,1972,Michael Corleone,0,m203,u3105,MICHAEL,154,1621,1
+Al Pacino,The Godfather Part II,1974,Don Michael Corleone,0,m369,u5545,MICHAEL,187,3075,1
+Al Pacino,Dog Day Afternoon,1975,Sonny,0,m324,u4866,SONNY,272,3515,0
+Al Pacino,Glengarry Glen Ross,1992,Ricky Roma,0,m368,u5527,ROMA,208,2951,0
+Al Pacino,The Insider,1999,Lowell Bergman,0,m101,u1499|u1500,LOWELL|LOWELL'S VOICE,242,3347,0
+Carrie-Anne Moss,The Matrix,1999,Trinity,0,m433,u6527,TRINITY,93,627,1
+Casey Affleck,Good Will Hunting,1997,Morgan O'Mally,0,m373,u5612,MORGAN,42,300,0
+Charlize Theron,The Cider House Rules,1999,Candy Kendall,0,m44,u691,CANDY,88,807,0
+Charlize Theron,Reindeer Games,2000,Ashley Mercer,0,m169,u2595,ASHLEY,126,1164,0
+Charlize Theron,15 Minutes,2001,Rose Hearn,0,m2,u44,ROSE,11,118,0
+Christian Bale,American Psycho,2000,Patrick Bateman,0,m20,u327,BATEMAN,339,2919,1
+David Bowie,Basquiat,1996,Andy Warhol,0,m258,u3888,ANDY WARHOL,24,292,0
+Ellen Burstyn,The Exorcist,1973,Chris MacNeil,0,m341,u5138,CHRIS,184,1477,0
+Elliot Page,Juno,2007,Juno MacGuff,0,m109,u1660,JUNO,279,3641,1
+Gary Oldman,True Romance,1993,Drexl Spivey,0,m586,u8639,DREXL,28,659,1
+Gary Oldman,Basquiat,1996,Albert Milo,0,m258,u3887,ALBERT MILO,15,345,0
+Gary Oldman,Air Force One,1997,Ivan Korshunov,0,m11,u166,KORSHUNOV,56,588,1
+Gary Oldman,The Fifth Element,1997,Zorg,0,m5,u99,ZORG,21,267,1
+Gary Oldman,Hannibal,2001,Mason Verger,0,m381,u5773,VERGER,46,715,0
+Guy Pearce,L.A. Confidential,1997,Edmund 'Ed' Exley,0,m332,u4997,EXLEY,153,1522,1
+Harriet Sansom Harris,Nurse Betty,2000,Ellen,0,m152,u2378,ELLEN,23,343,0
+Heath Ledger,10 Things I Hate About You,1999,Patrick Verona,0,m0,u9,PATRICK,140,1027,0
+Heath Ledger,The Patriot,2000,Gabriel Martin,0,m157,u2448,GABRIEL,67,664,0
+Hilary Swank,Buffy the Vampire Slayer,1992,Kimberly Hannah,0,m287,u4307,KIMBERLY,43,330,1
+Hugh Jackman,X-Men,2000,Logan / Wolverine,0,m614,u9006,LOGAN,40,334,1
+Joe Pantoliano,Bound,1996,Caesar,0,m281,u4208,CAESAR,139,1239,1
+Joe Pantoliano,The Matrix,1999,Cypher,0,m433,u6520,CYPHER,35,483,1
+John Lithgow,Cliffhanger,1993,Qualen,0,m300,u4551,QUALEN,54,502,1
+Joseph Gordon-Levitt,Halloween H20: 20 Years Later,1998,Jimmy,0,m80,u1221,JIMMY,9,71,1
+Joseph Gordon-Levitt,10 Things I Hate About You,1999,Cameron James,0,m0,u2,CAMERON,78,527,0
+Josh Hartnett,Halloween H20: 20 Years Later,1998,John,0,m80,u1222,JOHN,43,326,1
+Josh Hartnett,Pearl Harbor,2001,Danny Walker,0,m468,u7000,DANNY,77,816,0
+Josh Hartnett,The Black Dahlia,2006,Bucky Bleichert,0,m270,u4069,BUCKY,5,27,0
+Katharine Isabelle,Knight Moves,1992,Erica Sanderson,0,m112,u1702,ERICA,20,125,0
+Katharine Isabelle,Bones,2001,Tia,0,m280,u4206,TIA,6,56,0
+Katie Holmes,The Ice Storm,1997,Libbets Casey,0,m397,u5993,LIBBETS,16,101,0
+Katie Holmes,Wonder Boys,2000,Hannah Green,0,m230,u3500,HANNAH GREEN,33,506,0
+Larry Holden,Memento,2000,Jimmy,1,m436,u6562,JIMMY,9,73,1
+Leonardo DiCaprio,Titanic,1997,Jack Dawson,0,m574,u8455,JACK,100,1200,1
+Leonardo DiCaprio,The Man in the Iron Mask,1998,King Louis XIV / Philippe,0,m429,u6459|u6462,LOUIS|PHILLIPPE,97,1341,0
+Leonardo DiCaprio,The Beach,2000,Richard,0,m559,u8230,RICHARD,55,391,0
+Liam Neeson,Schindler's List,1993,Oskar Schindler,0,m504,u7460,SCHINDLER,114,1261,1
+Liam Neeson,The Haunting,1999,Dr. David Marrow,0,m551,u8119,MARROW,74,912,0
+Maggie Gyllenhaal,Donnie Darko,2001,Elizabeth Darko,0,m50,u783,ELIZABETH,19,194,0
+Marion Cotillard,Big Fish,2003,Josephine,0,m30,u494,JOSEPHINE,35,192,0
+Matt Damon,Good Will Hunting,1997,Will Hunting,0,m373,u5621,WILL,278,2785,1
+Matt Damon,Saving Private Ryan,1998,Private Ryan,0,m502,u7425,RYAN,13,92,0
+Matt Damon,The Talented Mr. Ripley,1999,Tom Ripley,0,m204,u3125,RIPLEY,279,3086,0
+Matt Damon,The Bourne Identity,2002,Jason Bourne,0,m282,u4216,BOURNE,157,1225,1
+Matt Damon,The Bourne Supremacy,2004,Jason Bourne,0,m39,u613,BOURNE,100,719,1
+Matthew McConaughey,Lone Star,1996,Buddy Deeds,0,m423,u6325,BUDDY,9,79,0
+Matthew McConaughey,Contact,1997,Palmer Joss,0,m304,u4605,JOSS,68,1082,0
+Matthew McConaughey,EDtv,1999,Ed 'Eddie' Pekurny,0,m330,u4960,ED,291,2868,0
+Michael Caine,Hannah and Her Sisters,1986,Elliot,0,m380,u5741,ELLIOT,125,1123,0
+Michael Caine,Jaws: The Revenge,1987,Hoagie Newcombe,0,m405,u6110,HOAGIE,73,632,0
+Michael Caine,The Cider House Rules,1999,Dr. Wilbur Larch,0,m44,u697,LARCH,75,1047,0
+Michael Caine,Quills,2000,Dr. Royer-Collard,0,m164,u2542,ROYER-COLLARD,82,913,1
+Morgan Freeman,Unforgiven,1992,Ned Logan,0,m591,u8715,NED,79,687,0
+Morgan Freeman,Nurse Betty,2000,Charlie,0,m152,u2371,CHARLIE,150,2571,0
+Nicky Katt,The Limey,1999,Stacy the Hitman,0,m552,u8137,STACY,38,412,0
+Paul Dooley,Runaway Bride,1999,Walter,0,m498,u7371,WALTER,11,115,0
+Pete Postlethwaite,The Usual Suspects,1995,Kobayashi,0,m592,u8726,KOBAYASHI,13,229,1
+Pete Postlethwaite,The Lost World: Jurassic Park,1997,Roland Tembo,0,m410,u6159,ROLAND,47,757,1
+Robert Downey Jr.,True Believer,1989,Roger Baron,0,m223,u3367,ROGER,65,706,0
+Robert Downey Jr.,Natural Born Killers,1994,Wayne Gale,0,m454,u6817,WAYNE,119,2366,0
+Robert Downey Jr.,Only You,1994,Peter Wright,0,m464,u6947,PETER,94,1211,0
+Robert Downey Jr.,Wonder Boys,2000,Terry Crabtree,0,m230,u3495,CRABTREE,102,976,0
+Robin Williams,Dead Poets Society,1989,John Keating,0,m318,u4781,KEATING,45,775,1
+Robin Williams,The Fisher King,1991,Parry,0,m352,u5313,PARRY,116,1900,0
+Robin Williams,Good Will Hunting,1997,Sean Maguire,0,m373,u5615,SEAN,158,2076,1
+Rutger Hauer,Blade Runner,1982,Batty,0,m34,u529,BATTY,51,381,0
+Rutger Hauer,Buffy the Vampire Slayer,1992,Lothos,0,m287,u4308,LOTHOS,17,292,0
+Rutger Hauer,Arctic Blue,1993,Ben Corbett,0,m248,u3766,CORBETT,114,1742,0
+Scarlett Johansson,The Horse Whisperer,1998,Grace MacLean,0,m376,u5678,GRACE,118,1011,0
+Scarlett Johansson,Ghost World,2001,Rebecca,0,m72,u1106,REBECCA,189,1610,0
+Scarlett Johansson,The Man Who Wasn't There,2001,Birdy Abundas,0,m553,u8144,BIRDY,28,245,0
+Scarlett Johansson,Lost in Translation,2003,Charlotte,0,m425,u6379,CHARLOTTE,111,858,0
+Stephen Tobolowsky,The Grifters,1990,Jeweler,0,m79,u1208,JEWELER,10,117,0
+Stephen Tobolowsky,Thelma & Louise,1991,Max,0,m216,u3263,MAX,9,145,0
+Stephen Tobolowsky,Hero,1992,Wallace,0,m386,u5834,WALLACE,20,232,0
+Stephen Tobolowsky,The Insider,1999,Eric Kluster,0,m101,u1491,ERIC KLUSTER,6,92,0
+Tom Berenger,Platoon,1986,Sergeant Robert 'Bob' Barnes,0,m474,u7075,BARNES,19,275,1
+Tom Berenger,Someone to Watch Over Me,1987,Det. Mike Keegan,0,m188,u2856,MIKE,205,1503,0
+Tom Hardy,Star Trek: Nemesis,2002,Praetor Shinzon,0,m198,u3034,SHINZON,104,1465,1
+Tom Wilkinson,The Ghost and the Darkness,1996,Sir Robert Beaumont,0,m73,u1112,BEAUMONT,24,415,1
+Tom Wilkinson,Shakespeare in Love,1998,Hugh Fennyman,0,m511,u7556,FENNYMAN,27,174,0
+Tom Wilkinson,The Patriot,2000,Gen. Cornwallis,0,m157,u2447,CORNWALLIS,29,326,1
+Tom Wilkinson,Eternal Sunshine of the Spotless Mind,2004,Dr. Mierzwiak,0,m55,u863,MIERZWIAK,45,452,0
+Topher Grace,Traffic,2000,Seth Abrahms,0,m581,u8573,SETH,23,399,0

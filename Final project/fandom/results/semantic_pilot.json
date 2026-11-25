@@ -1,0 +1,870 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "versions": {
+    "torch": "2.9.0",
+    "transformers": "4.51.3",
+    "numpy": "1.26.0",
+    "scipy": "1.14.1"
+  },
+  "unique_texts": 604,
+  "chunks": 1134,
+  "rated_wikipedia_pairs": [
+    {
+      "pair_id": "P01",
+      "kind": "same_film",
+      "rating": 3,
+      "reported_tfidf": 0.3827,
+      "tfidf": 0.38270732911209915,
+      "minilm": 0.8350662773148452
+    },
+    {
+      "pair_id": "P02",
+      "kind": "within_actor",
+      "rating": 1,
+      "reported_tfidf": 0.074,
+      "tfidf": 0.07399681653977239,
+      "minilm": 0.5249762979856429
+    },
+    {
+      "pair_id": "P03",
+      "kind": "within_actor",
+      "rating": 1,
+      "reported_tfidf": 0.0001,
+      "tfidf": 0.00011313435002744171,
+      "minilm": 0.3799852483882475
+    },
+    {
+      "pair_id": "P04",
+      "kind": "same_film",
+      "rating": 1,
+      "reported_tfidf": 0.3902,
+      "tfidf": 0.39023175196614196,
+      "minilm": 0.8684707557476674
+    },
+    {
+      "pair_id": "P05",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0226,
+      "tfidf": 0.022633896648176947,
+      "minilm": 0.6107312477292735
+    },
+    {
+      "pair_id": "P06",
+      "kind": "within_actor",
+      "rating": 1,
+      "reported_tfidf": 0.0,
+      "tfidf": 2.0865131337415066e-05,
+      "minilm": 0.4877493561880486
+    },
+    {
+      "pair_id": "P07",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.006,
+      "tfidf": 0.006039904529578831,
+      "minilm": 0.6197284167751123
+    },
+    {
+      "pair_id": "P08",
+      "kind": "same_film",
+      "rating": 4,
+      "reported_tfidf": 0.416,
+      "tfidf": 0.41600824994527197,
+      "minilm": 0.7722778601435183
+    },
+    {
+      "pair_id": "P09",
+      "kind": "same_film",
+      "rating": 4,
+      "reported_tfidf": 0.3495,
+      "tfidf": 0.34945308776310885,
+      "minilm": 0.6841949272712702
+    },
+    {
+      "pair_id": "P10",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0,
+      "tfidf": 2.484465827772716e-05,
+      "minilm": 0.36503501108581815
+    },
+    {
+      "pair_id": "P11",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0,
+      "tfidf": 6.5015101652927836e-06,
+      "minilm": 0.389107461465072
+    },
+    {
+      "pair_id": "P12",
+      "kind": "within_actor",
+      "rating": 5,
+      "reported_tfidf": 0.0,
+      "tfidf": 3.776568560913261e-05,
+      "minilm": 0.4331975095278035
+    },
+    {
+      "pair_id": "P13",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0,
+      "tfidf": 2.752636748604373e-05,
+      "minilm": 0.29231094165280413
+    },
+    {
+      "pair_id": "P14",
+      "kind": "case",
+      "rating": 4,
+      "reported_tfidf": 0.0476,
+      "tfidf": 0.047584951922122,
+      "minilm": 0.786066666736073
+    },
+    {
+      "pair_id": "P15",
+      "kind": "within_actor",
+      "rating": 1,
+      "reported_tfidf": 0.0237,
+      "tfidf": 0.02369751752651146,
+      "minilm": 0.42807823779683063
+    },
+    {
+      "pair_id": "P16",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0065,
+      "tfidf": 0.0064509186720315735,
+      "minilm": 0.4127380706589614
+    },
+    {
+      "pair_id": "P17",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0001,
+      "tfidf": 0.00013206912587827605,
+      "minilm": 0.5294179690271186
+    },
+    {
+      "pair_id": "P18",
+      "kind": "within_actor",
+      "rating": 3,
+      "reported_tfidf": 0.0351,
+      "tfidf": 0.03505972797749273,
+      "minilm": 0.4897537232672896
+    },
+    {
+      "pair_id": "P19",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0182,
+      "tfidf": 0.018228095654927404,
+      "minilm": 0.31414491685606216
+    },
+    {
+      "pair_id": "P20",
+      "kind": "within_actor",
+      "rating": 3,
+      "reported_tfidf": 0.0077,
+      "tfidf": 0.007681378916688597,
+      "minilm": 0.3104390345517243
+    },
+    {
+      "pair_id": "P21",
+      "kind": "within_actor",
+      "rating": 2,
+      "reported_tfidf": 0.0001,
+      "tfidf": 5.436976856961341e-05,
+      "minilm": 0.6411710490097705
+    },
+    {
+      "pair_id": "P22",
+      "kind": "within_actor",
+      "rating": 3,
+      "reported_tfidf": 0.0405,
+      "tfidf": 0.040468554467948795,
+      "minilm": 0.5975601532638233
+    },
+    {
+      "pair_id": "P23",
+      "kind": "within_actor",
+      "rating": 3,
+      "reported_tfidf": 0.0001,
+      "tfidf": 0.00010677218159059228,
+      "minilm": 0.5531806770574105
+    },
+    {
+      "pair_id": "P24",
+      "kind": "same_film",
+      "rating": 3,
+      "reported_tfidf": 0.5878,
+      "tfidf": 0.587779700571864,
+      "minilm": 0.5946750381136325
+    }
+  ],
+  "agreement_with_readers": {
+    "within_actor": {
+      "n": 18,
+      "reported_tfidf": {
+        "spearman": 1.0221027086346572e-17,
+        "permutation_p": 1.0
+      },
+      "tfidf": {
+        "spearman": 0.04016644051541839,
+        "permutation_p": 0.8798120187981202
+      },
+      "minilm": {
+        "spearman": 0.09149022561845303,
+        "permutation_p": 0.7137286271372862
+      }
+    },
+    "all_except_case": {
+      "n": 23,
+      "reported_tfidf": {
+        "spearman": 0.23259903188648767,
+        "permutation_p": 0.285971402859714
+      },
+      "tfidf": {
+        "spearman": 0.2574975523707482,
+        "permutation_p": 0.23697630236976303
+      },
+      "minilm": {
+        "spearman": 0.23836620811830303,
+        "permutation_p": 0.2695730426957304
+      }
+    }
+  },
+  "rated_within_actor_pairs_available_in_fandom": 0,
+  "fandom_own_minus_costar": {
+    "n": 43,
+    "actors": 21,
+    "mean": -0.03585174363589558,
+    "p": 0.032296770322967704,
+    "ci95": [
+      -0.07097826884557397,
+      -0.005840012381346675
+    ]
+  },
+  "exploratory_same_wiki_costars": {
+    "n": 38,
+    "actors": 19,
+    "mean": -0.03196757390536192,
+    "p": 0.058694130586941305,
+    "ci95": [
+      -0.06728015853580814,
+      -0.0030017866075317985
+    ]
+  },
+  "fandom_review_key": [
+    {
+      "item": "F01",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Joe Pantoliano",
+          "Bound",
+          "Caesar"
+        ],
+        "A": [
+          "Joe Pantoliano",
+          "Memento",
+          "Teddy"
+        ],
+        "B": [
+          "Guy Pearce",
+          "Memento",
+          "Leonard"
+        ]
+      },
+      "minilm": {
+        "A": 0.49939413519356524,
+        "B": 0.3689652217087681
+      },
+      "tfidf": {
+        "A": 0.014101027863162854,
+        "B": 3.401476584966168e-05
+      }
+    },
+    {
+      "item": "F02",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Kenneth Branagh",
+          "Mary Shelley's Frankenstein",
+          "Victor Frankenstein"
+        ],
+        "A": [
+          "Kenneth Branagh",
+          "Tenet",
+          "Sator"
+        ],
+        "B": [
+          "Robert Pattinson",
+          "Tenet",
+          "Neil"
+        ]
+      },
+      "minilm": {
+        "A": 0.27893771112459026,
+        "B": 0.2075848582435961
+      },
+      "tfidf": {
+        "A": 0.044486912204680026,
+        "B": 0.023028171810023992
+      }
+    },
+    {
+      "item": "F03",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Matt Damon",
+          "The Bourne Ultimatum",
+          "Jason Bourne"
+        ],
+        "A": [
+          "John Lithgow",
+          "Interstellar",
+          "Donald"
+        ],
+        "B": [
+          "Matt Damon",
+          "Interstellar",
+          "Mann"
+        ]
+      },
+      "minilm": {
+        "A": 0.49639392415243055,
+        "B": 0.3196189939206511
+      },
+      "tfidf": {
+        "A": 0.040010576900707036,
+        "B": 0.006935641848382426
+      }
+    },
+    {
+      "item": "F04",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Pete Postlethwaite",
+          "The Lost World: Jurassic Park",
+          "Roland Tembo"
+        ],
+        "A": [
+          "Ken Watanabe",
+          "Inception",
+          "Saito"
+        ],
+        "B": [
+          "Pete Postlethwaite",
+          "Inception",
+          "Maurice Fischer"
+        ]
+      },
+      "minilm": {
+        "A": 0.6019544751641185,
+        "B": 0.5261920795334659
+      },
+      "tfidf": {
+        "A": 0.020917515391528852,
+        "B": 0.015449829094065868
+      }
+    },
+    {
+      "item": "F05",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "John Lithgow",
+          "The Adventures of Buckaroo Banzai Across the 8th Dimension",
+          "Lord John Whorfin"
+        ],
+        "A": [
+          "John Lithgow",
+          "Interstellar",
+          "Donald"
+        ],
+        "B": [
+          "Matt Damon",
+          "Interstellar",
+          "Mann"
+        ]
+      },
+      "minilm": {
+        "A": 0.5847294063232835,
+        "B": 0.4696581765799126
+      },
+      "tfidf": {
+        "A": 0.05568369759591673,
+        "B": 0.06422566131382355
+      }
+    },
+    {
+      "item": "F06",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Cillian Murphy",
+          "Sunshine",
+          "Capa"
+        ],
+        "A": [
+          "Cillian Murphy",
+          "The Dark Knight",
+          "Scarecrow"
+        ],
+        "B": [
+          "Michael Caine",
+          "The Dark Knight",
+          "Alfred"
+        ]
+      },
+      "minilm": {
+        "A": 0.1974991174655374,
+        "B": 0.25652526090261385
+      },
+      "tfidf": {
+        "A": 0,
+        "B": 0.02086993728791041
+      }
+    },
+    {
+      "item": "F07",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Aaron Eckhart",
+          "Paycheck",
+          "James Rethrick"
+        ],
+        "A": [
+          "Aaron Eckhart",
+          "The Dark Knight",
+          "Harvey Dent"
+        ],
+        "B": [
+          "Morgan Freeman",
+          "The Dark Knight",
+          "Lucius Fox"
+        ]
+      },
+      "minilm": {
+        "A": 0.4794453384321678,
+        "B": 0.4742119000723933
+      },
+      "tfidf": {
+        "A": 0.000174538232630789,
+        "B": 0.00016176072235623892
+      }
+    },
+    {
+      "item": "F08",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Leonardo DiCaprio",
+          "Gangs of New York",
+          "Amsterdam Vallon"
+        ],
+        "A": [
+          "Leonardo DiCaprio",
+          "Inception",
+          "Dom Cobb"
+        ],
+        "B": [
+          "Cillian Murphy",
+          "Inception",
+          "Robert Fischer, Jr."
+        ]
+      },
+      "minilm": {
+        "A": 0.4746864309505154,
+        "B": 0.5185677938873707
+      },
+      "tfidf": {
+        "A": 5.617745439691093e-05,
+        "B": 0.08646580407808512
+      }
+    },
+    {
+      "item": "F09",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Anne Hathaway",
+          "Hoodwinked!",
+          "Red"
+        ],
+        "A": [
+          "Anne Hathaway",
+          "The Dark Knight Rises",
+          "Selina"
+        ],
+        "B": [
+          "Cillian Murphy",
+          "The Dark Knight Rises",
+          "Dr. Jonathan Crane / Scarecrow"
+        ]
+      },
+      "minilm": {
+        "A": 0.5806505952768704,
+        "B": 0.32654181585412834
+      },
+      "tfidf": {
+        "A": 0.07413581420464854,
+        "B": 0.00015400264614482214
+      }
+    },
+    {
+      "item": "F10",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Tom Hardy",
+          "The Revenant",
+          "John Fitzgerald"
+        ],
+        "A": [
+          "Tom Hardy",
+          "Dunkirk",
+          "Farrier"
+        ],
+        "B": [
+          "Cillian Murphy",
+          "Dunkirk",
+          "Shivering Soldier"
+        ]
+      },
+      "minilm": {
+        "A": 0.28323142077997165,
+        "B": 0.40876828651373043
+      },
+      "tfidf": {
+        "A": 0.024279320450667993,
+        "B": 4.783841490409209e-05
+      }
+    },
+    {
+      "item": "F11",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Christian Bale",
+          "Pocahontas",
+          "Thomas"
+        ],
+        "A": [
+          "Christian Bale",
+          "Batman Begins",
+          "Bruce Wayne / Batman"
+        ],
+        "B": [
+          "Ken Watanabe",
+          "Batman Begins",
+          "Ra's al Ghul"
+        ]
+      },
+      "minilm": {
+        "A": 0.36475202714328847,
+        "B": 0.43132176764408764
+      },
+      "tfidf": {
+        "A": 0.0002074246022313806,
+        "B": 0.00038282726292030404
+      }
+    },
+    {
+      "item": "F12",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Rutger Hauer",
+          "Split Second",
+          "Stone"
+        ],
+        "A": [
+          "Rutger Hauer",
+          "Batman Begins",
+          "Earle"
+        ],
+        "B": [
+          "Katie Holmes",
+          "Batman Begins",
+          "Rachel Dawes"
+        ]
+      },
+      "minilm": {
+        "A": 0.3831330693944853,
+        "B": 0.3912080407986618
+      },
+      "tfidf": {
+        "A": 0.04810908809308309,
+        "B": 0.02857552482088795
+      }
+    },
+    {
+      "item": "F13",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Al Pacino",
+          "The Godfather Part II",
+          "Don Michael Corleone"
+        ],
+        "A": [
+          "Maura Tierney",
+          "Insomnia",
+          "Rachel Clement"
+        ],
+        "B": [
+          "Al Pacino",
+          "Insomnia",
+          "Will Dormer"
+        ]
+      },
+      "minilm": {
+        "A": 0.5460218834179086,
+        "B": 0.5331280349111222
+      },
+      "tfidf": {
+        "A": 0.00026493638260617137,
+        "B": 0.05283858873087266
+      }
+    },
+    {
+      "item": "F14",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Gary Oldman",
+          "L\u00e9on: The Professional",
+          "Norman Stansfield"
+        ],
+        "A": [
+          "Gary Oldman",
+          "Batman Begins",
+          "Jim Gordon"
+        ],
+        "B": [
+          "Mark Boone Junior",
+          "Batman Begins",
+          "Flass"
+        ]
+      },
+      "minilm": {
+        "A": 0.3852623549367862,
+        "B": 0.4270305550495361
+      },
+      "tfidf": {
+        "A": 0.03140238663857064,
+        "B": 0.022334277959211887
+      }
+    },
+    {
+      "item": "F15",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Robert Downey Jr.",
+          "In Dreams",
+          "Vivian Thompson"
+        ],
+        "A": [
+          "Matt Damon",
+          "Oppenheimer",
+          "Leslie Groves"
+        ],
+        "B": [
+          "Robert Downey Jr.",
+          "Oppenheimer",
+          "Lewis Strauss"
+        ]
+      },
+      "minilm": {
+        "A": 0.13528149206502038,
+        "B": 0.14109124210662408
+      },
+      "tfidf": {
+        "A": 0,
+        "B": 0.045701225867957
+      }
+    },
+    {
+      "item": "F16",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Tom Wilkinson",
+          "Rush Hour",
+          "Griffin"
+        ],
+        "A": [
+          "Tom Wilkinson",
+          "Batman Begins",
+          "Carmine Falcone"
+        ],
+        "B": [
+          "Liam Neeson",
+          "Batman Begins",
+          "Ducard"
+        ]
+      },
+      "minilm": {
+        "A": 0.6762613719907395,
+        "B": 0.5650634048934743
+      },
+      "tfidf": {
+        "A": 0.012012086876227688,
+        "B": 0.0005013635001716808
+      }
+    },
+    {
+      "item": "F17",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Morgan Freeman",
+          "Bruce Almighty",
+          "God"
+        ],
+        "A": [
+          "Morgan Freeman",
+          "Batman Begins",
+          "Lucius Fox"
+        ],
+        "B": [
+          "John Nolan",
+          "Batman Begins",
+          "Fredericks"
+        ]
+      },
+      "minilm": {
+        "A": 0.37113747209585923,
+        "B": 0.29510445490542436
+      },
+      "tfidf": {
+        "A": 0.03371315246869213,
+        "B": 3.250422461595204e-05
+      }
+    },
+    {
+      "item": "F18",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Liam Neeson",
+          "Darkman",
+          "Peyton Westlake / Darkman"
+        ],
+        "A": [
+          "Larry Holden",
+          "Batman Begins",
+          "Finch"
+        ],
+        "B": [
+          "Liam Neeson",
+          "Batman Begins",
+          "Ducard"
+        ]
+      },
+      "minilm": {
+        "A": 0.34341442088752683,
+        "B": 0.34987280695125367
+      },
+      "tfidf": {
+        "A": 0.07207924307640384,
+        "B": 0.016361619637147357
+      }
+    },
+    {
+      "item": "F19",
+      "own_side": "B",
+      "credits": {
+        "anchor": [
+          "Robin Williams",
+          "Jack",
+          "Jack Powell"
+        ],
+        "A": [
+          "Martin Donovan",
+          "Insomnia",
+          "Hap Eckhart"
+        ],
+        "B": [
+          "Robin Williams",
+          "Insomnia",
+          "Walter Finch"
+        ]
+      },
+      "minilm": {
+        "A": 0.24945669196632056,
+        "B": 0.1864214325487403
+      },
+      "tfidf": {
+        "A": 0.04468231872108416,
+        "B": 0
+      }
+    },
+    {
+      "item": "F20",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Michael Caine",
+          "Dressed to Kill",
+          "Doctor Robert Elliott"
+        ],
+        "A": [
+          "Michael Caine",
+          "The Dark Knight",
+          "Alfred"
+        ],
+        "B": [
+          "Morgan Freeman",
+          "The Dark Knight",
+          "Lucius Fox"
+        ]
+      },
+      "minilm": {
+        "A": 0.414642024539439,
+        "B": 0.362964693716161
+      },
+      "tfidf": {
+        "A": 0.00018947952128828727,
+        "B": 8.016637665002033e-05
+      }
+    },
+    {
+      "item": "F21",
+      "own_side": "A",
+      "credits": {
+        "anchor": [
+          "Tom Berenger",
+          "Sniper",
+          "Thomas Beckett"
+        ],
+        "A": [
+          "Tom Berenger",
+          "Inception",
+          "Peter Browning"
+        ],
+        "B": [
+          "Elliot Page",
+          "Inception",
+          "Ariadne"
+        ]
+      },
+      "minilm": {
+        "A": 0.5021014991064505,
+        "B": 0.3305087829797263
+      },
+      "tfidf": {
+        "A": 0.00027861963760156705,
+        "B": 0.00014956134613683047
+      }
+    }
+  ]
+}
