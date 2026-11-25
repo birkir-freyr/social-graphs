@@ -1,0 +1,34 @@
+{
+ "n_pairs": 24,
+ "spearman_cosine_vs_rating_within_actor": 0.0,
+ "p_within_actor": 1.0,
+ "n_within_actor": 18,
+ "spearman_cosine_vs_rating_all_except_case": 0.233,
+ "p_all_except_case": 0.2877,
+ "n_all_except_case": 23,
+ "group_case": {
+  "n": 1,
+  "mean_cosine": 0.0476,
+  "mean_rating": 4.0
+ },
+ "group_same_film": {
+  "n": 5,
+  "mean_cosine": 0.4252,
+  "mean_rating": 3.0
+ },
+ "group_within_actor_high": {
+  "n": 6,
+  "mean_cosine": 0.0357,
+  "mean_rating": 2.0
+ },
+ "group_within_actor_low": {
+  "n": 6,
+  "mean_cosine": 0.0,
+  "mean_rating": 2.33
+ },
+ "group_within_actor_mid": {
+  "n": 6,
+  "mean_cosine": 0.0034,
+  "mean_rating": 2.17
+ }
+}

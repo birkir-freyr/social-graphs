@@ -36,7 +36,16 @@ Every fix below is in the repo. Results that changed are noted; the rest left th
 | 17 | Overclaims ("unlike any", "nowhere else", "no other film"). | Toned down. |
 | 18 | Zuckerman et al. reference had the wrong end page (1074). | 1018-1073, checked on Crossref. |
 | 19 | Main claim: the first draft said Nolan casts actors against type. The same-film placebo showed a co-star's role departs just as far, so the effect belongs to the films. | Main claim, abstract and title changed. |
-| 20 | LaTeX layout: double periods after Methods headings ("Masking.."), acknowledgements cut off at the bottom of page 5, gap on page 1. | Trailing periods removed; `\newpage` before end matter; `\Parasplit` mid-paragraph. |
+| 20 | Methods said the symmetric leave-one-out scoring gave false positives in 12% of null runs. That came from only 20 synthetic runs. | Rerun with 200 runs (`check_leaveoneout.py --reps 200`): 4% at three earlier roles, 3-8% at four to eight, close to the nominal 5%. Text corrected. |
+| 21 | "With every passage cut to the same length the effect remains" hid how much it shrinks. | Numbers added: +0.006 to +0.014 at 40-120 words (p 0.04 at 40, p <= 0.005 from 60), so length explains roughly half of the effect. Also named in the Discussion's limits. |
+| 22 | "Four lie below the band, against 2.3 expected": 2.3 is the expected count outside a two-sided band, not below it. | 1.2 expected below. |
+| 23 | "All p > 0.2" for regulars vs one-timers; the smallest is 0.199. | "smallest p = 0.20". |
+| 24 | Co-star homophily was explained with "this is because", but the gap survives actor fixed effects and only disappears in the distinctive (non-mainstream) component. | Stated as such. |
+| 25 | Discussion said Nolan moves actors away from their type "in the literature's sense", but that literature defines type by genre, which was not tested. | Softened; genre test named as future work. |
+| 26 | Other directors: +0.004 in the text vs about 0.010 in Fig. 3a. Different subsets (all roles vs the 103 with a co-star). | Both numbers given with their subsets. |
+| 27 | Smaller wording: 878 counted before the credit filter; 77 vs 78 film pairs; two passage-length medians from different subsets; one-sided era test; "or 0.04" for an alternative specification removed. | Each explained in the text. |
+| 28 | Validation ratings were in a per-person column layout and the folder was not in the repo. | One `rating` column; `validation/` committed. |
+| 29 | LaTeX layout: double periods after Methods headings ("Masking.."), acknowledgements cut off at the bottom of page 5, gap on page 1. | Trailing periods removed; `\newpage` before end matter; `\Parasplit` mid-paragraph. |
 
 ## How to check
 

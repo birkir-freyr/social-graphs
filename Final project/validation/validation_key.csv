@@ -1,0 +1,25 @@
+pair_id,kind,cos_tier,cosine,actor_a,film_a,character_a,words_a,actor_b,film_b,character_b,words_b
+P01,same_film,high,0.3827,Callum Keith Rennie,Memento,Dodd,97,Larry Holden,Memento,Jimmy,174
+P02,within_actor,high,0.0740,Robert Downey Jr.,The Gingerbread Man,Clyde Pell,106,Robert Downey Jr.,Oppenheimer,Lewis Strauss,202
+P03,within_actor,mid,0.0001,Casey Affleck,American Pie,Tom Myers,41,Casey Affleck,Interstellar,Tom,55
+P04,same_film,high,0.3902,Christian Bale,The Dark Knight,Bruce Wayne,155,Maggie Gyllenhaal,The Dark Knight,Rachel,204
+P05,within_actor,high,0.0226,Carrie-Anne Moss,Memento,Natalie,87,Carrie-Anne Moss,Terrified,Tracy,143
+P06,within_actor,low,0.0000,Michael Caine,The Dark Knight,Alfred,68,Michael Caine,Sleuth,Andrew Wyke,84
+P07,within_actor,mid,0.0060,Rutger Hauer,Batman Begins,Earle,43,Rutger Hauer,Bone Daddy,Palmer,157
+P08,same_film,high,0.4160,Ken Watanabe,Batman Begins,Ra's al Ghul,180,Cillian Murphy,Batman Begins,Dr. Jonathan Crane,174
+P09,same_film,high,0.3495,Matt Damon,Oppenheimer,Leslie Groves,34,Benny Safdie,Oppenheimer,Edward Teller,73
+P10,within_actor,low,0.0000,Marion Cotillard,The Dark Knight Rises,Miranda,36,Marion Cotillard,Contagion,Leonora Orantes,74
+P11,within_actor,low,0.0000,Gary Oldman,Oppenheimer,Harry Truman,33,Gary Oldman,The Courier,Ezekiel Mannings,64
+P12,within_actor,low,0.0000,Anne Hathaway,The Other Side of Heaven,Jean Sabin,32,Anne Hathaway,The Odyssey,Penelope,175
+P13,within_actor,low,0.0000,Liam Neeson,Batman Begins,Ducard,82,Liam Neeson,The Bounty,Charles Churchill,42
+P14,case,case,0.0476,Heath Ledger,The Dark Knight,Joker,412,Heath Ledger,Ned Kelly,Ned Kelly,408
+P15,within_actor,high,0.0237,Jessica Chastain,Lawless,Maggie Beauford,127,Jessica Chastain,Interstellar,Murph,242
+P16,within_actor,mid,0.0065,Ellen Burstyn,According to Greta,Katherine,97,Ellen Burstyn,Interstellar,Murph (older),242
+P17,within_actor,mid,0.0001,Elliot Page,Wilby Wonderful,Emily Anderson,230,Elliot Page,The Odyssey,Sinon,80
+P18,within_actor,high,0.0351,Martin Donovan,Insomnia,Hap Eckhart,211,Martin Donovan,Amateur,Thomas Ludens,177
+P19,within_actor,high,0.0182,Robert Pattinson,The Childhood of a Leader,Charles Marker / The Leader,49,Robert Pattinson,The Odyssey,Antinous,91
+P20,within_actor,mid,0.0077,Charlize Theron,Hancock,Mary,232,Charlize Theron,The Odyssey,Calypso,49
+P21,within_actor,low,0.0001,Dimple Kapadia,2001: Do Hazaar Ek,Roshni Sharma,111,Dimple Kapadia,Tenet,Priya,134
+P22,within_actor,high,0.0405,Jonathan Jackson,On the Edge,Toby,152,Jonathan Jackson,Insomnia,Randy Stetz,131
+P23,within_actor,mid,0.0001,Morgan Freeman,The Dark Knight,Lucius Fox,51,Morgan Freeman,The Big Bounce,Walter Crewes,107
+P24,same_film,high,0.5878,Dileep Rao,Inception,Yusuf,127,Joseph Gordon-Levitt,Inception,Arthur,83

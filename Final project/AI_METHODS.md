@@ -17,7 +17,7 @@ We set the research question, chose the data, and made the decisions about what 
 | Follow-up checks | Proposed and implemented the same-film placebo, the selection test, the degree-preserving null, the era test, the network–text tests and the reprised-character control (`investigations/`) | We decided which checks to run and what they meant. When the placebo showed the effect belonged to the films, we changed the paper's main claim. One of the model's own tests was biased by type size, and a later check caught it; we report the corrected version. |
 | Figures | Wrote the plotting code | We rejected designs until the figures showed what we wanted. We checked every link and label in Fig. 1 against the raw data (`investigations/verify_fig1.py`). |
 | Writing | Drafted text from our instructions, including the abstract and captions | We reviewed every draft and had every number checked against script output. This caught false statements: a caption claiming Nolan was the only director outside the confidence band (four others lie below it), and a table described as using a different network. We checked all references against Crossref, PubMed and the ACL Anthology. |
-| Validation sample | Built the rating sheet and the analysis script, and produced its own ratings | We rated the 24 pairs ourselves, once each, without seeing scores or pair types. The model's ratings were never used in the paper. |
+| Validation sample | Built the rating sheet and the analysis script, and produced trial ratings | We rated the 24 pairs ourselves, once each, without seeing scores or pair types. We discarded the model's trial ratings; the paper uses only our own. |
 
 ## What we learned
 
