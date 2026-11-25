@@ -29,4 +29,4 @@ quantities as in the rest of the repo. Run them from this folder with `python3 <
 | `verify_fig1.py` * | Checks every drawn link, dot and label of Fig. 1 against the raw CSV | 0 problems |
 
 `*.out` files hold the last printed output of each script; `*.json` hold machine-readable results.
-| `sequel_control.py` | Positive control: reprised characters vs same-film co-star (departure, rank, direct cosine) | not yet in paper: -0.007 (p 0.67); direct +0.026 (p 0.07) |
+| `sequel_control.py` | Positive control: reprised characters vs same-film co-star (departure, rank, direct cosine) | -0.007 (p 0.67); direct +0.026 (p 0.07) |
