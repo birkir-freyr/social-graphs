@@ -45,7 +45,11 @@ Every fix below is in the repo. Results that changed are noted; the rest left th
 | 26 | Other directors: +0.004 in the text vs about 0.010 in Fig. 3a. Different subsets (all roles vs the 103 with a co-star). | Both numbers given with their subsets. |
 | 27 | Smaller wording: 878 counted before the credit filter; 77 vs 78 film pairs; two passage-length medians from different subsets; one-sided era test; "or 0.04" for an alternative specification removed. | Each explained in the text. |
 | 28 | Validation ratings were in a per-person column layout and the folder was not in the repo. | One `rating` column; `validation/` committed. |
-| 29 | LaTeX layout: double periods after Methods headings ("Masking.."), acknowledgements cut off at the bottom of page 5, gap on page 1. | Trailing periods removed; `\newpage` before end matter; `\Parasplit` mid-paragraph. |
+| 29 | *Following* has two years in the data (1998 premiere, 1999 release). The network uses 1998, one text-side script 1999, so two era correlations differed (-0.47 vs -0.45). No scored role is in *Following*. | Stated in Methods with both values; no result changes. |
+| 30 | Masking misses names in capitals (TARS, FBI, FDR), and masking a title that is an ordinary word (*Following*) removes that word elsewhere. Paper said "every name masked". | Stated in Methods; both affect a whole film alike, so the same-film placebo absorbs them. Not rerun. |
+| 31 | 12 analysed roles share a passage with another role (Murph at three ages, the two Gerrys, the Grimm brothers, and sequels matched to the first film's article). 17 earlier roles were matched to another film's Wikipedia article (Ice Age sequels, *Wrath of the Titans*, *Letters from Iwo Jima*, ...), more than the 11 that `film_confound.py` (D) catches. | Main effect without the 17: +0.0234 (z 4.28), unchanged. Stated in Methods. Placebo already excludes identical passages. |
+| 32 | Sentence splitter also splits after abbreviations (Dr., St.). | Stated in Methods; noise, not bias. |
+| 33 | LaTeX layout: double periods after Methods headings ("Masking.."), acknowledgements cut off at the bottom of page 5, gap on page 1. | Trailing periods removed; `\newpage` before end matter; `\Parasplit` mid-paragraph. |
 
 ## How to check
 
