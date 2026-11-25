@@ -1,0 +1,182 @@
+{
+  "avp": {
+    "community": "Xenopedia",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://avp.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://avp.fandom.com"
+  },
+  "buffy": {
+    "community": "Buffyverse Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://buffy.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://buffy.fandom.com"
+  },
+  "chrisnolan": {
+    "community": "Christopher Nolan Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://chrisnolan.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://chrisnolan.fandom.com"
+  },
+  "diehard": {
+    "community": "Die Hard Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://diehard.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://diehard.fandom.com"
+  },
+  "fastandfurious": {
+    "community": "The Fast and the Furious Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://fastandfurious.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://fastandfurious.fandom.com"
+  },
+  "gijoe": {
+    "community": "Joepedia",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://gijoe.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://gijoe.fandom.com"
+  },
+  "halloweenmovie": {
+    "community": "Halloween Series Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://halloweenmovie.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://halloweenmovie.fandom.com"
+  },
+  "hero": {
+    "community": "Heroes Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://hero.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://hero.fandom.com"
+  },
+  "homealone": {
+    "community": "Home Alone Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://homealone.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://homealone.fandom.com"
+  },
+  "interstellarfilm": {
+    "community": "Interstellar Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://interstellarfilm.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://interstellarfilm.fandom.com"
+  },
+  "karatekid": {
+    "community": "The Karate Kid Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://karatekid.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://thekaratekid.fandom.com"
+  },
+  "kingkong": {
+    "community": "King Kong Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://kingkong.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://kingkong.fandom.com"
+  },
+  "madmax": {
+    "community": "The Mad Max Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://madmax.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://madmax.fandom.com"
+  },
+  "marvelcinematicuniverse": {
+    "community": "Marvel Cinematic Universe Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://marvelcinematicuniverse.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://marvelcinematicuniverse.fandom.com"
+  },
+  "starwars": {
+    "community": "Wookieepedia",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://starwars.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://starwars.fandom.com"
+  },
+  "texaschainsawmassacre": {
+    "community": "The Texas Chainsaw Massacre Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://texaschainsawmassacre.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://texaschainsawmassacre.fandom.com"
+  },
+  "thehungergames": {
+    "community": "The Hunger Games Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://thehungergames.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://thehungergames.fandom.com"
+  },
+  "twilightsaga": {
+    "community": "Twilight Saga Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://twilightsaga.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://twilightsaga.fandom.com"
+  },
+  "twinpeaks": {
+    "community": "Twin Peaks Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://twinpeaks.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://twinpeaks.fandom.com"
+  },
+  "xmenmovies": {
+    "community": "X-Men Movies Wiki",
+    "rights": {
+      "url": "https://www.fandom.com/licensing",
+      "text": "CC-BY-SA"
+    },
+    "api": "https://xmenmovies.fandom.com/api.php?format=json&action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral",
+    "server": "https://xmenmovies.fandom.com"
+  }
+}

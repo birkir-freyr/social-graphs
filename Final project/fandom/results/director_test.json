@@ -1,0 +1,37 @@
+{
+ "n_scored": 130,
+ "n_directors": 3,
+ "k_nolan": 43,
+ "nolan_mean": 0.011876952059462272,
+ "rank": 2,
+ "n_ranked": 4,
+ "p_perm": 0.027197280271972803,
+ "nolan_z": 1.4000334390790916,
+ "directors_reaching_z": 0,
+ "n_z": 3,
+ "pooled_other_mean": 0.002265123587519679,
+ "next_highest_z": 0.8161698159436058,
+ "paired_actors": 15,
+ "paired_mean": 0.01046666835653318,
+ "paired_z": 0.856443252132753,
+ "paired_p": 0.40375962403759624,
+ "paired_positive": 10,
+ "other_mean": -0.006624486907943199,
+ "top": [
+  {
+   "director": "Louis Leterrier",
+   "mean": 0.02347908297668777,
+   "n": 3
+  },
+  {
+   "director": "Brian De Palma",
+   "mean": 0.005011498964744843,
+   "n": 3
+  },
+  {
+   "director": "Paul Greengrass",
+   "mean": -0.04836404266526221,
+   "n": 3
+  }
+ ]
+}

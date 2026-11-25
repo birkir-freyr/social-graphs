@@ -1,0 +1,496 @@
+===== check_descriptors.py =====
+2639 roles
+  descriptor-style credits dropped : 144
+  of those, usable (25+ words)     : 7
+  remaining                        : 2495
+
+examples of dropped credits:
+   Jeremy Theobald       The Young Man                 Following
+   Russ Fega             Waiter                        Memento
+   Thomas Lennon         Doctor                        Memento
+   Daniel Davis          Judge                         The Prestige
+   Cillian Murphy        Shivering Soldier             Dunkirk
+   Damien Bonnard        French Soldier                Dunkirk
+   Aaron Eckhart         Man                           Conversations with Other W
+   Al Pacino             Officer Frank Serpico         Serpico
+   Al Pacino             Big Boy Caprice               Dick Tracy
+   Alon Aboutboul        אודי                          Photo Roman
+   Alon Aboutboul        נתנאל                         Passover Fever
+   Aneurin Barnard       Guy                           Ironclad
+
+==============================================================
+                         all roles   descriptors cut
+mean difference            +0.0119           +0.0121
+z                            +1.15             +1.14
+p                           0.2586            0.2624
+actor-roles                     43                42
+actors                          21                21
+==============================================================
+
+The finding does not rest on descriptor-credited roles: the
+estimate moves by 0.0002 and the conclusion is unchanged.
+
+===== typecast.py =====
+text column: role_text_blind
+320 roles with 25+ words of text
+  Nolan roles   97
+
+================================================================
+testable actor-roles        43
+mean departure, Nolan role  0.9443
+mean departure, control     0.9324
+mean difference             +0.0119
+actors where Nolan is further  30/43
+distinct actors             21
+sign-flip null (by actor)   z = +1.15   p = 0.2586
+================================================================
+
+NO DIFFERENCE. Nolan roles are no further from an actor's
+prior work than any other role. 'Casting against type' is not
+visible in this measure.
+
+furthest from type:
+  Matt Damon            Leslie Groves       Oppenheimer         +0.085  (n=10)
+  Anne Hathaway         Selina              The Dark Knight Ri  +0.084  (n=5)
+  Anne Hathaway         Brand               Interstellar        +0.076  (n=5)
+  Morgan Freeman        Lucius Fox          The Dark Knight     +0.069  (n=5)
+  Matt Damon            Mann                Interstellar        +0.066  (n=7)
+  Michael Caine         Professor Brand     Interstellar        +0.066  (n=11)
+
+closest to type:
+  Tom Hardy             Bane                The Dark Knight Ri  -0.046  (n=3)
+  Christian Bale        Bruce Wayne / Batm  Batman Begins       -0.060  (n=4)
+  Gary Oldman           Gordon              The Dark Knight     -0.067  (n=7)
+  Christian Bale        Bruce Wayne         The Dark Knight Ri  -0.086  (n=5)
+  Joe Pantoliano        Teddy               Memento             -0.089  (n=4)
+  Gary Oldman           Commissioner Gordo  The Dark Knight Ri  -0.094  (n=10)
+
+wrote typecast_results.csv
+
+SANITY CHECK before you believe any of it: Heath Ledger as the
+Joker should be near the top. If he is not, read his role_text —
+the extraction is probably wrong, not the finding.
+
+===== within_nolan.py =====
+==================================================================
+actors with 2+ distinct Nolan characters   9
+mean pairwise similarity, Nolan roles      0.0140
+mean pairwise similarity, control          0.0407
+mean difference                            -0.0267
+actors where Nolan roles are MORE alike    2/9
+sign-flip null                             z = -1.61  p = 0.0634
+==================================================================
+
+NO DIFFERENCE. An actor's Nolan roles are no more alike than
+that actor's other roles are. Reuse does not mean repetition,
+but it does not mean deliberate variation either.
+
+actor                chars    nolan     ctrl     diff   characters
+Christian Bale           2   0.0412   0.0284  +0.0128   Alfred Borden | Bruce Wayne / Batman
+Cillian Murphy           5   0.0262   0.0161  +0.0101   Dr. Jonathan Crane | J. Robert Oppenheimer | R
+Tom Hardy                3   0.0142   0.0158  -0.0016   Bane | Eames | Farrier
+Kenneth Branagh          2   0.0129   0.0209  -0.0080   Commander Bolton | Sator
+Michael Caine            4   0.0139   0.0335  -0.0197   Alfred | Cutter | Professor Brand | Stephen Mi
+Joseph Gordon-Levi       2   0.0001   0.0227  -0.0226   Arthur | Blake
+Matt Damon               3   0.0011   0.0376  -0.0365   Leslie Groves | Mann | Odysseus
+Anne Hathaway            2   0.0000   0.0423  -0.0423   Brand | Selina
+Robert Pattinson         2   0.0162   0.1490  -0.1328   Antinous | Neil
+
+wrote within_nolan.csv, within_nolan.json
+
+===== director_test.py =====
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/birkirfreyr/.cache/fontconfig
+	/Users/birkirfreyr/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/birkirfreyr/.cache/fontconfig
+	/Users/birkirfreyr/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/birkirfreyr/.cache/fontconfig
+	/Users/birkirfreyr/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/birkirfreyr/.cache/fontconfig
+	/Users/birkirfreyr/.fontconfig
+320 roles with text
+  cache_wiki/ absent; using film_directors.csv (2129 pages)
+  director parsed for 291/320 roles (91%)
+
+==================================================================
+roles scored                  130
+Nolan minus same actor's other roles (actor-clustered): +0.0105 over 15 actors, z +0.86, p 0.4038, 10 of 15 positive
+directors with >= 3 roles       3
+Nolan roles scored            43
+Nolan mean departure          +0.0119
+Nolan z at his own sample size +1.40
+directors reaching that z      0 of 3
+other directors, mean         -0.0066
+other directors, median       +0.0050
+Nolan's rank                  2 of 4
+permutation (k=43 random roles) p = 0.0272
+==================================================================
+
+NOLAN IS UNUSUAL. His roles depart from an actor's prior type
+more than a random set of the same size drawn from all
+director-actor pairings in the data.
+
+directors furthest from type (>= 3 roles):
+  Louis Leterrier               +0.0235  (n=3)
+  Brian De Palma                +0.0050  (n=3)
+  Paul Greengrass               -0.0484  (n=3)
+  Christopher Nolan             +0.0119  (n=43)   [rank 2]
+
+closest to type:
+  Louis Leterrier               +0.0235  (n=3)
+  Brian De Palma                +0.0050  (n=3)
+  Paul Greengrass               -0.0484  (n=3)
+wrote figures/fig4_directors.png
+
+wrote director_results.csv, director_test.json
+
+===== investigations/returning_placebo.py =====
+actor pairs of distinct Nolan characters with placebo: 34 from 14 actors
+mean cosine: actor's own pair 0.0174  |  co-star pairs from the same two films 0.0233
+own pair minus co-star pairs (same films)                  mean -0.0059  z -1.27  p 0.2349  (n=34, actors=14)
+
+===== investigations/placebo_checks.py =====
+own minus co-star (full passages)                          mean -0.0064  z -0.73  p 0.4923  (n=43, actors=21)   95% CI [-0.0254, +0.0084]
+passage length: own median 204 words, co-stars' mean-per-part median 373 words
+own minus co-star, all passages cut to 60 words            mean +0.0039  z +0.82  p 0.4470  (n=31, actors=17)   95% CI [-0.0056, +0.0121]
+own minus co-star, all passages cut to 100 words           mean +0.0041  z +0.88  p 0.3983  (n=26, actors=16)   95% CI [-0.0049, +0.0130]
+
+===== investigations/explore_film_vocab.py =====
+320 usable passages: 97 Nolan, 223 other
+typicality (cos to corpus centroid, own film excluded): Nolan median 0.1326  other median 0.1446
+within-film cosine between different characters: Nolan mean 0.0887 (n pairs 390), other mean 0.2021 (n pairs 9)
+non-Nolan films with 2+ characters in our data: 9
+terms most over-represented in Nolan passages (ratio, term, #nolan, #other):
+    20.7  thugs              9    0
+    16.1  waited             7    0
+    16.1  explain            7    0
+    13.8  toxin              6    0
+    13.8  looked             6    0
+    13.8  jonathan           6    0
+    11.5  reactor            5    0
+    11.5  inmates            5    0
+    11.5  hoped              5    0
+    11.5  headquarters       5    0
+    11.5  hadn               5    0
+     9.2  signed             4    0
+     9.2  shell              4    0
+     9.2  riot               4    0
+     9.2  realised           4    0
+     9.2  policemen          4    0
+     9.2  microwave          4    0
+     9.2  latest             4    0
+     9.2  james              4    0
+     9.2  infrastructure     4    0
+     9.2  incorruptible      4    0
+     9.2  fusion             4    0
+     9.2  emitter            4    0
+     9.2  design             4    0
+     9.2  civilians          4    0
+     9.2  attended           8    1
+     9.2  alerted            4    0
+     8.4  offered           11    2
+     8.0  gcpd               7    1
+     8.0  explained         14    3
+
+===== investigations/film_confound.py =====
+=== Baseline (all-names masked, as in paper) ===
+scored roles 130 (Nolan 43)
+A1 Nolan role vs own earlier roles (paper's test)          mean +0.0119  z +1.16  p 0.2586  (n=43, actors=21)
+A2 Nolan minus same actor's other later roles              mean +0.0105  z +0.85  p 0.4069  (n=15, actors=15)
+placebo available: Nolan roles 43, non-Nolan roles 6
+   mean diff: Nolan real +0.0119  Nolan placebo +0.0183  |  other real +0.0000  other placebo +0.0239
+B1 Nolan: real role minus same-film placebo                mean -0.0064  z -0.73  p 0.4923  (n=43, actors=21)
+B2 other films: real role minus same-film placebo          mean -0.0239  z -1.21  p 0.3118  (n=6, actors=5)
+B3 placebo: Nolan films minus same actor's other films     mean -0.0167  z -0.92  p 0.3715  (n=4, actors=4)
+
+film-concentrated terms removed: 1784 (e.g. ['dream'])
+
+=== C. Film-concentrated vocabulary removed ===
+scored roles 130 (Nolan 43)
+A1 Nolan role vs own earlier roles (paper's test)          mean +0.0131  z +1.12  p 0.2760  (n=43, actors=21)
+A2 Nolan minus same actor's other later roles              mean +0.0104  z +0.71  p 0.4899  (n=15, actors=15)
+placebo available: Nolan roles 43, non-Nolan roles 6
+   mean diff: Nolan real +0.0131  Nolan placebo +0.0202  |  other real -0.0025  other placebo +0.0230
+B1 Nolan: real role minus same-film placebo                mean -0.0071  z -0.67  p 0.5205  (n=43, actors=21)
+B2 other films: real role minus same-film placebo          mean -0.0255  z -1.18  p 0.2512  (n=6, actors=5)
+B3 placebo: Nolan films minus same actor's other films     mean -0.0185  z -0.85  p 0.5007  (n=4, actors=4)
+
+roles dropped as possible wrong-article matches: 31
+
+=== D. Possible wrong-article roles removed ===
+scored roles 104 (Nolan 38)
+A1 Nolan role vs own earlier roles (paper's test)          mean +0.0230  z +1.65  p 0.1064  (n=38, actors=19)
+A2 Nolan minus same actor's other later roles              mean +0.0096  z +0.61  p 0.5649  (n=14, actors=14)
+placebo available: Nolan roles 38, non-Nolan roles 4
+   mean diff: Nolan real +0.0230  Nolan placebo +0.0256  |  other real +0.0023  other placebo +0.0218
+B1 Nolan: real role minus same-film placebo                mean -0.0026  z -0.32  p 0.7763  (n=38, actors=19)
+B2 other films: real role minus same-film placebo          mean -0.0195  z -0.77  p 0.5028  (n=4, actors=3)
+B3 placebo: Nolan films minus same actor's other films     mean -0.0083  z -0.25  p 1.0000  (n=2, actors=2)
+
+===== investigations/sequel_control.py =====
+later roles with a same-film co-star: 53; reprises 13 (8 actors; Nolan 10)
+
+reprises found (check by eye):
+  Charlize Theron        The Huntsman: Winter's War         Queen Ravenna                <- Snow White and the Huntsman (Queen Ravenna)
+  Christian Bale         The Dark Knight                    Bruce Wayne                  <- Batman Begins (Bruce Wayne / Batman)
+  Christian Bale         The Dark Knight Rises              Bruce Wayne                  <- Batman Begins (Bruce Wayne / Batman); The Dark Knight (Bruce Wayne)
+  Cillian Murphy         The Dark Knight Rises              Dr. Jonathan Crane / Scarecr <- Batman Begins (Dr. Jonathan Crane); The Dark Knight (Scarecrow)
+  Emily Blunt            Sherlock Gnomes                    Juliet                       <- Gnomeo & Juliet (Juliet)
+  Gary Oldman            The Dark Knight                    Gordon                       <- Batman Begins (Jim Gordon)
+  Gary Oldman            The Dark Knight Rises              Commissioner Gordon          <- Batman Begins (Jim Gordon); The Dark Knight (Gordon)
+  Liam Neeson            The Dark Knight Rises              Ra's Al Ghul                 <- Batman Begins (Ducard)
+  Michael Caine          Sherlock Gnomes                    Lord Redbrick                <- Gnomeo & Juliet (Lord Redbrick)
+  Michael Caine          The Dark Knight                    Alfred                       <- Batman Begins (Alfred)
+  Michael Caine          The Dark Knight Rises              Alfred                       <- Batman Begins (Alfred); The Dark Knight (Alfred)
+  Morgan Freeman         The Dark Knight                    Lucius Fox                   <- Batman Begins (Lucius Fox)
+  Morgan Freeman         The Dark Knight Rises              Fox                          <- Batman Begins (Lucius Fox); The Dark Knight (Lucius Fox)
+
+=== REPRISES (n=13) ===
+  departure: own 0.8806   co-star 0.9181
+   departure own - co-star (negative = closer to type)        mean -0.0375  z -1.24  p 0.2559  (n=13, actors=8)
+  rank (k=3): own 0.848   co-star 0.694
+   rank own - co-star (positive = fits own part better)       mean +0.1540  z +2.11  p 0.0329  (n=13, actors=8)
+  share of parts where own is closer than co-star: 0.54
+
+=== other later roles (n=40) ===
+  departure: own 0.9466   co-star 0.9518
+   departure own - co-star (negative = closer to type)        mean -0.0051  z -0.92  p 0.3726  (n=40, actors=23)
+  rank (k=3): own 0.467   co-star 0.508
+   rank own - co-star (positive = fits own part better)       mean -0.0414  z -0.88  p 0.3880  (n=40, actors=23)
+  share of parts where own is closer than co-star: 0.45
+
+=== REPRISES, direct: cosine to the earlier version of the same character ===
+  own part 0.1088   co-star's part 0.0575
+   own - co-star (positive = recognises the character)        mean +0.0513  z +1.99  p 0.0327  (n=13, actors=8)
+  share where own is closer: 0.77
+    Liam Neeson          The Dark Knight Rises          own 0.050  co-star 0.066
+    Cillian Murphy       The Dark Knight Rises          own 0.030  co-star 0.037
+    Michael Caine        Sherlock Gnomes                own 0.150  co-star 0.155
+    Michael Caine        The Dark Knight                own 0.048  co-star 0.043
+    Morgan Freeman       The Dark Knight Rises          own 0.039  co-star 0.026
+    Morgan Freeman       The Dark Knight                own 0.068  co-star 0.025
+    Michael Caine        The Dark Knight Rises          own 0.088  co-star 0.038
+    Charlize Theron      The Huntsman: Winter's War     own 0.076  co-star 0.019
+    Gary Oldman          The Dark Knight                own 0.139  co-star 0.065
+    Christian Bale       The Dark Knight                own 0.221  co-star 0.137
+    Christian Bale       The Dark Knight Rises          own 0.138  co-star 0.050
+    Emily Blunt          Sherlock Gnomes                own 0.123  co-star 0.021
+    Gary Oldman          The Dark Knight Rises          own 0.244  co-star 0.066
+
+===== investigations/robustness.py =====
+min earlier roles = 3
+   Nolan role vs own earlier roles                            mean +0.0119  z +1.16  p 0.2586  (n=43, actors=21)
+   Nolan minus same actor's other later roles                 mean +0.0105  z +0.85  p 0.4069  (n=15, actors=15)
+   Nolan real role minus same-film placebo                    mean -0.0064  z -0.73  p 0.4923  (n=43, actors=21)
+
+min earlier roles = 5
+   Nolan role vs own earlier roles                            mean +0.0202  z +1.29  p 0.2096  (n=27, actors=14)
+   Nolan minus same actor's other later roles                 mean -0.0080  z -0.47  p 0.6623  (n=12, actors=12)
+   Nolan real role minus same-film placebo                    mean -0.0066  z -0.55  p 0.6445  (n=27, actors=14)
+
+min earlier roles = 8
+   Nolan role vs own earlier roles                            mean +0.0312  z +1.29  p 0.2522  (n=12, actors=6)
+   Nolan minus same actor's other later roles                 mean -0.0036  z -0.12  p 1.0000  (n=6, actors=6)
+   Nolan real role minus same-film placebo                    mean -0.0007  z -0.05  p 0.9379  (n=12, actors=6)
+
+min earlier roles = 12
+   Nolan role vs own earlier roles                            no eligible observations (n=0, actors=0)
+   Nolan minus same actor's other later roles                 no eligible observations (n=0, actors=0)
+   Nolan real role minus same-film placebo                    no eligible observations (n=0, actors=0)
+
+ Nolan role vs own earlier roles, reprised characters once  mean +0.0179  z +1.68  p 0.1018  (n=33, actors=21)
+
+===== investigations/actor_signal.py =====
+[role_text_blind] roles tested 114: mean percentile of OWN actor 0.621 (chance 0.5); ranked first 13/114; Nolan roles 0.598 (n=43), others 0.634
+[role_text_masked] roles tested 114: mean percentile of OWN actor 0.647 (chance 0.5); ranked first 18/114; Nolan roles 0.607 (n=43), others 0.672
+[role_text] roles tested 114: mean percentile of OWN actor 0.650 (chance 0.5); ranked first 17/114; Nolan roles 0.595 (n=43), others 0.683
+
+===== investigations/link_film_network.py =====
+films with passages: 13 | passages per film: {'Following': 3, 'Memento': 7, 'Insomnia': 10, 'Batman Begins': 13, 'The Prestige': 6, 'The Dark Knight': 10, 'Inception': 11, 'The Dark Knight Rises': 13, 'Interstellar': 7, 'Dunkirk': 4, 'Tenet': 5, 'Oppenheimer': 3, 'The Odyssey': 5}
+
+=== all films (13 films, 78 pairs) ===
+  shared actors ~ text (shared actors' passages removed)   rho +0.140  p 0.4690  (pairs 77)
+  Jaccard ~ text (shared removed)                          rho +0.050  p 0.7699  (pairs 77)
+  shared actors ~ text (all passages)                      rho +0.258  p 0.1720  (pairs 78)
+  years apart ~ text (shared removed)                      rho -0.372  p 0.0040  (pairs 77)
+  years apart ~ shared actors                              rho -0.449  p 0.0003  (pairs 78)
+  shared actors ~ text | years (partial)                   rho -0.030  p 0.8883  (pairs 77)
+  top text-similar pairs (cos, shared actors):
+    0.312   1  Insomnia / Batman Begins
+    0.293   1  Memento / Insomnia
+    0.220   0  Insomnia / The Dark Knight
+    0.218   2  Memento / Batman Begins
+    0.200   0  Memento / The Dark Knight
+    0.197   0  Insomnia / The Dark Knight Rises
+  least similar:
+    0.012   3  Dunkirk / Tenet
+    0.009   0  The Prestige / Dunkirk
+    0.004   4  Dunkirk / Oppenheimer
+
+=== without Batman (10 films, 45 pairs) ===
+  shared actors ~ text (shared actors' passages removed)   rho -0.057  p 0.7558  (pairs 45)
+  Jaccard ~ text (shared removed)                          rho -0.046  p 0.7862  (pairs 45)
+  shared actors ~ text (all passages)                      rho +0.068  p 0.7077  (pairs 45)
+  years apart ~ text (shared removed)                      rho -0.295  p 0.0311  (pairs 45)
+  years apart ~ shared actors                              rho -0.415  p 0.0038  (pairs 45)
+  shared actors ~ text | years (partial)                   rho -0.207  p 0.2881  (pairs 45)
+  top text-similar pairs (cos, shared actors):
+    0.293   1  Memento / Insomnia
+    0.152   0  Following / Insomnia
+    0.103   1  Inception / Tenet
+    0.093   0  Following / Memento
+    0.093   1  Dunkirk / The Odyssey
+    0.084   1  Memento / The Prestige
+  least similar:
+    0.012   3  Dunkirk / Tenet
+    0.009   0  The Prestige / Dunkirk
+    0.004   4  Dunkirk / Oppenheimer
+
+===== investigations/link_homophily.py =====
+typed actors: 30; without TMDB filmography: []
+pairs 435 (dropped 0 with < 2 passages left); co-star pairs 169; Nolan co-cast pairs 113
+
+mean type similarity: co-stars 0.1334  others 0.1097
+1 co-star minus other pairs                                      obs +0.0237  null mean -0.0001  p 0.0031
+2 Spearman(shared films, similarity)                             obs +0.2253  null mean -0.0010  p 0.0059
+3 Nolan co-cast minus other pairs                                obs +0.0183  null mean +0.0002  p 0.1198
+3b Nolan co-cast minus other, pairs never co-starred elsewhere   obs +0.0074  null mean +0.0003  p 0.5138
+Nolan co-cast pairs: mean similarity 0.1325  (n=113)
+  shared non-Nolan films 0-0: pairs   266  mean sim 0.1097
+  shared non-Nolan films 1-1: pairs   109  mean sim 0.1247
+  shared non-Nolan films 2-3: pairs    50  mean sim 0.1522
+  shared non-Nolan films 4-99: pairs    10  mean sim 0.1335
+
+actors coded female by pronouns: 5 of 30: ['Anne Hathaway', 'Charlize Theron', 'Elizabeth Debicki', 'Emily Blunt', 'Florence Pugh']
+
+[all terms] residual similarity after gender, era, passages, genericness
+  co-star minus other                                      +0.0003  p 0.8496
+  Nolan co-cast minus other                                +0.0039  p 0.0246
+  Nolan co-cast minus other, never co-starred elsewhere    +0.0063  p 0.0046
+  OLS coefficients: same gender +0.0004, era gap per year -0.00041, co-star +0.0003  (R2 of controls shown by the drop below)
+  raw co-star gap +0.0237
+
+generic vocabulary: kept 294 of 9378 terms
+generic terms: co-stars 0.3640  others 0.3139
+
+[generic terms only] residual similarity after gender, era, passages, genericness
+  co-star minus other                                      +0.0059  p 0.3154
+  Nolan co-cast minus other                                +0.0083  p 0.2576
+  Nolan co-cast minus other, never co-starred elsewhere    +0.0007  p 0.9375
+  OLS coefficients: same gender +0.0052, era gap per year -0.00001, co-star +0.0069  (R2 of controls shown by the drop below)
+  raw co-star gap +0.0501
+
+=== actor fixed effects (double-centred similarity), QAP 10,000 ===
+  [all terms] co-star minus other                                    +0.0052  null +0.0000  p 0.0075
+  [all terms] Spearman(shared films, sim)                            +0.1265  null +0.0004  p 0.0042
+  [all terms] Nolan co-cast minus other                              +0.0064  null +0.0000  p 0.0014
+  [all terms] Nolan co-cast minus other, never co-starred elsewhere  +0.0059  null +0.0000  p 0.0183
+     shared films 0-0: pairs   266  mean centred sim -0.0020
+     shared films 1-1: pairs   109  mean centred sim +0.0018
+     shared films 2-3: pairs    50  mean centred sim +0.0073
+     shared films 4-99: pairs    10  mean centred sim -0.0030
+  [generic terms only] co-star minus other                                    +0.0079  null +0.0000  p 0.0533
+  [generic terms only] Spearman(shared films, sim)                            +0.1264  null +0.0003  p 0.0039
+  [generic terms only] Nolan co-cast minus other                              +0.0078  null -0.0000  p 0.0703
+  [generic terms only] Nolan co-cast minus other, never co-starred elsewhere  -0.0002  null -0.0000  p 0.9784
+     shared films 0-0: pairs   266  mean centred sim -0.0031
+     shared films 1-1: pairs   109  mean centred sim +0.0022
+     shared films 2-3: pairs    50  mean centred sim +0.0132
+     shared films 4-99: pairs    10  mean centred sim -0.0076
+
+=== distinctive part of each type (mainstream direction removed) ===
+mean: co-stars -0.0342  others -0.0316
+  [raw] co-star minus other                                    -0.0027  null +0.0000  p 0.3536
+  [raw] Nolan co-cast minus other                              +0.0016  null +0.0000  p 0.6596
+  [raw] Nolan co-cast minus other, never co-starred elsewhere  +0.0075  null +0.0000  p 0.0349
+  [double-centred] co-star minus other                                    +0.0038  null -0.0000  p 0.0458
+  [double-centred] Nolan co-cast minus other                              +0.0055  null +0.0000  p 0.0050
+  [double-centred] Nolan co-cast minus other, never co-starred elsewhere  +0.0080  null +0.0000  p 0.0017
+     shared films 0-0: pairs   266  mean distinctive sim -0.0316
+     shared films 1-1: pairs   109  mean distinctive sim -0.0326
+     shared films 2-3: pairs    50  mean distinctive sim -0.0354
+     shared films 4-99: pairs    10  mean distinctive sim -0.0457
+
+===== investigations/link_regulars.py =====
+scored Nolan roles 43; actors not matched to network: []
+
+--- regulars = 2+ Nolan films ---
+all Nolan roles   diff  regulars +0.0139 (n=10)  one-timers +0.0072 (n=11)  diff +0.0067  p 0.714
+all Nolan roles   role  regulars -0.0081 (n=10)  one-timers -0.0054 (n=11)  diff -0.0028  p 0.852
+all Nolan roles   pct   regulars +0.6464 (n=10)  one-timers +0.4742 (n=11)  diff +0.1721  p 0.138
+first Nolan role  diff  regulars +0.0113 (n=10)  one-timers +0.0072 (n=11)  diff +0.0041  p 0.830
+first Nolan role  role  regulars -0.0087 (n=10)  one-timers -0.0054 (n=11)  diff -0.0033  p 0.831
+first Nolan role  pct   regulars +0.6335 (n=10)  one-timers +0.4742 (n=11)  diff +0.1593  p 0.230
+
+--- regulars = 3+ Nolan films ---
+all Nolan roles   diff  regulars +0.0165 (n=9)  one-timers +0.0058 (n=12)  diff +0.0107  p 0.562
+all Nolan roles   role  regulars -0.0087 (n=9)  one-timers -0.0052 (n=12)  diff -0.0036  p 0.807
+all Nolan roles   pct   regulars +0.6286 (n=9)  one-timers +0.5019 (n=12)  diff +0.1268  p 0.284
+first Nolan role  diff  regulars +0.0153 (n=9)  one-timers +0.0045 (n=12)  diff +0.0108  p 0.570
+first Nolan role  role  regulars -0.0066 (n=9)  one-timers -0.0072 (n=12)  diff +0.0006  p 0.970
+first Nolan role  pct   regulars +0.6220 (n=9)  one-timers +0.4961 (n=12)  diff +0.1259  p 0.348
+
+--- Spearman over actors (all Nolan roles, actor means) ---
+diff  vs betweenness    rho +0.014  p 0.952  (n=21)
+diff  vs n Nolan films  rho -0.008  p 0.973  (n=21)
+role  vs betweenness    rho +0.050  p 0.828  (n=21)
+role  vs n Nolan films  rho +0.024  p 0.918  (n=21)
+pct   vs betweenness    rho +0.355  p 0.114  (n=21)
+pct   vs n Nolan films  rho +0.315  p 0.164  (n=21)
+
+--- regulars, role by role (k>=2) ---
+  Michael Caine          k=7  Batman Begins                diff +0.030  role +0.029  pct +0.737
+  Michael Caine          k=7  The Prestige                 diff +0.056  role +0.015  pct +0.955
+  Michael Caine          k=7  The Dark Knight              diff +0.006  role +0.013  pct +0.913
+  Michael Caine          k=7  Inception                    diff +0.034  role +0.010  pct +0.652
+  Michael Caine          k=7  The Dark Knight Rises        diff +0.034  role +0.010  pct +0.708
+  Michael Caine          k=7  Interstellar                 diff +0.066  role +0.015  pct +0.875
+  Cillian Murphy         k=6  The Dark Knight              diff +0.005  role +0.028  pct +0.826
+  Cillian Murphy         k=6  Inception                    diff +0.006  role +0.004  pct +0.348
+  Cillian Murphy         k=6  The Dark Knight Rises        diff +0.015  role +0.042  pct +0.333
+  Cillian Murphy         k=6  Dunkirk                      diff +0.002  role +0.013  pct +0.542
+  Cillian Murphy         k=6  Oppenheimer                  diff -0.046  role -0.043  pct +0.931
+  Christian Bale         k=4  Batman Begins                diff -0.060  role -0.097  pct +0.579
+  Christian Bale         k=4  The Prestige                 diff +0.063  role +0.012  pct +0.455
+  Christian Bale         k=4  The Dark Knight              diff -0.013  role -0.018  pct +0.522
+  Christian Bale         k=4  The Dark Knight Rises        diff -0.086  role -0.108  pct +0.708
+  Gary Oldman            k=4  Batman Begins                diff -0.002  role -0.034  pct +0.789
+  Gary Oldman            k=4  The Dark Knight              diff -0.067  role -0.085  pct +0.957
+  Gary Oldman            k=4  The Dark Knight Rises        diff -0.094  role -0.134  pct +1.000
+  Anne Hathaway          k=3  The Dark Knight Rises        diff +0.084  role +0.028  pct +0.792
+  Anne Hathaway          k=3  Interstellar                 diff +0.076  role -0.002  pct +0.750
+  Kenneth Branagh        k=3  Dunkirk                      diff +0.036  role +0.012  pct +0.125
+  Kenneth Branagh        k=3  Tenet                        diff -0.014  role -0.037  pct +0.615
+  Matt Damon             k=3  Interstellar                 diff +0.066  role +0.001  pct +0.125
+  Matt Damon             k=3  Oppenheimer                  diff +0.085  role +0.043  pct +0.414
+  Matt Damon             k=3  The Odyssey                  diff +0.056  role +0.006  pct +0.897
+  Morgan Freeman         k=3  Batman Begins                diff +0.025  role +0.005  pct +1.000
+  Morgan Freeman         k=3  The Dark Knight              diff +0.069  role +0.054  pct +0.609
+  Morgan Freeman         k=3  The Dark Knight Rises        diff +0.050  role +0.038  pct +0.542
+  Tom Hardy              k=3  The Dark Knight Rises        diff -0.046  role -0.030  pct +0.625
+  Tom Hardy              k=3  Dunkirk                      diff +0.015  role +0.002  pct +0.250
+  Liam Neeson            k=2  Batman Begins                diff -0.025  role -0.027  pct +0.737
+  Liam Neeson            k=2  The Dark Knight Rises        diff +0.006  role +0.022  pct +0.875
+
+--- robustness: regulars (3+) vs one-timers, selection percentile ---
+  without Christian Bale       diff +0.135  p 0.283
+  without Michael Caine        diff +0.104  p 0.393
+  without Gary Oldman          diff +0.091  p 0.446
+  without Cillian Murphy       diff +0.131  p 0.300
+  without Morgan Freeman       diff +0.116  p 0.355
+  without Tom Hardy            diff +0.151  p 0.220
+  without Anne Hathaway        diff +0.109  p 0.376
+  without Kenneth Branagh      diff +0.159  p 0.192
+  without Matt Damon           diff +0.146  p 0.237
+  reprised characters counted once (35 roles): diff +0.146  p 0.230
+  note: 18 regulars-vs-one-timers comparisons above; one p < 0.05 is what chance gives.

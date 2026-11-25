@@ -1,0 +1,84 @@
+actor,film,year,character,group,director,n_prior,excess,n_costars,own_minus_costar
+Joe Pantoliano,Memento,2000,Teddy,nolan,Christopher Nolan,3,-0.0864125405208569,5,-0.07877549544969646
+Al Pacino,Insomnia,2002,Will Dormer,nolan,Christopher Nolan,7,0.024919007888191125,4,0.0005508713887606154
+Al Pacino,Heat,1995,Lt. Vincent Hanna,other,Michael Mann,4,0.0238960923543734,0,
+Al Pacino,Donnie Brasco,1997,Benjamin 'Lefty' Ruggiero,other,Mike Newell,5,-0.027553081365949805,0,
+Al Pacino,The Devil's Advocate,1997,John Milton,other,Taylor Hackford,5,0.06423043706266252,0,
+Robin Williams,Insomnia,2002,Walter Finch,nolan,Christopher Nolan,7,0.014864366263299122,4,-0.00430374710327916
+Robin Williams,Jumanji,1995,Alan Parrish,other,Joe Johnston,3,-0.047538044715775385,0,
+Robin Williams,Jack,1996,Jack Powell,other,Francis Ford Coppola,4,0.0010863488536173582,0,
+Robin Williams,Flubber,1997,Professor Philip Brainard,other,Les Mayfield,5,-0.012313087751680718,0,
+Robin Williams,What Dreams May Come,1998,Chris Nielsen,other,Vincent Ward,6,0.022934003525968416,0,
+Robin Williams,Death to Smoochy,2002,Rainbow Randolph,other,Danny DeVito,7,0.016522294516504776,0,
+Christian Bale,Batman Begins,2005,Bruce Wayne / Batman,nolan,Christopher Nolan,4,-0.058637668273689214,9,-0.10196557666478043
+Christian Bale,The Prestige,2006,Alfred Borden,nolan,Christopher Nolan,4,0.06940361888087032,4,0.013799214200451382
+Christian Bale,The Dark Knight,2008,Bruce Wayne,nolan,Christopher Nolan,5,-0.007527946076828829,6,-0.003489875522431389
+Christian Bale,The Dark Knight Rises,2012,Bruce Wayne,nolan,Christopher Nolan,5,-0.0841381666024571,9,-0.10853780077572922
+Christian Bale,The Machinist,2004,Trevor Reznik,other,Brad Anderson,3,-0.075932577460473,0,
+Christian Bale,3:10 to Yuma,2007,Dan Evans,other,James Mangold,6,0.06298963897754872,0,
+Michael Caine,Batman Begins,2005,Alfred,nolan,Christopher Nolan,6,0.04325607504877116,9,0.03480946241187488
+Michael Caine,The Prestige,2006,Cutter,nolan,Christopher Nolan,6,0.06788244480685035,4,0.022437240162198252
+Michael Caine,The Dark Knight,2008,Alfred,nolan,Christopher Nolan,6,0.024698607943249073,6,0.023913373371417985
+Michael Caine,The Dark Knight Rises,2012,Alfred,nolan,Christopher Nolan,8,0.04240061172749676,9,0.023199059277918137
+Michael Caine,Interstellar,2014,Professor Brand,nolan,Christopher Nolan,9,0.07949058331406644,3,0.022844200538456448
+Michael Caine,Dressed to Kill,1980,Doctor Robert Elliott,other,Brian De Palma,3,0.021330579934077054,0,
+Michael Caine,A Shock to the System,1990,Graham Marshall,other,Jan Egleson,4,-0.06142610065132348,0,
+Michael Caine,Get Carter,2000,Cliff Brumby,other,Stephen Kay,4,-0.0006796003180521426,0,
+Michael Caine,Cars 2,2011,Finn McMissile,other,John Lasseter,9,-0.040171192813851286,0,
+Michael Caine,Gnomeo & Juliet,2011,Lord Redbrick,other,Kelly Asbury,9,0.014544746188477675,1,-0.008393523511447731
+Michael Caine,Now You See Me,2013,Arthur Tressler,other,Louis Leterrier,12,0.06075253122014501,0,
+Michael Caine,Now You See Me 2,2016,Arthur Tressler,other,Jon M. Chu,14,-0.017698744627192675,0,
+Michael Caine,King of Thieves,2018,Brian Reader,other,James Marsh,15,0.00013174008814453853,0,
+Michael Caine,Sherlock Gnomes,2018,Lord Redbrick,other,John Stevenson,15,0.034627518374187205,1,0.051448005420209775
+Liam Neeson,Clash of the Titans,2010,Zeus,other,Louis Leterrier,3,0.04521577910208441,0,
+Liam Neeson,The Dark Knight Rises,2012,Ra's Al Ghul,nolan,Christopher Nolan,3,0.0016411707928803976,9,0.01630288033305976
+Gary Oldman,The Dark Knight Rises,2012,Commissioner Gordon,nolan,Christopher Nolan,3,-0.06466968441938725,9,-0.09546397350828996
+Gary Oldman,Paranoia,2013,Nicholas Wyatt,other,Robert Luketic,6,0.16952263934773903,0,
+Gary Oldman,Dawn of the Planet of the Apes,2014,Dreyfus,other,Matt Reeves,7,0.10522778893259332,0,
+Gary Oldman,The Hitman's Bodyguard,2017,Vladislav Dukhovich,other,Patrick Hughes,8,0.04235708996810472,0,
+Rutger Hauer,Batman Begins,2005,Earle,nolan,Christopher Nolan,5,0.04370950400677309,9,0.04625052364007633
+Rutger Hauer,Blind Fury,1989,Nick Parker,other,Phillip Noyce,3,-0.07067695613691138,0,
+Rutger Hauer,Split Second,1992,Stone,other,Tony Maylam,4,-0.015675654114101545,0,
+Morgan Freeman,The Dark Knight,2008,Lucius Fox,nolan,Christopher Nolan,4,0.06737252207333633,6,0.05673366089412779
+Morgan Freeman,Batman Begins,2005,Lucius Fox,nolan,Christopher Nolan,3,0.03136684882938623,9,0.007552657842007107
+Morgan Freeman,Evan Almighty,2007,God,other,Tom Shadyac,3,-0.03363528389935322,0,
+Morgan Freeman,Wanted,2008,Sloan,other,Timur Bekmambetov,5,0.06341202142488533,0,
+Tom Hardy,The Dark Knight Rises,2012,Bane,nolan,Christopher Nolan,3,-0.04685608999012525,9,-0.02807395834193622
+Tom Hardy,Dunkirk,2017,Farrier,nolan,Christopher Nolan,4,0.015768483254157917,2,0.006361818256434892
+Tom Hardy,Warrior,2011,Tommy Conlon,other,Gavin O'Connor,3,-0.00436147345031257,0,
+Tom Hardy,The Revenant,2015,John Fitzgerald,other,Alejandro G. Iñárritu,5,-0.029254877233482968,0,
+Tom Berenger,Inception,2010,Peter Browning,nolan,Christopher Nolan,3,0.03320987495377126,9,0.003469784228631992
+Anne Hathaway,The Dark Knight Rises,2012,Selina,nolan,Christopher Nolan,5,0.08423766194412985,9,0.032740981895215446
+Anne Hathaway,Interstellar,2014,Brand,nolan,Christopher Nolan,5,0.07623113689322458,3,-0.016113089200287464
+Anne Hathaway,The Devil Wears Prada,2006,Andy Sachs,other,David Frankel,3,0.13045721682368383,0,
+Anne Hathaway,Rio,2011,Jewel,other,Carlos Saldanha,4,-0.03364727437554993,0,
+Anne Hathaway,Colossal,2017,Gloria,other,Nacho Vigalondo,7,0.06821416728730123,0,
+Anne Hathaway,Roald Dahl's The Witches,2020,Grand High Witch,other,Robert Zemeckis,8,-0.12145970254789917,0,
+Kenneth Branagh,Dunkirk,2017,Commander Bolton,nolan,Christopher Nolan,5,0.037958043910007566,2,0.012905434858859588
+Kenneth Branagh,Tenet,2020,Sator,nolan,Christopher Nolan,5,-0.01004602552848266,3,-0.031674698322592065
+Kenneth Branagh,Rabbit-Proof Fence,2002,A. O. Neville,other,Phillip Noyce,3,0.008079625771033605,0,
+Kenneth Branagh,Jack Ryan: Shadow Recruit,2014,Viktor Cherevin,other,Kenneth Branagh,3,0.013325308096123978,0,
+Matt Damon,Oppenheimer,2023,Leslie Groves,nolan,Christopher Nolan,7,0.13589992085821279,2,0.03825285160517394
+Matt Damon,The Odyssey,2026,Odysseus,nolan,Christopher Nolan,7,0.10738667059931117,3,0.007523014731216901
+Matt Damon,The Departed,2006,Colin,other,Martin Scorsese,3,0.08591028698247549,0,
+Matt Damon,The Bourne Ultimatum,2007,Jason Bourne,other,Paul Greengrass,3,-0.0470255650975927,0,
+Matt Damon,Interstellar,2014,Mann,nolan,Christopher Nolan,5,0.12346488428214308,4,0.0010972722644082278
+Matt Damon,Jason Bourne,2016,Jason Bourne,other,Paul Greengrass,4,-0.0338489727734228,0,
+Matt Damon,Stillwater,2021,Bill Baker,other,Tom McCarthy,7,0.1294184613451662,0,
+Robert Downey Jr.,Oppenheimer,2023,Lewis Strauss,nolan,Christopher Nolan,3,-0.03916670930159705,2,-0.04402625957023798
+Charlize Theron,Snow White and the Huntsman,2012,Queen Ravenna,other,Rupert Sanders,3,-0.033590571844326345,0,
+Charlize Theron,A Million Ways to Die in the West,2014,Anna,other,Seth MacFarlane,4,-0.01570023152088862,0,
+Charlize Theron,Kubo and the Two Strings,2016,Monkey / Mother,other,Travis Knight,5,-0.00426982277985688,0,
+Charlize Theron,The Fate of the Furious,2017,Cipher,other,F. Gary Gray,6,-0.01758416934542928,0,
+Charlize Theron,The Old Guard,2020,Andromache of Scythia / Andy,other,Gina Prince-Bythewood,8,-0.005637512437043246,0,
+Charlize Theron,F9,2021,Cipher,other,Justin Lin,9,-0.015763822661909677,0,
+Charlize Theron,Fast X,2023,Cipher,other,Louis Leterrier,10,-0.023771723468831052,0,
+Emily Blunt,Mary Poppins Returns,2018,Mary Poppins,other,Rob Marshall,3,-0.026280123191225302,0,
+Emily Blunt,Sherlock Gnomes,2018,Juliet,other,John Stevenson,3,-0.05862629312337453,1,-0.06630107104066718
+John Leguizamo,Encanto,2021,Bruno,other,Jared Bush,4,-0.09618744903164778,0,
+John Lithgow,Santa Claus: The Movie,1985,B.Z.,other,Jeannot Szwarc,3,-0.006853935313162807,0,
+John Lithgow,Ricochet,1991,Earl Talbott Blake,other,Russell Mulcahy,4,-0.013783123910530493,0,
+John Lithgow,Raising Cain,1992,Carter Nix / Cain / Dr. Nix / Josh / Margo,other,Brian De Palma,4,0.0250705349790048,0,
+John Lithgow,Cliffhanger,1993,Qualen,other,Renny Harlin,6,-0.03150316459215763,0,
+John Lithgow,Shrek,2001,Lord Farquaad,other,Andrew Adamson,8,-0.014204270001945907,0,
+Rami Malek,Amsterdam,2022,Tom Voze,other,David O. Russell,3,-0.027175326691915913,0,

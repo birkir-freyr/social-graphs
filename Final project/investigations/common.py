@@ -108,6 +108,8 @@ def signflip(values_by_cluster, n_perm=10000, seed=2805):
     rng = random.Random(seed)
     groups = [v for v in values_by_cluster.values() if v]
     n = sum(len(v) for v in groups)
+    if not n:
+        return float("nan"), float("nan"), float("nan"), 0, 0
     obs = sum(sum(v) for v in groups) / n
     sums = [sum(v) for v in groups]
     null = []
@@ -120,4 +122,6 @@ def signflip(values_by_cluster, n_perm=10000, seed=2805):
 
 def fmt(res, label):
     m, z, p, n, k = res
+    if not n:
+        return f"{label:<58} no eligible observations (n=0, actors=0)"
     return f"{label:<58} mean {m:+.4f}  z {z:+5.2f}  p {p:.4f}  (n={n}, actors={k})"

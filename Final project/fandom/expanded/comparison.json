@@ -1,0 +1,104 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "tfidf": {
+    "all": {
+      "n": 52,
+      "actors": 27,
+      "mean": -0.004291886142398256,
+      "p": 0.5838416158384162,
+      "ci95": [
+        -0.019815902010147168,
+        0.00854923649765221
+      ]
+    },
+    "one_earlier_role_per_article": {
+      "n": 52,
+      "actors": 27,
+      "mean": -0.004057268050675697,
+      "p": 0.6034396560343965,
+      "ci95": [
+        -0.019771930731439433,
+        0.008910408339122784
+      ]
+    }
+  },
+  "newly_eligible_nolan_roles": [
+    [
+      "Elliot Page",
+      "Inception",
+      2010,
+      "Ariadne"
+    ],
+    [
+      "Elliot Page",
+      "The Odyssey",
+      2026,
+      "Sinon"
+    ],
+    [
+      "Hugh Jackman",
+      "The Prestige",
+      2006,
+      "Robert Angier"
+    ],
+    [
+      "Joseph Gordon-Levitt",
+      "Inception",
+      2010,
+      "Arthur"
+    ],
+    [
+      "Joseph Gordon-Levitt",
+      "The Dark Knight Rises",
+      2012,
+      "Blake"
+    ],
+    [
+      "Robert Pattinson",
+      "Tenet",
+      2020,
+      "Neil"
+    ],
+    [
+      "Robert Pattinson",
+      "The Odyssey",
+      2026,
+      "Antinous"
+    ],
+    [
+      "Stephen Tobolowsky",
+      "Memento",
+      2000,
+      "Sammy"
+    ],
+    [
+      "Wes Bentley",
+      "Interstellar",
+      2014,
+      "Doyle"
+    ]
+  ],
+  "minilm": {
+    "all": {
+      "n": 52,
+      "actors": 27,
+      "mean": -0.03263388425045109,
+      "p": 0.034596540345965404,
+      "ci95": [
+        -0.06439078106160995,
+        -0.005299687467772667
+      ]
+    },
+    "one_earlier_role_per_article": {
+      "n": 52,
+      "actors": 27,
+      "mean": -0.030689204467447884,
+      "p": 0.04689531046895311,
+      "ci95": [
+        -0.06225557591284739,
+        -0.0032669645090675184
+      ]
+    }
+  }
+}
