@@ -1,0 +1,11 @@
+levels: same film 0.675  same actor 0.548  random 0.530
+excess departure, Nolan                                    mean +0.0383  z +2.20  p 0.0215  (n=82, actors=55)
+own minus co-star, Nolan                                   mean -0.0044  z -0.34  p 0.7385  (n=82, actors=55)
+own minus co-star, other directors                         mean -0.0028  z -0.20  p 0.8501  (n=103, actors=42)
+Nolan roles with positive departure: 42 of 82
+--- fandom
+levels: same film 0.633  same actor 0.532  random 0.504
+excess departure, Nolan                                    mean +0.0052  z +0.30  p 0.7666  (n=52, actors=27)
+own minus co-star, Nolan                                   mean -0.0326  z -2.08  p 0.0346  (n=52, actors=27)
+own minus co-star, other directors                         mean -0.0291  z -1.07  p 0.2877  (n=10, actors=9)
+Nolan roles with positive departure: 28 of 52

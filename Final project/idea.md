@@ -128,6 +128,3 @@ if they help interpret a result.
 - Week 8 explicitly suggests actors, films, and crews as a network, with plots
   or reviews supplying the text. Its project brief asks for one research question
   and checked measurements. [Week 8 project and dataset guidance](https://raw.githubusercontent.com/suneman/socialgraphs2026-web/main/docs/weeks/week8.html).
-
-The repository's [semester methods guide](METHODS.md) collects the methods and
-validation practices from the weekly work.

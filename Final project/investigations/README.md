@@ -1,7 +1,7 @@
 # Follow-up analyses (`investigations/`)
 
 These scripts test whether the role-similarity result is about the part or about the film, add the
-network baselines, and produce the new Fig. 3. All reuse `typecast.py`'s vectoriser, cosine and
+network baselines, and produce Fig. 2. All reuse `typecast.py`'s vectoriser, cosine and
 leave-one-out scoring, and `director_test.py`'s director table, so the numbers are the same
 quantities as in the rest of the repo. Run them from this folder with `python3 <script>`
 (scripts marked * need networkx/scipy/matplotlib/PyMuPDF; run those from `Final project`).
@@ -25,8 +25,12 @@ quantities as in the rest of the repo. Run them from this folder with `python3 <
 | `link_regulars.py` * | Network core vs one-timers: departure, co-star-corrected departure, rank; Spearman with betweenness | all p > 0.2; abs(rho) < 0.2 |
 | `link_film_network.py` * | Mantel test: shared actors vs film text similarity (shared actors' passages left out), with/without Batman, partial on years | rho 0.05 (p 0.72); -0.11 without Batman |
 | `link_homophily.py` * | Type similarity of co-stars outside Nolan (QAP), with gender/era/size controls and the mainstream decomposition | 0.23 vs 0.16 raw; distinctive part p 0.25 |
-| `fig_role_or_film.py` * | New Fig. 3 (`figures/fig3_role_or_film.png`) with bootstrap intervals; panel b uses `selection_placebo.run(rows, 3)` | Fig. 3 |
+| `fig_role_or_film.py` * | Fig. 2 (`figures/fig3_role_or_film.png`; the file name is older than the numbering) with bootstrap intervals; panel b uses `selection_placebo.run(rows, 3)` | Fig. 2 |
 | `verify_fig1.py` * | Checks every drawn link, dot and label of Fig. 1 against the raw CSV | 0 problems |
 
 `*.out` files hold the last printed output of each script; `*.json` hold machine-readable results.
 | `sequel_control.py` | Positive control: reprised characters vs same-film co-star (departure, rank, direct cosine) | -0.007 (p 0.67); direct +0.026 (p 0.07) |
+| `prior_rules.py` | Main effect and placebo with a minimum of 2 earlier roles, or with later roles in the type; also on the Fandom passages | min 2: +0.023, placebo +0.001; later roles: placebo p 0.86 |
+| `billing_placebo.py` | Placebo with the role and its co-stars all billed in the top ten | -0.0005 (p 0.88) |
+| `minilm_main.py` * | Main effect, placebo and similarity levels with the all-MiniLM-L6-v2 sentence encoder (needs torch and transformers) | 0.68 / 0.55 / 0.53; placebo -0.004 (p 0.74), other directors -0.003 (p 0.85); excess +0.038 (p 0.02), 42 of 82 positive |
+| `validation_full_precision.py` | Ratings vs cosine at full precision (the key file rounds cosines, creating ties) | rho 0.04 (p 0.88) within actors; 0.26 (p 0.24) over 23 pairs |

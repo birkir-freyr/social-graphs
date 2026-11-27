@@ -18,7 +18,7 @@ The 320 passages come from 293 source articles and cover 81 actors, 227 films an
 
 ## The same tests on two sources
 
-The analysis uses the paper’s name masking, TF–IDF vectorizer, 25-word minimum and three strictly earlier comparison roles. For each held-out earlier role, both that role and the target are compared with the same centroid. Excess departure is the target’s distance minus the held-out role’s distance, averaged over held-out roles. The same-film comparison subtracts the mean excess departure of eligible co-stars scored against that same actor’s history. Tests use 10,000 actor-clustered sign flips and intervals use 5,000 actor-clustered bootstrap draws. [Paper methods](../paper/main.tex) · [Per-role Fandom scores](results/fandom_scores.csv)
+The analysis uses the paper’s name masking, TF–IDF vectorizer, 25-word minimum and three strictly earlier comparison roles. For each held-out earlier role, both that role and the target are compared with the same centroid. Excess departure is the target’s distance minus the held-out role’s distance, averaged over held-out roles. The same-film comparison subtracts the mean excess departure of eligible co-stars scored against that same actor’s history. Tests use 10,000 actor-clustered sign flips and intervals use 5,000 actor-clustered bootstrap draws. [Per-role Fandom scores](results/fandom_scores.csv)
 
 | Text and sample | Scored Nolan roles / actors | Excess departure (*p*) | Own minus co-star (*p*) |
 |---|---:|---:|---:|
@@ -61,7 +61,7 @@ All 223 earlier/comparison passages came from Heroes Wiki or Villains Wiki. Thes
 
 ## Does a sentence encoder recognize similar characters?
 
-TF–IDF rewards shared vocabulary. The Week 7 sentence encoder can also match passages that express similar ideas in different words. I ran both measures against the team’s existing reader scores, then repeated the same-film Fandom comparison with the encoder. Longer passages were split into contiguous chunks within the model’s input limit and given equal weight. [Course methods, §§47 and 51](../METHODS.md) · [MiniLM model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+TF–IDF rewards shared vocabulary. The Week 7 sentence encoder can also match passages that express similar ideas in different words. I ran both measures against the team’s existing reader scores, then repeated the same-film Fandom comparison with the encoder. Longer passages were split into contiguous chunks within the model’s input limit and given equal weight. [MiniLM model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
 | Comparison | TF–IDF | MiniLM |
 |---|---:|---:|
